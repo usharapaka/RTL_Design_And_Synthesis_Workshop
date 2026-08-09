@@ -97,7 +97,7 @@ RTL-Design-Workshop/
 │   └── README.md
 
 
-## Author
+ Author
 
  Name: Rapaka Usha  
  College: Anurag University  
