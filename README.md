@@ -34,7 +34,7 @@ This repository documents my learning journey and hands-on experiments completed
 
 ---
 
-## Module-2 – RTL Design and Synthesis
+## Module-2.1 – RTL Design and Synthesis
 
 **Topics Covered:**
 
@@ -51,7 +51,7 @@ This repository documents my learning journey and hands-on experiments completed
 
 ---
 
-## Module-3 – Flip-Flop Coding Styles and Optimization
+## Module-2.2 – Flip-Flop Coding Styles and Optimization
 
 **Topics Covered:**
 
@@ -90,10 +90,10 @@ RTL-Design-Workshop/
 │── Module_1/
 │   └── README.md
 │
-│── Module-2/
+│── Module-2.1/
 │   └── README.md
 │
-│── Module-3/
+│── Module-2.2/
 │   └── README.md
 
 
