@@ -198,7 +198,7 @@ The optimized design required less hardware while maintaining the same logical b
 
 ---
 
-## Sequential Optimization (D Flip-Flop)
+## Sequential Optimization 
 
 A D flip-flop with an asynchronous reset and constant assignment was synthesized.
 
