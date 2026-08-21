@@ -13,7 +13,7 @@ This repository documents my learning journey and hands-on experiments completed
 - Introduction and Cloud Lab Instructions
 - Local Lab Installation
 
-➡️ **Documentation:** [Module 0 README](Module-0/README.md)
+**Documentation:** [Module 0 README](./Module%200/README.md)
 
 ---
 
