@@ -47,7 +47,7 @@ This repository documents my learning journey and hands-on experiments completed
 - Gate-Level Netlist
 - Technology Mapping
 
-➡️ **Documentation:** [Module-2 README](Module-2/README.md)
+➡️ **Documentation:** [Module-2.1 README](Module-2.1/README.md)
 
 ---
 
@@ -62,7 +62,62 @@ This repository documents my learning journey and hands-on experiments completed
 - SKY130 Technology Mapping
 - Interesting Optimization – Part 1
 
-➡️ **Documentation:** [Module-3 README](Module-3/README.md)
+➡️ **Documentation:** [Module-2.2 README](Module-2.2/README.md)
+
+---
+
+## Module-3 – Flip-Flop Coding Styles and Optimization
+
+**Topics Covered:**
+
+- Constant Propagation
+- State Optimization
+- Cloning
+- Retiming
+- Optimization Labs
+
+➡️ **Documentation:** [Module-3 README](./Module-3/README.md)
+
+---
+
+## Module-4 – Combinational and Sequential Logic Optimization
+
+**Topics Covered:**
+
+- Gate-Level Simulation (GLS)
+- Synthesis-Simulation Mismatch
+- Blocking vs. Non-Blocking Assignments
+- Ternary Operator MUX
+- Yosys Synthesis
+- Gate-Level Simulation of MUX
+- Common RTL Coding Pitfalls
+- Blocking Assignment Caveat
+- Synthesis of Corrected RTL
+
+
+➡️ Documentation: [Module-4 README](./Module-4/README.md)
+
+---
+
+## Module-5 – Gate-Level Simulation and Synthesis-Simulation Mismatch
+
+**Topics Covered:**
+
+- If-Else Statements
+- Nested If-Else
+- Inferred Latches
+- Case Statements
+- Incomplete/Partial Case Handling
+- For Loops
+- Generate Blocks
+- Ripple Carry Adder (RCA)
+- 4-to-1 MUX using For Loop
+- 8-to-1 Demux using Case & For Loop
+- 8-bit RCA using Generate Block
+- Synthesis Optimization
+
+
+➡️ Documentation: [Module-5 README](./Module-5/README.md)
 
 ---
 
@@ -81,24 +136,30 @@ This repository documents my learning journey and hands-on experiments completed
 ## Repository Structure
 
 ```text
-RTL-Design-Workshop/
+RTL_Design_And_Synthesis_Workshop/
 │── README.md
 │
-│── Module-0/
+├── Module-0/
 │   └── README.md
 │
-│── Module_1/
+├── Module-1/
 │   └── README.md
 │
-│── Module-2.1/
+├── Module-2/
 │   └── README.md
 │
-│── Module-2.2/
+├── Module-3/
 │   └── README.md
+│
+├── Module-4/
+│   └── README.md
+│
+└── Module-5/
+    └── README.md
+```
 
+### Author
 
- Author
-
- Name: Rapaka Usha  
- College: Anurag University  
- Branch: Electronics and Communication Engineering (ECE)
+Name: Rapaka Usha  
+College: Anurag University  
+Branch: Electronics and Communication Engineering (ECE)
