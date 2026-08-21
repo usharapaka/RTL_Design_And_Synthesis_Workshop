@@ -13,7 +13,7 @@ This repository documents my learning journey and hands-on experiments completed
 - Introduction and Cloud Lab Instructions
 - Local Lab Installation
 
-**Documentation:** [Module 0 README](./Module%200/README.md)
+➡️**Documentation:** [Module 0 README](./Module%200/README.md)
 
 ---
 
@@ -30,7 +30,7 @@ This repository documents my learning journey and hands-on experiments completed
 - Technology Mapping & Gate-Level Netlist
 - Practical Exercise, Results & Conclusion
 
-➡️ **Documentation:** [Module 1 README](Module-1/README.md)
+➡️ **Documentation:** [Module 1 README](./Module%201/README.md)
 
 ---
 
@@ -47,7 +47,7 @@ This repository documents my learning journey and hands-on experiments completed
 - Gate-Level Netlist
 - Technology Mapping
 
-➡️ **Documentation:** [Module-2.1 README](Module-2.1/README.md)
+➡️ **Documentation:** [Module 2.1 README](./Module%202.1/README.md)
 
 ---
 
@@ -62,7 +62,7 @@ This repository documents my learning journey and hands-on experiments completed
 - SKY130 Technology Mapping
 - Interesting Optimization – Part 1
 
-➡️ **Documentation:** [Module-2.2 README](Module-2.2/README.md)
+➡️ **Documentation:** [Module 2.2 README](./Module%202.2/README.md)
 
 ---
 
@@ -76,7 +76,7 @@ This repository documents my learning journey and hands-on experiments completed
 - Retiming
 - Optimization Labs
 
-➡️ **Documentation:** [Module-3 README](./Module-3/README.md)
+➡️ **Documentation:** [Module 3 README](./Module%203/README.md)
 
 ---
 
@@ -94,8 +94,7 @@ This repository documents my learning journey and hands-on experiments completed
 - Blocking Assignment Caveat
 - Synthesis of Corrected RTL
 
-
-➡️ Documentation: [Module-4 README](./Module-4/README.md)
+➡️ **Documentation:** [Module 4 README](./Module%204/README.md)
 
 ---
 
@@ -117,7 +116,7 @@ This repository documents my learning journey and hands-on experiments completed
 - Synthesis Optimization
 
 
-➡️ Documentation: [Module-5 README](./Module-5/README.md)
+➡️ **Documentation:** [Module 5 README](./Module%205/README.md)
 
 ---
 
