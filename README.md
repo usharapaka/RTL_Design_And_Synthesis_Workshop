@@ -17,7 +17,7 @@ This repository documents my learning journey and hands-on experiments completed
 
 ---
 
-## Module-1 – Verilog RTL Design Through Simulation & Yosys Synthesis
+## Module-1 –  Introduction to Verilog RTL design and Synthesis
 
 **Topics Covered:**
 
@@ -34,7 +34,7 @@ This repository documents my learning journey and hands-on experiments completed
 
 ---
 
-## Module-2.1 – RTL Design and Synthesis
+## Module-2.1 –  Timing libs, hierarchical vs flat synthesis and efficient flop coding styles
 
 **Topics Covered:**
 
@@ -51,7 +51,7 @@ This repository documents my learning journey and hands-on experiments completed
 
 ---
 
-## Module-2.2 – Flip-Flop Coding Styles and Optimization
+## Module-2.2 
 
 **Topics Covered:**
 
@@ -66,7 +66,7 @@ This repository documents my learning journey and hands-on experiments completed
 
 ---
 
-## Module-3 – Flip-Flop Coding Styles and Optimization
+## Module-3 – Combinational and sequential optmizations
 
 **Topics Covered:**
 
@@ -80,7 +80,7 @@ This repository documents my learning journey and hands-on experiments completed
 
 ---
 
-## Module-4 – Combinational and Sequential Logic Optimization
+## Module-4 – GLS,blocking vs non-blocking and Synthesis Simulation mismatch
 
 **Topics Covered:**
 
@@ -99,7 +99,7 @@ This repository documents my learning journey and hands-on experiments completed
 
 ---
 
-## Module-5 – Gate-Level Simulation and Synthesis-Simulation Mismatch
+## Module-5 – Optimization in synthesis
 
 **Topics Covered:**
 
