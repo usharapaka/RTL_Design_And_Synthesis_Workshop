@@ -139,7 +139,7 @@ endmodule
 
 ---
 
-### Synthesis Result of Lab 3
+### Synthesis Result 
 
 The synthesized circuit corresponding to the nested conditional RTL is shown below.
 
@@ -171,12 +171,26 @@ endmodule
 
 ---
 
-### Synthesis Result of Lab 5
+### Synthesis Result 
 
 The synthesis output corresponding to the complete case structure is shown below.
 
 
 <img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/94faf56c-86bc-4e94-a04d-2b3837d7e05e" />
+
+
+### Simulation Waveform
+
+The GTKWave simulation waveform shows the behavior of the incomplete case design for different input and select combinations.
+
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/61dd2b2e-8b24-4311-837c-0850f33d454d" />
+
+### Yosys Synthesis Result
+
+The synthesized circuit generated using Yosys shows the gate-level implementation of the incomplete case design.
+
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/70f2dfce-54b3-4c47-8e06-b125d38427e3" />
+
 
 ---
 
@@ -207,7 +221,38 @@ endmodule
 
 ---
 
-## For Loops in Verilog
+### Partial Assignments in Case
+
+Here, two outputs are controlled inside the same `case` statement. Since every case branch does not assign both outputs, some signals may remain unassigned for certain conditions. This can result in latch inference during synthesis.
+### Verilog code:
+ 
+``` module partial_case_assign (
+    input i0, input i1, input i2,
+    input [1:0] sel,
+    output reg y, output reg x
+);
+always @(*) begin
+    case(sel)
+        2'b00: begin
+            y = i0;
+            x = i2;
+        end
+        2'b01: y = i1;
+        default: begin
+            x = i1;
+            y = i2;
+        end
+    endcase
+end
+endmodule
+```
+
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/01afbd4e-f472-4f36-8478-f9f1c8e57616" />
+
+
+---
+
+## 4 For Loops in Verilog
 
 A `for` loop allows a group of statements to be repeated using a loop variable. In synthesizable RTL, loops are generally used to describe repetitive hardware structures rather than software-style runtime iteration.
 
@@ -286,7 +331,7 @@ The basic relationship can be represented as:
 
 ---
 
-## 7. Labs on Loops and Generate Blocks
+## 7 Loops and Generate Blocks
 
 The next set of experiments applies loops and generate constructs to practical digital circuits.
 
