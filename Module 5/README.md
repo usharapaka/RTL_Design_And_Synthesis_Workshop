@@ -1,4 +1,4 @@
-# Module 5: Optimization in Synthesis
+# Module 5 - Optimization in Synthesis
 
 Module 5 of the RTL workshop focuses on writing synthesizable Verilog in a way that produces the intended hardware. The session covers conditional statements, latch inference, loops, generate constructs, and the implementation of commonly used digital circuits.
 
