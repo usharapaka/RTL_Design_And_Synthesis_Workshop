@@ -1,4 +1,4 @@
-# Module-3 - Combinational and Sequential Optimization
+# Module 3 - Combinational and Sequential Optimization
 
 This document covers the optimization techniques applied during logic synthesis for both combinational and sequential circuits, along with the corresponding laboratory exercises performed using Yosys.
 
