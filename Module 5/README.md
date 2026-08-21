@@ -1,6 +1,6 @@
 # Module 5: Optimization in Synthesis
 
-Day 5 of the RTL workshop focuses on writing synthesizable Verilog in a way that produces the intended hardware. The session covers conditional statements, latch inference, loops, generate constructs, and the implementation of commonly used digital circuits.
+Module 5 of the RTL workshop focuses on writing synthesizable Verilog in a way that produces the intended hardware. The session covers conditional statements, latch inference, loops, generate constructs, and the implementation of commonly used digital circuits.
 
 The practical exercises demonstrate how different RTL coding styles affect the synthesized hardware and how proper coding techniques can be used to obtain predictable combinational logic.
 
@@ -105,7 +105,8 @@ end
 endmodule
 ```
 
-![in\_comp\_if](in_comp_if.png)
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/fb6805e1-bff6-49c4-afeb-63a667b62113" />
+
 
 ---
 
@@ -113,7 +114,8 @@ endmodule
 
 The synthesis result of the previous RTL can be examined to identify the hardware generated because of the incomplete conditional assignment.
 
-![incomp\_synth](incomp_synth.png)
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/8b237a9d-71aa-4f3f-8952-73282e8e91d3" />
+
 
 ---
 
@@ -132,7 +134,8 @@ end
 endmodule
 ```
 
-![icomp2](icomp2.png)
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/16ff98e7-bf73-4a5c-9b72-05231ea972c3" />
+
 
 ---
 
@@ -140,7 +143,9 @@ endmodule
 
 The synthesized circuit corresponding to the nested conditional RTL is shown below.
 
-![incomp2synth](incomp2synth.png)
+
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/038a5b60-9121-433b-b3a6-d092b60f1764" />
+
 
 ---
 
@@ -160,7 +165,9 @@ end
 endmodule
 ```
 
-![compcase](compcase.png)
+
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/fd3163c8-66f4-4dcf-97f1-e85d4559feff" />
+
 
 ---
 
@@ -168,7 +175,8 @@ endmodule
 
 The synthesis output corresponding to the complete case structure is shown below.
 
-![compcase\_synth](compcase_synth.png)
+
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/94faf56c-86bc-4e94-a04d-2b3837d7e05e" />
 
 ---
 
@@ -193,39 +201,9 @@ end
 endmodule
 ```
 
-![badcase](badcase.png)
 
----
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/e8912969-931e-4bff-90ea-9f344e75c1da" />
 
-### Lab 8: Partial Assignments in Case
-
-Here, two outputs are controlled inside the same `case` statement. Notice that every branch does not assign both outputs. Such partial assignments can cause storage elements to be inferred for signals that are not assigned in all branches.
-
-```verilog
-module partial_case_assign (
-    input i0, input i1, input i2,
-    input [1:0] sel,
-    output reg y, output reg x
-);
-always @(*) begin
-    case(sel)
-        2'b00: begin
-            y = i0;
-            x = i2;
-        end
-        2'b01: y = i1;
-        default: begin
-            x = i1;
-            y = i2;
-        end
-    endcase
-end
-endmodule
-```
-
-![Screenshot\_2025-05-28\_12-39-30](Screenshot_2025-05-28_12-39-30.png)
-
-> **Note:** The procedure for running the RTL and synthesis experiments is covered in [Day 1](https://github.com/Ahtesham18112011/RTL_workshop/tree/main/Day_1).
 
 ---
 
@@ -336,7 +314,9 @@ end
 endmodule
 ```
 
-![mux\_generate](mux_generate.png)
+
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/fb95ac57-a2fb-450d-bc7e-d05ba7f6ed5a" />
+
 
 ---
 
@@ -371,7 +351,9 @@ end
 endmodule
 ```
 
-![demux-case](demux-case.png)
+
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/e6001055-aac0-44f6-b0c4-c652df9765bc" />
+
 
 ---
 
@@ -399,7 +381,9 @@ end
 endmodule
 ```
 
-![demux-generate](demux-generate.png)
+
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/28c594aa-3bcd-4ef5-b54e-a8440e6c16ff" />
+
 
 ---
 
@@ -440,9 +424,9 @@ module fa (input a, input b, input c, output co, output sum);
 endmodule
 ```
 
-![rca\_org](rca_org.png)
 
-> **Note:** The basic procedure for performing the above experiments is already explained in [Day 1](https://github.com/Ahtesham18112011/RTL_workshop/tree/main/Day_1).
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/4d066e21-f6ac-4d77-b4f5-13205887373e" />
+
 
 ---
 
