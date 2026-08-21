@@ -1,543 +1,280 @@
-# Day 3 – Combinational and Sequential Logic Optimization
+# Module-3 - Combinational and Sequential Logic Optimization
 
+This document covers the optimization techniques applied during logic synthesis for both combinational and sequential circuits, along with the corresponding laboratory exercises performed using Yosys.
+
+---
 ## Introduction
 
-Day 3 of the RTL Design Workshop focused on understanding how synthesis tools optimize digital circuits.
+Digital circuit optimization is an important stage of the synthesis process. After converting RTL into logic gates, the synthesis tool analyzes the circuit to remove unnecessary logic, simplify Boolean expressions, and generate an implementation that consumes less area while preserving the required functionality.
 
-The experiments covered both **combinational logic** and **sequential logic**. Using Yosys, the RTL designs were synthesized and optimized, and the resulting netlists were examined using the schematic viewer. Simulation waveforms were also checked using GTKWave.
-
-The main purpose of these experiments was to understand how unnecessary hardware can be removed while preserving the required functionality of the design.
+This session explored the optimization techniques Yosys applies to both combinational and sequential circuits.
 
 ---
 
-## Objectives
+## Combinational Logic Optimization
 
-The main objectives of this session were:
+Combinational optimization reduces unnecessary logic **without changing circuit functionality**. The synthesis tool analyzes Boolean expressions and removes redundant hardware, producing a smaller and more efficient gate-level implementation.
 
-- Understand the need for logic optimization during synthesis.
-- Study optimization of combinational circuits.
-- Study optimization of sequential circuits.
-- Understand constant propagation.
-- Observe removal of redundant logic.
-- Analyze synthesized gate-level netlists.
-- Verify sequential circuit behavior using waveforms.
-- Understand how Yosys simplifies RTL during synthesis.
+### Objectives
 
----
-
-# Combinational Logic Optimization
-
-Combinational logic produces an output based only on the present input values.
-
-During synthesis, Yosys analyzes the Boolean logic described in the RTL and tries to generate a simpler implementation. Redundant operations, unnecessary gates, and logic that does not contribute to the output can be removed.
-
-### Main objectives of combinational optimization
-
-- Reduce the number of gates.
-- Reduce hardware area.
+- Reduce the number of logic gates.
 - Simplify Boolean expressions.
-- Reduce unnecessary switching activity.
-- Improve the efficiency of the synthesized circuit.
+- Minimize chip area.
+- Improve circuit speed.
+- Reduce power consumption.
 
 ---
 
-# Sequential Logic Optimization
+## Sequential Logic Optimization
 
-Sequential circuits contain storage elements such as flip-flops and registers.
+Sequential optimization applies to circuits containing memory elements such as flip-flops.
 
-Optimization of sequential circuits is slightly different from combinational optimization because the synthesis tool has to preserve the required clocked behavior.
+Unlike combinational optimization, the synthesis tool must **preserve the behavior of sequential elements** while removing unnecessary registers and simplifying the logic connected to them.
 
-Yosys can identify constant or unnecessary sequential logic and simplify the resulting implementation.
+### Typical Goals
 
-### Important areas of sequential optimization
+- Removing redundant flip-flops.
+- Propagating constant values through sequential logic.
+- Eliminating unreachable logic.
+- Improving timing while maintaining functional equivalence.
 
-- Constant registers
-- Redundant registers
-- Unused sequential logic
-- Simplification of reset logic
-- Simplification of logic connected to registers
+### Figure 1: Sequential Optimization of D Flip-Flop
+
+<img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 10 35 20 PM" src="https://github.com/user-attachments/assets/f72cf92c-0116-495c-81a7-b8733a320eb0" />
+
+The synthesized circuit removes unnecessary sequential logic while preserving the behavior of the original design.
 
 ---
 
-# Constant Propagation
+## Constant Propagation
 
-Constant propagation is an optimization technique in which a signal having a known fixed value is replaced by that value during synthesis.
+Constant propagation replaces signals that always carry a fixed logic value **directly with that constant** during synthesis.
 
-For example, if a signal always remains at logic `1`, there is no need to implement additional logic to generate that signal. The constant can be propagated through the circuit and unnecessary hardware can be removed.
+Instead of implementing logic to compute an already-known value, the synthesis tool substitutes the constant and removes redundant gates.
 
 ### Advantages
 
 - Reduces logic complexity.
-- Removes unnecessary gates.
-- Reduces hardware utilization.
-- Can improve timing.
-- Reduces unnecessary switching activity.
+- Decreases hardware utilization.
+- Improves timing.
+- Lowers power consumption.
+
+### Figure 2: Constant Propagation Example
+
+<img width="958" height="930" alt="WhatsApp Image 2026-08-19 at 10 58 38 PM" src="https://github.com/user-attachments/assets/1ae08c88-3da9-4bf0-8ec4-90b25f013a22" />
+
+The synthesized netlist shows that constant-valued signals are propagated through the logic, allowing unnecessary gates to be removed during optimization.
 
 ---
 
-# Unused Logic Optimization
+## Unused Output Optimization
 
-A synthesis tool only needs to generate hardware that contributes to the required outputs.
+If a signal or output is never used by the remaining circuit, the synthesis tool recognizes that it has no effect on final functionality and **automatically removes it** during optimization.
 
-If an internal signal or logic block does not affect any final output, it can be considered unnecessary. Yosys can remove such logic during optimization.
+This reduces the total gate count and prevents unnecessary hardware from being implemented.
 
-This helps produce a cleaner and smaller synthesized netlist.
+This demonstrates that synthesis tools generate hardware only for logic that actually contributes to the final outputs.
+
+### Figure 3: Logic Simplification after Optimization
+
+<img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 11 01 44 PM" src="https://github.com/user-attachments/assets/cb834402-f7e5-4199-b02d-969e03b10337" />
+
+The optimized netlist contains fewer logic gates while maintaining the same functionality as the original RTL design.
 
 ---
 
-# State Optimization
+## State Optimization
 
-State optimization is mainly associated with finite state machines.
+Finite State Machines (FSMs) can contain equivalent or unnecessary states. During optimization, these states may be **merged or removed**, reducing the required hardware while preserving the original behavior.
 
-An FSM may contain unnecessary or equivalent states. During synthesis, the state-related logic can be simplified to reduce hardware requirements while preserving the required behavior.
+### State Optimization Generally Includes
 
-### State optimization can involve:
-
-- Removing unnecessary states.
-- Identifying equivalent states.
+- Eliminating equivalent states.
+- Efficient state encoding.
 - Simplifying next-state logic.
-- Improving state encoding.
 - Reducing overall hardware complexity.
 
 ---
 
-# Logic Cloning
+## Logic Cloning
 
-Logic cloning is a technique used mainly to improve timing when a logic cell has a high fan-out.
+Logic cloning is a performance optimization where selected logic cells are **duplicated** to reduce fan-out and improve timing.
 
-Instead of making one cell drive a large number of destinations, multiple copies of the logic can be created. Each copy then drives fewer loads.
-
-This can reduce loading and improve timing on critical paths.
+Instead of one gate driving many loads, additional copies are created so each copy drives fewer destinations. This reduces delay on critical timing paths.
 
 ---
 
-# Retiming
+## Retiming
 
-Retiming is a sequential optimization technique in which registers are repositioned around combinational logic.
+Retiming is a sequential optimization technique where flip-flops are **repositioned across combinational logic** without changing circuit functionality.
 
-The objective is to distribute the combinational delay more evenly between pipeline stages.
+Its purpose is to balance propagation delays between pipeline stages and improve the maximum operating frequency.
 
-Retiming can help improve the maximum operating frequency without changing the intended logical behavior of the circuit.
+Unlike other optimizations, retiming modifies only **register placement** while preserving the logical behavior of the design.
 
 ---
 
-# Yosys Optimization Passes
+## Optimization Passes Performed in Yosys
 
-During synthesis, Yosys performs different types of optimization to simplify the generated hardware.
+During synthesis, Yosys automatically performs several optimization passes to simplify the generated hardware.
 
-| Optimization | Purpose |
+| Optimization Pass | Purpose |
 |---|---|
-| Constant propagation | Replaces signals with known constant values |
-| Dead logic removal | Removes logic that does not affect required outputs |
-| Boolean simplification | Simplifies Boolean expressions |
-| Wire optimization | Removes unnecessary signal connections |
-| Cell optimization | Removes or simplifies unnecessary cells |
-| Expression optimization | Reduces equivalent or redundant expressions |
-| Sequential optimization | Simplifies unnecessary sequential logic |
+| Constant propagation | Replace known-constant signals directly |
+| Dead logic elimination | Remove logic with no effect on outputs |
+| Boolean simplification | Reduce Boolean expressions |
+| Removal of unused wires | Remove unreferenced signals |
+| Removal of unused cells | Remove unreferenced gates/cells |
+| Expression simplification | Simplify equivalent expressions |
+| Resource sharing | Reuse hardware across similar operations |
 
-These operations help convert the RTL into an efficient gate-level implementation.
+These optimizations collectively produce an efficient gate-level netlist.
 
 ---
 
 # Laboratory Exercises
 
-## Lab 1 – Constant Propagation
+## Constant Propagation
 
-### Objective
+A simple combinational circuit was synthesized to observe how Yosys replaces constant values directly within the logic network.
 
-To understand how constant values are propagated through a circuit during synthesis.
-
-### Theory
-
-When a signal has a fixed value, Yosys can substitute that value directly into the logic. Once this happens, some gates may become unnecessary and can be removed.
-
-### Procedure
-
-1. Write the required RTL design.
-2. Load the design into Yosys.
-3. Perform synthesis.
-4. Apply the required optimization.
-5. Generate the synthesized netlist.
-6. Open the netlist using the schematic viewer.
-7. Observe the optimized circuit.
-
-### Verilog Code
-
-> **Use the exact Verilog code from the workshop screenshot here.**
->
-> Do not modify the code.
-
-### Yosys Commands
-
-> **Paste the exact Yosys commands from your screenshot here without changing them.**
-
-### Observation
-
-The synthesized circuit becomes simpler after the constant value is propagated through the logic.
+After optimization, unnecessary gates were removed, producing a simpler implementation.
 
 ### Result
 
-Constant propagation successfully removed unnecessary logic from the synthesized circuit.
+The constant value was propagated through the logic, reducing redundant hardware.
 
 ---
 
-# Lab 2 – Logic Simplification
+##  Logic Simplification
 
-### Objective
+A multiplexer-based design was synthesized to demonstrate how Boolean expressions simplify when one input remains constant.
 
-To observe how Yosys simplifies combinational logic during synthesis.
-
-### Theory
-
-A Boolean expression may contain operations that become unnecessary when one or more inputs have fixed values.
-
-During synthesis, Yosys analyzes the expression and generates only the logic required for the final output.
-
-### Procedure
-
-1. Load the RTL design into Yosys.
-2. Synthesize the design.
-3. Run the required optimization commands.
-4. Generate the netlist.
-5. View the synthesized circuit.
-6. Compare the simplified structure with the original RTL.
-
-### Verilog Code
-
-> **Paste the exact Verilog code from the workshop here.**
-
-### Yosys Commands
-
-> **Paste the exact commands from the workshop here.**
-
-### Observation
-
-The optimized netlist contains fewer unnecessary logic elements.
+The synthesized circuit contained fewer logic gates while maintaining identical functionality.
 
 ### Result
 
-The Boolean logic was simplified successfully without changing the intended functionality.
+The multiplexer logic was simplified because one of its inputs was fixed to a constant value.
 
 ---
 
-# Lab 3 – Expression Optimization
+## Expression Optimization
 
-### Objective
-
-To understand how equivalent or redundant expressions are optimized during synthesis.
-
-### Theory
-
-Different RTL expressions can sometimes produce the same logical result.
-
-Yosys analyzes these expressions during synthesis and can remove redundant hardware when the same functionality can be achieved with a simpler implementation.
-
-### Procedure
-
-1. Load the RTL source into Yosys.
-2. Synthesize the design.
-3. Apply the optimization process.
-4. Generate the gate-level netlist.
-5. Examine the synthesized schematic.
-
-### Verilog Code
-
-> **Paste the exact Verilog code from the workshop here.**
-
-### Yosys Commands
-
-> **Paste the exact commands from the workshop here.**
-
-### Observation
-
-Equivalent or unnecessary logic is reduced in the synthesized representation.
+Additional combinational logic examples were analyzed to observe how the synthesis tool recognizes equivalent expressions and minimizes redundant hardware.
 
 ### Result
 
-Expression optimization reduced redundant hardware while maintaining the required functionality.
+Equivalent expressions were simplified and redundant logic was reduced.
 
 ---
 
-# Lab 4 – Boolean Reduction
+## Boolean Reduction
 
-### Objective
+Nested conditional expressions were synthesized and optimized.
 
-To study how Yosys reduces complex Boolean and conditional logic.
-
-### Theory
-
-Nested conditions can result in more hardware than necessary.
-
-During synthesis, Boolean expressions are analyzed and simplified. Redundant operations can be removed when they do not affect the final output.
-
-### Procedure
-
-1. Load the RTL design.
-2. Run synthesis.
-3. Apply the optimization commands.
-4. Generate the netlist.
-5. Open the synthesized circuit.
-6. Observe the simplified Boolean implementation.
-
-### Verilog Code
-
-> **Paste the exact Verilog code from the workshop here.**
-
-### Yosys Commands
-
-> **Paste the exact commands from the workshop here.**
-
-### Observation
-
-The synthesized circuit represents the required Boolean function using simplified logic.
+Yosys simplified the resulting Boolean equation, removing unnecessary logic while preserving the expected output.
 
 ### Result
 
-The Boolean expression was successfully reduced during synthesis.
+The optimized design required less hardware while maintaining the same logical behavior.
 
 ---
 
-# Lab 5 – Sequential Optimization
+## Sequential Optimization (D Flip-Flop)
 
-## D Flip-Flop Optimization
+A D flip-flop with an asynchronous reset and constant assignment was synthesized.
 
-### Objective
-
-To observe how Yosys handles a D flip-flop containing reset and constant logic.
-
-### Theory
-
-A D flip-flop stores information according to the clock. When constant values are used in sequential logic, the synthesis tool can identify opportunities to simplify the resulting circuit.
-
-The important requirement is that the required sequential behavior must be preserved.
-
-### Verilog Code
-
-> **Paste the exact Verilog code from your workshop screenshot here.**
->
-> **Do not change even a single line.**
-
-### Yosys Commands
-
-> **Paste the exact Yosys commands from your workshop screenshot here.**
-
-### Synthesized Netlist
-
-![D Flip-Flop Synthesized Netlist](dff_const1_netlist.jpeg)
-
-### Observation
-
-The synthesized schematic shows the flip-flop, clock, reset and constant data connections.
-
-The schematic provides a gate-level view of how the RTL description has been mapped during synthesis.
+Since the output eventually settled to a constant value, the synthesis tool simplified portions of the sequential logic.
 
 ### Result
 
-The D flip-flop design was successfully synthesized and its optimized structure was examined.
+Unnecessary sequential logic was identified and optimized while maintaining the expected behavior.
 
 ---
 
-# Lab 6 – Constant Register Optimization
+## Constant Register Optimization
 
-### Objective
+A flip-flop whose output always remained at logic `1` was synthesized.
 
-To understand how a register with a constant output can be optimized.
+Since the register never changed state, Yosys optimized the circuit by removing unnecessary sequential elements and replacing them with constant logic wherever applicable.
 
-### Theory
+### Figure 4 : Constant Register Optimization
 
-If the output of a register always remains at a fixed logic value, keeping a complete sequential data path may not be necessary.
+<img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 10 34 06 PM" src="https://github.com/user-attachments/assets/941b30a1-73ee-4ff3-a1f9-0a981be9ce41" />
 
-The synthesis tool can recognize this constant behavior and replace unnecessary logic with a constant value wherever possible.
+Since the register output always remains at logic `1`, Yosys replaces the flip-flop with constant logic, reducing hardware complexity.
 
-### Verilog Code
+### Figure 5 : Waveform Verification
 
-> **Paste the exact Verilog code from your workshop screenshot here.**
+<img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 10 49 19 PM" src="https://github.com/user-attachments/assets/0cee48d6-648c-4fe6-836a-e2f47551204e" />
 
-### Yosys Commands
+The waveform confirms that the optimized circuit produces the expected output behavior after synthesis.
 
-> **Paste the exact commands from your workshop screenshot here.**
+### Figure 6 : Final Optimized Netlist
 
-### Synthesized Netlist
+<img width="958" height="930" alt="WhatsApp Image 2026-08-19 at 10 35 55 PM" src="https://github.com/user-attachments/assets/6472bf3d-d167-499c-b398-46f6800c2eba" />
 
-![Constant Register Netlist](dff_const2_netlist.jpeg)
-
-### Observation
-
-The synthesized circuit shows the constant output behavior of the register.
-
-The output is maintained at logic `1`, demonstrating the effect of constant-register optimization.
-
-### Result
-
-The constant register was successfully optimized and unnecessary sequential hardware was reduced.
+The final synthesized netlist reflects the cumulative effect of multiple optimization passes performed by Yosys.
 
 ---
 
-# Verification of Optimization
+# Verification of Optimization Results
 
-The synthesized netlists were examined to understand how RTL Boolean operations are mapped into gate-level cells.
+## Figure 7 : Optimization Check 1
 
-## Optimization Check 1
+<img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 10 31 16 PM" src="https://github.com/user-attachments/assets/408fe59e-644a-4478-a4d5-3935fd51b8ac" />
 
-![Optimization Check 1](opt_check_netlist.jpeg)
 
-The synthesized design shows the required logic implemented using a standard-cell gate.
-
-The inputs are combined according to the Boolean operation specified in the RTL.
-
-### Observation
-
-The RTL operation is represented by an appropriate gate-level cell in the synthesized netlist.
+The generated netlist confirms that unnecessary logic has been removed.
 
 ---
 
-## Optimization Check 2
+## Figure 8 : Optimization Check 2
 
-![Optimization Check 2](opt_check2_netlist.jpeg)
+<img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 10 32 20 PM" src="https://github.com/user-attachments/assets/a911e952-89c8-4968-9c0c-23168b4a900d" />
 
-This synthesized circuit demonstrates another Boolean operation mapped into a standard-cell implementation.
 
-### Observation
-
-The required logical relationship between the inputs and output is maintained after synthesis.
+The optimized circuit preserves the original functionality while reducing hardware.
 
 ---
 
-## Optimization Check 3
+## Figure 9 : Optimization Check 3
 
-![Optimization Check 3](opt_check3_netlist.jpeg)
+<img width="958" height="930" alt="WhatsApp Image 2026-08-19 at 10 45 37 PM" src="https://github.com/user-attachments/assets/f4822fc7-13bf-4e4f-adef-b81623edfc6e" />
 
-The schematic contains multiple inputs connected to the corresponding synthesized logic.
-
-### Observation
-
-The synthesized netlist represents the multi-input Boolean operation using an appropriate standard cell.
+This netlist demonstrates additional logic simplifications performed by Yosys.
 
 ---
 
-# Sequential Netlist Verification
 
-## DFF Constant 1
+## Laboratory Summary
 
-![DFF Constant 1](dff_const1_netlist.jpeg)
-
-The schematic represents the synthesized D flip-flop design with clock, reset and constant data connections.
-
-This helps visualize the relationship between the RTL description and the synthesized sequential hardware.
-
----
-
-## DFF Constant 3
-
-![DFF Constant 3](dff_const3_netlist.jpeg)
-
-The synthesized structure contains sequential elements together with the required control logic.
-
-### Observation
-
-The netlist demonstrates how sequential RTL is converted into standard-cell based hardware.
-
----
-
-# Waveform Verification
-
-After synthesis and simulation, the output waveforms were examined using GTKWave.
-
-Waveform verification is important because the optimized circuit should still provide the expected behavior.
-
----
-
-## DFF Constant 1 Waveform
-
-![DFF Constant 1 Waveform](tb_dff_const1_waveform.jpeg)
-
-The waveform displays the clock, reset and output signals.
-
-The output behavior can be compared with the expected operation of the D flip-flop.
-
-### Observation
-
-The output follows the expected sequential behavior for the applied clock and reset conditions.
-
----
-
-## DFF Constant 2 Waveform
-
-![DFF Constant 2 Waveform](tb_dff_const2_waveform.jpeg)
-
-The waveform contains the clock, reset and output signal.
-
-### Observation
-
-The output remains at the expected constant value during the displayed simulation.
-
-This agrees with the constant-register optimization observed in the synthesized netlist.
-
----
-
-## DFF Constant 3 Waveform
-
-![DFF Constant 3 Waveform](tb_dff_const3_waveform.jpeg)
-
-The waveform contains the clock, reset and sequential output signals.
-
-### Observation
-
-The waveform shows the sequential response of the circuit according to the applied clock and reset conditions.
-
----
-
-# Counter Optimization
-
-The synthesized counter design was also examined to understand how sequential and combinational logic appears after synthesis.
-
-![Counter Optimization](counter_opt_netlist.jpeg)
-
-### Observation
-
-The synthesized netlist contains flip-flop based sequential elements together with the combinational logic required for the counter operation.
-
-This demonstrates that optimization does not simply remove all hardware. Instead, the synthesis tool keeps the logic that is necessary to maintain the required functionality.
-
----
-
-# Laboratory Summary
-
-| Lab | Topic | Main Observation |
+| Lab | Focus | Key Result |
 |---|---|---|
-| 1 | Constant Propagation | Fixed values can remove unnecessary logic |
-| 2 | Logic Simplification | Boolean logic can be represented using simpler hardware |
-| 3 | Expression Optimization | Redundant or equivalent expressions can be simplified |
-| 4 | Boolean Reduction | Complex conditions can be reduced during synthesis |
-| 5 | Sequential Optimization | Constant sequential logic can be simplified |
-| 6 | Constant Register Optimization | Constant register outputs can be replaced with simpler logic |
+| 1 | Constant propagation | Redundant gates removed via constant substitution |
+| 2 | Logic simplification | MUX simplified when one input was held constant |
+| 3 | Expression optimization | Equivalent expressions merged/minimized |
+| 4 | Boolean reduction | Nested conditionals reduced to simpler Boolean logic |
+| 5 | Sequential optimization | D-FF with async reset simplified to constant-driven logic |
+| 6 | Constant register optimization | Always-`1` flip-flop replaced with constant logic |
 
 ---
 
 # Key Learning Outcomes
 
-After completing Day 3, I was able to:
-
-- Understand why optimization is required during synthesis.
-- Differentiate between combinational and sequential optimization.
-- Understand the concept of constant propagation.
-- Identify redundant and unused logic.
-- Analyze synthesized gate-level netlists.
-- Understand how Boolean operations are mapped to standard cells.
-- Observe optimization of constant registers.
-- Examine D flip-flop synthesis.
-- Verify sequential behavior using GTKWave.
-- Relate RTL code to the synthesized hardware structure.
-- Understand how Yosys improves the efficiency of a synthesized design.
+- Understood the difference between combinational and sequential optimization.
+- Learned how constant propagation simplifies digital circuits.
+- Observed removal of unused outputs and redundant logic during synthesis.
+- Explored optimization techniques such as state optimization, logic cloning, and retiming.
+- Analyzed how Yosys automatically performs multiple optimization passes to generate an efficient gate-level implementation.
+- Verified optimization results using synthesized netlists and schematic visualization.
 
 ---
 
 # Conclusion
 
-Day 3 provided practical experience with optimization techniques used during RTL synthesis.
+Day 3 provided practical understanding of how synthesis tools optimize RTL designs.
 
-The experiments showed how Yosys can simplify Boolean logic, propagate constant values, remove unnecessary hardware and optimize sequential circuits.
+The laboratory exercises demonstrated that Yosys can simplify combinational logic, remove redundant hardware, propagate constants, optimize sequential elements, and reduce unnecessary logic while preserving the intended functionality of the design.
 
-The synthesized schematics provided a clear view of the resulting gate-level implementation, while GTKWave was used to verify the behavior of the sequential designs.
-
-Overall, the session helped in understanding how an RTL description is transformed into a simpler and more efficient hardware implementation while preserving the required functionality.
+These optimization techniques are important for achieving efficient **area, timing, and power** characteristics in digital hardware designs.
