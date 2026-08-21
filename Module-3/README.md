@@ -41,6 +41,7 @@ Unlike combinational optimization, the synthesis tool must **preserve the behavi
 ### Sequential Optimization of D Flip-Flop
 ### Verilog Code:
 
+```verilog
 module dff_const1(input clk, input reset, output reg q);
 always @(posedge clk, posedge reset)
 begin
@@ -50,6 +51,7 @@ begin
 		q <= 1'b1;
 end
 endmodule
+```
 
 ### Figure 1:
 <img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 10 35 20 PM" src="https://github.com/user-attachments/assets/f72cf92c-0116-495c-81a7-b8733a320eb0" />
@@ -217,6 +219,7 @@ Since the register never changed state, Yosys optimized the circuit by removing 
 ### Constant Register Optimization
 ### Verilog Code:
 
+```verilog
 module dff_const2(input clk, input reset, output reg q);
 always @(posedge clk, posedge reset)
 begin
@@ -226,6 +229,7 @@ begin
 		q <= 1'b1;
 end
 endmodule
+```
 
 ### Figure 5:
 
@@ -278,9 +282,11 @@ The generated netlist confirms that unnecessary logic has been removed.
 ## Optimization Check 2
 Verilog Code:
 
+```verilog
 module opt_check2 (input a , input b , output y);
 	assign y = a?1:b;
 endmodule
+```
 
 ### Explanation:
 
@@ -300,9 +306,11 @@ The optimized circuit preserves the original functionality while reducing hardwa
 ## Optimization Check 3
 Verilog Code:
 
+```verilog
 module opt_check2 (input a , input b , output y);
 	assign y = a?1:b;
 endmodule
+```
 
 ### Functionality:
 2-to-1 multiplexer; y = a ? 1 : b (outputs 1 when a is true, otherwise b).
