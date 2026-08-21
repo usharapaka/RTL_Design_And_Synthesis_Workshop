@@ -44,6 +44,10 @@ Unlike combinational optimization, the synthesis tool must **preserve the behavi
 
 The synthesized circuit removes unnecessary sequential logic while preserving the behavior of the original design.
 
+### Waveform Verification
+
+<img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 10 48 45 PM" src="https://github.com/user-attachments/assets/50b4c1e6-0544-4ec8-ae17-91d947845fce" />
+
 ---
 
 ## Constant Propagation
