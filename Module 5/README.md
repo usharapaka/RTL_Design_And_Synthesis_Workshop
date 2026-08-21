@@ -92,7 +92,7 @@ The `default` branch ensures that `y` receives a value even when the specified c
 
 The following experiments demonstrate how incomplete conditions and different case structures influence RTL synthesis.
 
-### Lab 1: Incomplete If Statement
+### Incomplete If Statement
 
 This experiment demonstrates an `if` statement in which the output is assigned only when `i0` is active. The missing assignment for the other condition can result in latch inference during synthesis.
 
@@ -110,7 +110,7 @@ endmodule
 
 ---
 
-### Lab 2: Synthesis Result of Lab 1
+### Synthesis Result 
 
 The synthesis result of the previous RTL can be examined to identify the hardware generated because of the incomplete conditional assignment.
 
@@ -119,7 +119,7 @@ The synthesis result of the previous RTL can be examined to identify the hardwar
 
 ---
 
-### Lab 3: Nested If-Else
+###  Nested If-Else
 
 This experiment uses more than one condition to determine the value of the output. Since the final condition is not covered by an `else`, there can still be an execution path in which `y` remains unassigned.
 
@@ -139,7 +139,7 @@ endmodule
 
 ---
 
-### Lab 4: Synthesis Result of Lab 3
+### Synthesis Result of Lab 3
 
 The synthesized circuit corresponding to the nested conditional RTL is shown below.
 
@@ -149,7 +149,7 @@ The synthesized circuit corresponding to the nested conditional RTL is shown bel
 
 ---
 
-### Lab 5: Complete Case Statement
+### Complete Case Statement
 
 A `case` statement can be used when the output depends on the value of a select signal. In this example, the first two select combinations are handled explicitly and the remaining combinations are covered using `default`.
 
@@ -171,7 +171,7 @@ endmodule
 
 ---
 
-### Lab 6: Synthesis Result of Lab 5
+### Synthesis Result of Lab 5
 
 The synthesis output corresponding to the complete case structure is shown below.
 
@@ -180,7 +180,7 @@ The synthesis output corresponding to the complete case structure is shown below
 
 ---
 
-### Lab 7: Incomplete Case Handling
+### Incomplete Case Handling
 
 This experiment illustrates the importance of carefully defining case conditions. Wildcard patterns can match multiple input combinations, so their placement and coverage must be considered carefully.
 
@@ -207,7 +207,7 @@ endmodule
 
 ---
 
-## 4. For Loops in Verilog
+## For Loops in Verilog
 
 A `for` loop allows a group of statements to be repeated using a loop variable. In synthesizable RTL, loops are generally used to describe repetitive hardware structures rather than software-style runtime iteration.
 
@@ -284,15 +284,13 @@ The basic relationship can be represented as:
 * Each stage generates a sum bit and a carry output.
 * The final carry becomes the most significant output bit.
 
-![rca\_org](rca_org.png)
-
 ---
 
 ## 7. Labs on Loops and Generate Blocks
 
 The next set of experiments applies loops and generate constructs to practical digital circuits.
 
-### Lab 9: 4-to-1 MUX Using For Loop
+###  4-to-1 MUX Using For Loop
 
 This implementation represents the multiplexer inputs as a vector and uses a loop to identify the selected input.
 
@@ -320,7 +318,7 @@ endmodule
 
 ---
 
-### Lab 10: 8-to-1 Demux Using Case
+### 8-to-1 Demux Using Case
 
 An 8-to-1 demultiplexer directs the input signal to one of eight output lines according to the three-bit select signal.
 
@@ -357,7 +355,7 @@ endmodule
 
 ---
 
-### Lab 11: 8-to-1 Demux Using For Loop
+### 8-to-1 Demux Using For Loop
 
 The same demultiplexer functionality can also be described using a `for` loop. Instead of listing every select condition separately, the loop checks each output position against the select value.
 
@@ -387,7 +385,7 @@ endmodule
 
 ---
 
-### Lab 12: 8-bit Ripple Carry Adder with Generate Block
+### 8-bit Ripple Carry Adder with Generate Block
 
 This experiment demonstrates how a generate-for construct can be used to create the repeated full-adder stages of an 8-bit Ripple Carry Adder.
 
@@ -431,8 +429,8 @@ endmodule
 ---
 
 ## Summary
-
-Day 5 introduced important RTL coding techniques used for synthesizable digital designs.
+ 
+ Module 5 introduced important RTL coding techniques used for synthesizable digital designs.
 
 * Conditional statements can be used to describe selection and decision-making logic.
 * Incomplete assignments in combinational blocks may result in unwanted latch inference.
@@ -445,5 +443,3 @@ Day 5 introduced important RTL coding techniques used for synthesizable digital 
 
 Overall, the experiments provided practical understanding of how Verilog coding style influences the resulting hardware during synthesis.
 
-```
-```
