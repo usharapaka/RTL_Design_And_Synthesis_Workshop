@@ -214,25 +214,21 @@ Since the register output always remains at logic `1`, Yosys replaces the flip-f
 
 The waveform confirms that the optimized circuit produces the expected output behavior after synthesis.
 
-### Figure 7: Constant Register Optimization
-
-<img width="958" height="930" alt="WhatsApp Image 2026-08-19 at 10 35 55 PM" src="https://github.com/user-attachments/assets/f6c24db0-a07d-4afa-98e9-7497a10a5f64" />
-
-### Figure 8: Waveform Verification
-
-<img width="958" height="930" alt="WhatsApp Image 2026-08-19 at 10 35 55 PM" src="https://github.com/user-attachments/assets/a49b0025-5ed1-4fbc-aa0e-7339783ae76b" />
-
-### Figure 9: Final Optimized Netlist
+### Figure 7: Final Optimized Netlist
 
 <img width="958" height="930" alt="WhatsApp Image 2026-08-19 at 10 35 55 PM" src="https://github.com/user-attachments/assets/6472bf3d-d167-499c-b398-46f6800c2eba" />
 
 The final synthesized netlist reflects the cumulative effect of multiple optimization passes performed by Yosys.
 
+### Figure 8: Waveform Verification
+
+<img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 10 52 37 PM" src="https://github.com/user-attachments/assets/fe487ce1-9cab-451c-a58e-4298d594cb44" />
+
 ---
 
 # Verification of Optimization Results
 
-## Figure 10: Optimization Check 1
+## Figure 9: Optimization Check 1
 
 <img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 10 31 16 PM" src="https://github.com/user-attachments/assets/408fe59e-644a-4478-a4d5-3935fd51b8ac" />
 
@@ -241,7 +237,7 @@ The generated netlist confirms that unnecessary logic has been removed.
 
 ---
 
-## Figure 11: Optimization Check 2
+## Figure 10: Optimization Check 2
 
 <img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 10 32 20 PM" src="https://github.com/user-attachments/assets/a911e952-89c8-4968-9c0c-23168b4a900d" />
 
@@ -250,7 +246,7 @@ The optimized circuit preserves the original functionality while reducing hardwa
 
 ---
 
-## Figure 12: Optimization Check 3
+## Figure 11: Optimization Check 3
 
 <img width="958" height="930" alt="WhatsApp Image 2026-08-19 at 10 45 37 PM" src="https://github.com/user-attachments/assets/f4822fc7-13bf-4e4f-adef-b81623edfc6e" />
 
