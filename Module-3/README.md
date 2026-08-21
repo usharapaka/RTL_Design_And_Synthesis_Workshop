@@ -38,8 +38,20 @@ Unlike combinational optimization, the synthesis tool must **preserve the behavi
 - Eliminating unreachable logic.
 - Improving timing while maintaining functional equivalence.
 
-### Figure 1: Sequential Optimization of D Flip-Flop
+### Sequential Optimization of D Flip-Flop
+### Verilog Code:
 
+module dff_const1(input clk, input reset, output reg q);
+always @(posedge clk, posedge reset)
+begin
+	if(reset)
+		q <= 1'b0;
+	else
+		q <= 1'b1;
+end
+endmodule
+
+### Figure 1:
 <img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 10 35 20 PM" src="https://github.com/user-attachments/assets/f72cf92c-0116-495c-81a7-b8733a320eb0" />
 
 The synthesized circuit removes unnecessary sequential logic while preserving the behavior of the original design.
@@ -202,7 +214,20 @@ A flip-flop whose output always remained at logic `1` was synthesized.
 
 Since the register never changed state, Yosys optimized the circuit by removing unnecessary sequential elements and replacing them with constant logic wherever applicable.
 
-### Figure 5: Constant Register Optimization
+### Constant Register Optimization
+### Verilog Code:
+
+module dff_const2(input clk, input reset, output reg q);
+always @(posedge clk, posedge reset)
+begin
+	if(reset)
+		q <= 1'b1;
+	else
+		q <= 1'b1;
+end
+endmodule
+
+### Figure 5:
 
 <img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 10 34 06 PM" src="https://github.com/user-attachments/assets/941b30a1-73ee-4ff3-a1f9-0a981be9ce41" />
 
@@ -228,8 +253,19 @@ The final synthesized netlist reflects the cumulative effect of multiple optimiz
 
 # Verification of Optimization Results
 
-## Figure 9: Optimization Check 1
+## Optimization Check 1
+## Verilog Code:
 
+module opt_check (input a , input b , output y);
+	assign y = a?b:0;
+endmodule
+
+### Explanation:
+assign y = a ? b : 0; means:
+ If a is true, y is assigned the value of b.
+ If a is false, y is 0.
+
+## Figure 9: 
 <img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 10 31 16 PM" src="https://github.com/user-attachments/assets/408fe59e-644a-4478-a4d5-3935fd51b8ac" />
 
 
@@ -237,8 +273,21 @@ The generated netlist confirms that unnecessary logic has been removed.
 
 ---
 
-## Figure 10: Optimization Check 2
+## Optimization Check 2
+## Verilog Code:
 
+module opt_check2 (input a , input b , output y);
+	assign y = a?1:b;
+endmodule
+
+### Explanation:
+
+Acts as a multiplexer:
+ y = 1 if a is true.
+ y = b if a is false.
+
+
+## Figure 10:
 <img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 10 32 20 PM" src="https://github.com/user-attachments/assets/a911e952-89c8-4968-9c0c-23168b4a900d" />
 
 
@@ -246,7 +295,16 @@ The optimized circuit preserves the original functionality while reducing hardwa
 
 ---
 
-## Figure 11: Optimization Check 3
+## Optimization Check 3
+
+module opt_check2 (input a , input b , output y);
+	assign y = a?1:b;
+endmodule
+
+### Functionality:
+2-to-1 multiplexer; y = a ? 1 : b (outputs 1 when a is true, otherwise b).
+
+## Figure 11:
 
 <img width="958" height="930" alt="WhatsApp Image 2026-08-19 at 10 45 37 PM" src="https://github.com/user-attachments/assets/f4822fc7-13bf-4e4f-adef-b81623edfc6e" />
 
