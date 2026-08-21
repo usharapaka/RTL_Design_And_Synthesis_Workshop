@@ -266,11 +266,6 @@ module opt_check (input a , input b , output y);
 endmodule
 ```
 
-### Explanation:
-assign y = a ? b : 0; means:
- If a is true, y is assigned the value of b.
- If a is false, y is 0.
-
 ## Figure 9: 
 <img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 10 31 16 PM" src="https://github.com/user-attachments/assets/408fe59e-644a-4478-a4d5-3935fd51b8ac" />
 
@@ -288,13 +283,6 @@ module opt_check2 (input a , input b , output y);
 endmodule
 ```
 
-### Explanation:
-
-Acts as a multiplexer:
- y = 1 if a is true.
- y = b if a is false.
-
-
 ## Figure 10:
 <img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 10 32 20 PM" src="https://github.com/user-attachments/assets/a911e952-89c8-4968-9c0c-23168b4a900d" />
 
@@ -311,9 +299,6 @@ module opt_check2 (input a , input b , output y);
 	assign y = a?1:b;
 endmodule
 ```
-
-### Functionality:
-2-to-1 multiplexer; y = a ? 1 : b (outputs 1 when a is true, otherwise b).
 
 ## Figure 11:
 
@@ -350,7 +335,7 @@ This netlist demonstrates additional logic simplifications performed by Yosys.
 
 # Conclusion
 
-Day 3 provided practical understanding of how synthesis tools optimize RTL designs.
+Module 3 provided practical understanding of how synthesis tools optimize RTL designs.
 
 The laboratory exercises demonstrated that Yosys can simplify combinational logic, remove redundant hardware, propagate constants, optimize sequential elements, and reduce unnecessary logic while preserving the intended functionality of the design.
 
