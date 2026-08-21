@@ -256,9 +256,11 @@ The final synthesized netlist reflects the cumulative effect of multiple optimiz
 ## Optimization Check 1
 ## Verilog Code:
 
+```verilog
 module opt_check (input a , input b , output y);
 	assign y = a?b:0;
 endmodule
+```
 
 ### Explanation:
 assign y = a ? b : 0; means:
