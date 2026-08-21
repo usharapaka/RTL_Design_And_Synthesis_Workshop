@@ -1,36 +1,8 @@
-````markdown
-# Day 5: Optimization in Synthesis
+# Module 5: Optimization in Synthesis
 
 Day 5 of the RTL workshop focuses on writing synthesizable Verilog in a way that produces the intended hardware. The session covers conditional statements, latch inference, loops, generate constructs, and the implementation of commonly used digital circuits.
 
 The practical exercises demonstrate how different RTL coding styles affect the synthesized hardware and how proper coding techniques can be used to obtain predictable combinational logic.
-
----
-
-## Contents
-
-- [1. Conditional Statements in Verilog](#1-conditional-statements-in-verilog)
-- [2. Latch Inference](#2-latch-inference)
-- [3. Labs on If-Else and Case Statements](#3-labs-on-if-else-and-case-statements)
-  - [Lab 1: Incomplete If Statement](#lab-1-incomplete-if-statement)
-  - [Lab 2: Synthesis Result of Lab 1](#lab-2-synthesis-result-of-lab-1)
-  - [Lab 3: Nested If-Else](#lab-3-nested-if-else)
-  - [Lab 4: Synthesis Result of Lab 3](#lab-4-synthesis-result-of-lab-3)
-  - [Lab 5: Complete Case Statement](#lab-5-complete-case-statement)
-  - [Lab 6: Synthesis Result of Lab 5](#lab-6-synthesis-result-of-lab-5)
-  - [Lab 7: Incomplete Case Handling](#lab-7-incomplete-case-handling)
-  - [Lab 8: Partial Assignments in Case](#lab-8-partial-assignments-in-case)
-- [4. For Loops in Verilog](#4-for-loops-in-verilog)
-- [5. Generate Blocks in Verilog](#5-generate-blocks-in-verilog)
-- [6. Ripple Carry Adder](#6-ripple-carry-adder)
-- [7. Labs on Loops and Generate Blocks](#7-labs-on-loops-and-generate-blocks)
-  - [Lab 9: 4-to-1 MUX Using For Loop](#lab-9-4-to-1-mux-using-for-loop)
-  - [Lab 10: 8-to-1 Demux Using Case](#lab-10-8-to-1-demux-using-case)
-  - [Lab 11: 8-to-1 Demux Using For Loop](#lab-11-8-to-1-demux-using-for-loop)
-  - [Lab 12: 8-bit Ripple Carry Adder with Generate Block](#lab-12-8-bit-ripple-carry-adder-with-generate-block)
-- [Summary](#summary)
-
----
 
 ## 1. Conditional Statements in Verilog
 
