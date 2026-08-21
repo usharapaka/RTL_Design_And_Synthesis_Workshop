@@ -44,7 +44,7 @@ Unlike combinational optimization, the synthesis tool must **preserve the behavi
 
 The synthesized circuit removes unnecessary sequential logic while preserving the behavior of the original design.
 
-### Waveform Verification
+### Figure 2: Waveform Verification
 
 <img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 10 48 45 PM" src="https://github.com/user-attachments/assets/50b4c1e6-0544-4ec8-ae17-91d947845fce" />
 
@@ -63,7 +63,7 @@ Instead of implementing logic to compute an already-known value, the synthesis t
 - Improves timing.
 - Lowers power consumption.
 
-### Figure 2: Constant Propagation Example
+### Figure 3: Constant Propagation Example
 
 <img width="958" height="930" alt="WhatsApp Image 2026-08-19 at 10 58 38 PM" src="https://github.com/user-attachments/assets/1ae08c88-3da9-4bf0-8ec4-90b25f013a22" />
 
@@ -79,7 +79,7 @@ This reduces the total gate count and prevents unnecessary hardware from being i
 
 This demonstrates that synthesis tools generate hardware only for logic that actually contributes to the final outputs.
 
-### Figure 3: Logic Simplification after Optimization
+### Figure 4: Logic Simplification after Optimization
 
 <img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 11 01 44 PM" src="https://github.com/user-attachments/assets/cb834402-f7e5-4199-b02d-969e03b10337" />
 
@@ -202,19 +202,27 @@ A flip-flop whose output always remained at logic `1` was synthesized.
 
 Since the register never changed state, Yosys optimized the circuit by removing unnecessary sequential elements and replacing them with constant logic wherever applicable.
 
-### Figure 4 : Constant Register Optimization
+### Figure 5: Constant Register Optimization
 
 <img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 10 34 06 PM" src="https://github.com/user-attachments/assets/941b30a1-73ee-4ff3-a1f9-0a981be9ce41" />
 
 Since the register output always remains at logic `1`, Yosys replaces the flip-flop with constant logic, reducing hardware complexity.
 
-### Figure 5 : Waveform Verification
+### Figure 6: Waveform Verification
 
 <img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 10 49 19 PM" src="https://github.com/user-attachments/assets/0cee48d6-648c-4fe6-836a-e2f47551204e" />
 
 The waveform confirms that the optimized circuit produces the expected output behavior after synthesis.
 
-### Figure 6 : Final Optimized Netlist
+### Figure 7: Constant Register Optimization
+
+<img width="958" height="930" alt="WhatsApp Image 2026-08-19 at 10 35 55 PM" src="https://github.com/user-attachments/assets/f6c24db0-a07d-4afa-98e9-7497a10a5f64" />
+
+### Figure 8: Waveform Verification
+
+<img width="958" height="930" alt="WhatsApp Image 2026-08-19 at 10 35 55 PM" src="https://github.com/user-attachments/assets/a49b0025-5ed1-4fbc-aa0e-7339783ae76b" />
+
+### Figure 9: Final Optimized Netlist
 
 <img width="958" height="930" alt="WhatsApp Image 2026-08-19 at 10 35 55 PM" src="https://github.com/user-attachments/assets/6472bf3d-d167-499c-b398-46f6800c2eba" />
 
@@ -224,7 +232,7 @@ The final synthesized netlist reflects the cumulative effect of multiple optimiz
 
 # Verification of Optimization Results
 
-## Figure 7 : Optimization Check 1
+## Figure 10: Optimization Check 1
 
 <img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 10 31 16 PM" src="https://github.com/user-attachments/assets/408fe59e-644a-4478-a4d5-3935fd51b8ac" />
 
@@ -233,7 +241,7 @@ The generated netlist confirms that unnecessary logic has been removed.
 
 ---
 
-## Figure 8 : Optimization Check 2
+## Figure 11: Optimization Check 2
 
 <img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 10 32 20 PM" src="https://github.com/user-attachments/assets/a911e952-89c8-4968-9c0c-23168b4a900d" />
 
@@ -242,7 +250,7 @@ The optimized circuit preserves the original functionality while reducing hardwa
 
 ---
 
-## Figure 9 : Optimization Check 3
+## Figure 12: Optimization Check 3
 
 <img width="958" height="930" alt="WhatsApp Image 2026-08-19 at 10 45 37 PM" src="https://github.com/user-attachments/assets/f4822fc7-13bf-4e4f-adef-b81623edfc6e" />
 
