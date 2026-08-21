@@ -1,4 +1,4 @@
-# Module 4 – Gate-Level Simulation and Verilog Coding Practices
+# Module 4 – GLS,blocking vs non-blocking and Synthesis Simulation mismatch
 
 ## Overview
 
