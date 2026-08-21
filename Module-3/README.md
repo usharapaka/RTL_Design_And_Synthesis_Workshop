@@ -274,7 +274,7 @@ The generated netlist confirms that unnecessary logic has been removed.
 ---
 
 ## Optimization Check 2
-## Verilog Code:
+Verilog Code:
 
 module opt_check2 (input a , input b , output y);
 	assign y = a?1:b;
@@ -296,6 +296,7 @@ The optimized circuit preserves the original functionality while reducing hardwa
 ---
 
 ## Optimization Check 3
+Verilog Code:
 
 module opt_check2 (input a , input b , output y);
 	assign y = a?1:b;
