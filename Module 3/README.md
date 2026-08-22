@@ -80,7 +80,7 @@ Instead of implementing logic to compute an already-known value, the synthesis t
 
 ### Figure 3: Constant Propagation Example
 
-<img width="958" height="930" alt="WhatsApp Image 2026-08-19 at 10 58 38 PM" src="https://github.com/user-attachments/assets/1ae08c88-3da9-4bf0-8ec4-90b25f013a22" />
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/6a436400-01cf-4ec4-98e0-216e12bc2e27" />
 
 The synthesized netlist shows that constant-valued signals are propagated through the logic, allowing unnecessary gates to be removed during optimization.
 
@@ -96,7 +96,7 @@ This demonstrates that synthesis tools generate hardware only for logic that act
 
 ### Figure 4: Logic Simplification after Optimization
 
-<img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 11 01 44 PM" src="https://github.com/user-attachments/assets/cb834402-f7e5-4199-b02d-969e03b10337" />
+<img width="1552" height="580" alt="WhatsApp Image 2026-08-22 at 6 51 48 PM" src="https://github.com/user-attachments/assets/00ff296a-2c03-4c32-833e-8059830e28a3" />
 
 The optimized netlist contains fewer logic gates while maintaining the same functionality as the original RTL design.
 
