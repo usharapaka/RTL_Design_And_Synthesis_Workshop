@@ -132,31 +132,6 @@ This repository documents my learning journey and hands-on experiments completed
 
 ---
 
-## Repository Structure
-
-```text
-RTL_Design_And_Synthesis_Workshop/
-│── README.md
-│
-├── Module-0/
-│   └── README.md
-│
-├── Module-1/
-│   └── README.md
-│
-├── Module-2/
-│   └── README.md
-│
-├── Module-3/
-│   └── README.md
-│
-├── Module-4/
-│   └── README.md
-│
-└── Module-5/
-    └── README.md
-```
-
 ### Author
 
 Name: Rapaka Usha  
