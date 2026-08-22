@@ -397,7 +397,7 @@ end
 
 The experiment demonstrates how coding style can influence simulation behavior and why complete combinational descriptions are important.
 
-<img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 11 22 49 PM" src="https://github.com/user-attachments/assets/c61c8dc5-d074-4be0-8c5b-c873b267056c" />
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/f11d2c20-6684-4937-8211-386625bcd95a" />
 
 
 ---
@@ -426,8 +426,7 @@ A design that appears to work for some input transitions may still contain codin
 
 The experiment highlights the importance of proper sensitivity lists and appropriate assignment types when writing combinational RTL.
 
-<img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 11 37 11 PM" src="https://github.com/user-attachments/assets/69d596c0-57d3-4a1e-9853-1d4519c50d97" />
-
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/7256e123-ccfe-4efa-bcda-4c17bfb5ced8" />
 
 ---
 
@@ -492,8 +491,7 @@ Now the newly calculated value of `x` is used when evaluating `d`.
 
 The experiment demonstrates the importance of arranging blocking assignments in the correct logical order.
 
-<img width="958" height="930" alt="WhatsApp Image 2026-08-19 at 11 39 17 PM" src="https://github.com/user-attachments/assets/b6ea37ee-9259-4ecd-81cb-f5292b01994e" />
-
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/5ae12197-109b-4026-80fb-473b01b80e32" />
 
 ---
 
@@ -545,8 +543,7 @@ The experiment confirms that proper ordering of blocking assignments produces th
 
 The corrected module was successfully synthesized, demonstrating the importance of proper coding order in combinational RTL.
 
-<img width="958" height="930" alt="WhatsApp Image 2026-08-19 at 11 40 53 PM" src="https://github.com/user-attachments/assets/2ae6e881-c6c3-4913-8278-d0869f109ad8" />
-
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/24671dda-3e8b-4467-ba89-5aba20b08c8f" />
 
 ---
 
