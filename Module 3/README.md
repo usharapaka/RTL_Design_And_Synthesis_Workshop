@@ -54,13 +54,14 @@ endmodule
 ```
 
 ### Figure 1:
-<img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 10 35 20 PM" src="https://github.com/user-attachments/assets/f72cf92c-0116-495c-81a7-b8733a320eb0" />
+
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/8916a2ad-bd78-46dc-92b0-bcc2c0d44270" />
 
 The synthesized circuit removes unnecessary sequential logic while preserving the behavior of the original design.
 
 ### Figure 2: Waveform Verification
 
-<img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 10 48 45 PM" src="https://github.com/user-attachments/assets/50b4c1e6-0544-4ec8-ae17-91d947845fce" />
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/5494e54e-dd87-49d4-99cb-2222e878c07d" />
 
 ---
 
