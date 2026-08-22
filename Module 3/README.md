@@ -338,6 +338,21 @@ module opt_check4 (input a , input b , input c , output y);
 
 <img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/162a5803-4647-4710-a07a-bfd2257e81ce" />
 
+## Figure 17: Multiple_module_opt
+
+The multiple_module_opt design contains a top-level module with two submodules. Yosys analyzes the module hierarchy and uses flatten to combine the submodule logic into the top-level design. The opt_clean -purge and opt commands then remove unnecessary logic and optimize the circuit. The final schematic contains one AND gate and one OR gate, demonstrating how hierarchical modules can be flattened and optimized into a simpler logic representation.
+
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/9e2625dd-b208-4644-80f9-d1c7da7b8d11" />
+
+---
+
+## Figure 18: Multiple_module_opt2
+
+The multiple_module_opt2 design demonstrates how optimization can eliminate redundant logic in a multiple-module design. After analyzing the hierarchy and flattening the modules, opt_clean -purge and opt simplify the circuit. The final schematic shows that the output y is reduced to a constant 1'b0, while the input signals no longer affect the output, demonstrating the removal of unnecessary logic during synthesis optimization.
+
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/6060aa98-5933-4f22-aa97-318eaf02eaf1" />
+
+---
 
 ## Laboratory Summary
 
