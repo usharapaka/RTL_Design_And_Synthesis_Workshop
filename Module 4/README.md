@@ -217,8 +217,7 @@ This is a compact way of describing a 2:1 multiplexer.
 
 The 2:1 multiplexer was successfully described using the ternary operator.
 
-<img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 11 07 54 PM" src="https://github.com/user-attachments/assets/b477074e-9db5-4084-a898-fe45281231f0" />
-
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/0aa6bdbc-f51e-4495-98db-9c4d4bff55da" />
 
 ---
 
@@ -266,8 +265,7 @@ The synthesized design represents the same logical function as the original RTL 
 
 The multiplexer was successfully synthesized using Yosys.
 
-<img width="958" height="930" alt="WhatsApp Image 2026-08-19 at 11 17 18 PM" src="https://github.com/user-attachments/assets/83fac39e-0547-455c-828e-d1e1bd63c2c4" />
-
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/da822a2a-bc3e-4731-b682-3e0e20b22d5e" />
 
 ---
 
@@ -306,8 +304,7 @@ The simulation checks whether the synthesized implementation produces the expect
 
 The synthesized multiplexer was simulated at gate level and its logical operation was verified.
 
-<img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 11 19 04 PM" src="https://github.com/user-attachments/assets/7361acef-f20e-4687-bdf6-fcb5331c46e8" />
-
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/d32a58e8-1d83-46f3-87d3-84209a26e929" />
 
 ---
 
