@@ -226,7 +226,8 @@ endmodule
 Here, two outputs are controlled inside the same `case` statement. Since every case branch does not assign both outputs, some signals may remain unassigned for certain conditions. This can result in latch inference during synthesis.
 ### Verilog code:
  
-``` module partial_case_assign (
+```verilog
+ module partial_case_assign (
     input i0, input i1, input i2,
     input [1:0] sel,
     output reg y, output reg x
