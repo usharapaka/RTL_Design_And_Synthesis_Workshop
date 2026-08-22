@@ -53,7 +53,7 @@ end
 endmodule
 ```
 
-### Figure 1:
+### Figure 1: dff_const1
 
 <img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/8916a2ad-bd78-46dc-92b0-bcc2c0d44270" />
 
@@ -232,27 +232,43 @@ end
 endmodule
 ```
 
-### Figure 5:
+### Figure 5: dff_const2
 
-<img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 10 34 06 PM" src="https://github.com/user-attachments/assets/941b30a1-73ee-4ff3-a1f9-0a981be9ce41" />
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/dfb0ef3b-e0c9-46f5-a27f-4e0f992c33c8" />
 
 Since the register output always remains at logic `1`, Yosys replaces the flip-flop with constant logic, reducing hardware complexity.
 
 ### Figure 6: Waveform Verification
 
-<img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 10 49 19 PM" src="https://github.com/user-attachments/assets/0cee48d6-648c-4fe6-836a-e2f47551204e" />
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/4206bcfd-9e4e-474f-9b5c-5c51382d1536" />
 
 The waveform confirms that the optimized circuit produces the expected output behavior after synthesis.
 
-### Figure 7: Final Optimized Netlist
+### Figure 7: dff_const3
 
-<img width="958" height="930" alt="WhatsApp Image 2026-08-19 at 10 35 55 PM" src="https://github.com/user-attachments/assets/6472bf3d-d167-499c-b398-46f6800c2eba" />
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/33fd28b9-3965-4747-8025-31a5c535a3e9" />
 
-The final synthesized netlist reflects the cumulative effect of multiple optimization passes performed by Yosys.
+The final synthesized netlist reflects the cumulative effect of multiple optimization passes performed by Yosys
 
 ### Figure 8: Waveform Verification
 
-<img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 10 52 37 PM" src="https://github.com/user-attachments/assets/fe487ce1-9cab-451c-a58e-4298d594cb44" />
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/e71ea96a-14eb-4db2-9e7a-5b1a054ffc6e" />
+
+### figure 9: dff_const4
+
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/161b1f52-55fd-46c3-a212-8f5c32910073" />
+
+### figure 10: Waveform Verification
+
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/9674221a-92de-4165-87a8-9c4354a3b710" />
+
+### figure 11: dff_const5
+
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/68c5c623-98e7-4414-a205-ef41b3c53c98" />
+
+### figure 12: Waveform Verification
+
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/a6c3af83-87e4-40a9-af30-0c2e6173880d" />
 
 ---
 
@@ -267,9 +283,9 @@ module opt_check (input a , input b , output y);
 endmodule
 ```
 
-## Figure 9: 
-<img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 10 31 16 PM" src="https://github.com/user-attachments/assets/408fe59e-644a-4478-a4d5-3935fd51b8ac" />
+## Figure 13: 
 
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/991047e1-f8af-4583-b4c2-9ce7e78899c7" />
 
 The generated netlist confirms that unnecessary logic has been removed.
 
@@ -284,9 +300,9 @@ module opt_check2 (input a , input b , output y);
 endmodule
 ```
 
-## Figure 10:
-<img width="1600" height="783" alt="WhatsApp Image 2026-08-19 at 10 32 20 PM" src="https://github.com/user-attachments/assets/a911e952-89c8-4968-9c0c-23168b4a900d" />
+## Figure 14:
 
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/64712ff2-c7f2-4aac-9956-3ddfa1eba85e" />
 
 The optimized circuit preserves the original functionality while reducing hardware.
 
@@ -301,13 +317,26 @@ module opt_check2 (input a , input b , output y);
 endmodule
 ```
 
-## Figure 11:
+## Figure 15:
 
-<img width="958" height="930" alt="WhatsApp Image 2026-08-19 at 10 45 37 PM" src="https://github.com/user-attachments/assets/f4822fc7-13bf-4e4f-adef-b81623edfc6e" />
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/151ccc07-93b5-4e7f-aa8d-668247a5b35c" />
 
 This netlist demonstrates additional logic simplifications performed by Yosys.
 
 ---
+
+## Optimization Check 4
+Verilog Code:
+
+```verilog
+module opt_check4 (input a , input b , input c , output y);
+ assign y = a?(b?(a & c ):c):(!c);
+ endmodule
+```
+
+## Figure 16:
+
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/162a5803-4647-4710-a07a-bfd2257e81ce" />
 
 
 ## Laboratory Summary
