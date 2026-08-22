@@ -1,4 +1,4 @@
-# Module 2.1: Timing Libraries, Synthesis Approaches, and Efficient Flip-Flop Coding
+# Module 2.1 - Timing Libraries, Synthesis Approaches, and Efficient Flip-Flop Coding
 
 ## Objectives
 
