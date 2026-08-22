@@ -1,5 +1,7 @@
 # Module 5 - Optimization in Synthesis
 
+## Overview
+
 This document focuses on writing synthesizable Verilog in a way that produces the intended hardware. The session covers conditional statements, latch inference, loops, generate constructs, and the implementation of commonly used digital circuits.
 
 The practical exercises demonstrate how different RTL coding styles affect the synthesized hardware and how proper coding techniques can be used to obtain predictable combinational logic.
