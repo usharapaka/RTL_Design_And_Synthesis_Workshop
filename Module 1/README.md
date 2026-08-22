@@ -1,4 +1,4 @@
-# Module-1 – Verilog RTL Design Through Simulation
+# Module 1 – Verilog RTL Design Through Simulation
 
 ##  Experiment Objective
 
