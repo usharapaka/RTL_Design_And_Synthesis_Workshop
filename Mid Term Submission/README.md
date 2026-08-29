@@ -1,9 +1,12 @@
-BabySoC Synthesis and Gate-Level Simulation (GLS)
-Overview
+# BabySoC Synthesis and Gate-Level Simulation (GLS)
 
-This section documents the complete synthesis and Gate-Level Simulation (GLS) flow performed on the BabySoC design. The RTL design was synthesized using Yosys, mapped to the SKY130 standard-cell library, and verified through post-synthesis functional simulation using Icarus Verilog and GTKWave.
+## Overview
+
+This section documents the complete synthesis and Gate-Level Simulation (GLS) flow performed on the **BabySoC design**. The RTL design was synthesized using **Yosys**, mapped to the **SKY130 standard-cell library**, and verified through post-synthesis functional simulation using **Icarus Verilog** and **GTKWave**.
 
 The overall flow followed was:
+
+```text
 RTL Design
     ↓
 Yosys Synthesis
@@ -20,19 +23,16 @@ Pre-Synthesis vs Post-Synthesis Comparison
 1. Reading the RTL Design
 
 The synthesis flow begins by launching Yosys and reading the required Verilog source files for the BabySoC design.
-
 yosys
 read_verilog src/module/vsdbabysoc.v
 
 read_verilog -I src/include/src/module/rvmyth.v
 
 read_verilog -I src/include/src/module/clk_gate.v
-
 The vsdbabysoc module represents the top-level design, while rvmyth and clk_gate provide supporting functionality required for the complete design hierarchy.
 
 Figure 1: RTL Design Loading in Yosys
-
-📸 Place Screenshot 1 here
+<!-- Insert Screenshot 1 here -->
 
 This step confirms that the RTL source files are successfully loaded into the Yosys synthesis environment.
 
@@ -51,8 +51,7 @@ synth -top vsdbabysoc
 The synth command performs RTL synthesis using vsdbabysoc as the top-level module.
 
 Figure 2: Initial Design Hierarchy
-
-📸 Place Screenshot 2 here
+<!-- Insert Screenshot 2 here -->
 
 The hierarchy visualization provides an initial view of the relationship between the major modules in the BabySoC design.
 
@@ -61,8 +60,7 @@ The hierarchy visualization provides an initial view of the relationship between
 After synthesis, Yosys reports information about the synthesized design, including the number of wires, ports, cells, and modules present in the hierarchy.
 
 Figure 3: Synthesis Statistics and Design Hierarchy
-
-📸 Place Screenshot 3 here
+<!-- Insert Screenshot 3 here -->
 
 The synthesis statistics provide an overview of the complexity and composition of the synthesized BabySoC design.
 
@@ -77,9 +75,7 @@ Found and reported 0 problems.
 This confirms that no obvious structural problems were detected in the synthesized design.
 
 Figure 4: Successful Yosys CHECK Pass
-
-📸 Place Screenshot 4 here
-
+<!-- Insert Screenshot 4 here -->
 5. Technology Mapping to SKY130 Standard Cells
 
 After synthesis, the design was mapped to the SKY130 standard-cell library.
@@ -95,8 +91,7 @@ abc -liberty src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 The resulting implementation contains mapped standard cells such as AND, OR, NAND, NOR, XOR, multiplexers, and flip-flops.
 
 Figure 5: SKY130 Technology Mapping Results
-
-📸 Place Screenshot 5 here
+<!-- Insert Screenshot 5 here -->
 
 The ABC RESULTS output shows the different SKY130 standard cells selected during technology mapping.
 
@@ -109,8 +104,7 @@ show vsdbabysoc
 The complete visualization displays the internal connectivity of the synthesized design and demonstrates the complexity of the technology-mapped netlist.
 
 Figure 6: Complete Synthesized Design Visualization
-
-📸 Place Screenshot 6 here
+<!-- Insert Screenshot 6 here -->
 
 This visualization represents the complete synthesized circuit and its internal standard-cell-level connections.
 
@@ -146,8 +140,7 @@ VCO_IN ─┘
         ▼
        OUT
 Figure 7: Synthesized BabySoC Block Connectivity
-
-📸 Place Screenshot 7 here
+<!-- Insert Screenshot 7 here -->
 
 This view clearly shows the connection between the PLL, RISC-V core, and DAC blocks.
 
@@ -178,8 +171,7 @@ write_verilog -noattr baby_soc_netlist3.v
 The generated netlist contains the flattened implementation of the BabySoC design, including internal wires and mapped logic cells.
 
 Figure 8: Generated Gate-Level Netlist
-
-📸 Place Screenshot 8 here
+<!-- Insert Screenshot 8 here -->
 
 The generated Verilog netlist is used as the design representation for post-synthesis simulation.
 
@@ -206,8 +198,7 @@ ENb_CP
 ENb_VCO
 VCO_IN
 Figure 9: Gate-Level Simulation Testbench
-
-📸 Place Screenshot 9 here
+<!-- Insert Screenshot 9 here -->
 
 The testbench generates simulation waveforms for verifying the functionality of the BabySoC design before and after synthesis.
 
@@ -244,8 +235,7 @@ reset
 OUT
 RV_TO_DAC
 Figure 10: Pre-Synthesis and Post-Synthesis Waveform Comparison
-
-📸 Place Screenshot 10 here
+<!-- Insert Screenshot 10 here -->
 
 The waveforms were compared using GTKWave to verify that the synthesized implementation maintains the intended functional behavior of the RTL design.
 
@@ -273,6 +263,4 @@ Conclusion
 The BabySoC RTL design was successfully synthesized and mapped to the SKY130 standard-cell library using Yosys. The synthesized design passed structural verification, and a gate-level netlist was generated for post-synthesis simulation.
 
 The final Gate-Level Simulation was performed using Icarus Verilog with the POST_SYNTH_SIM and FUNCTIONAL compilation attributes. The generated post-synthesis waveform was compared with the pre-synthesis waveform using GTKWave to verify functional consistency.
-
-This flow demonstrates the complete progression from RTL design → synthesis → technology mapping → gate-level netlist generation → post-synthesis functional verification.
 
