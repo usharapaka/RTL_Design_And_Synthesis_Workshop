@@ -131,11 +131,6 @@ This repository documents my learning journey and hands-on experiments completed
 - Gate-Level Simulation (GLS)
 - GTKWave Analysis
 
-  
-➡️ **Documentation:** [BabySoC Synthesis and GLS README](./Mid%20Term%20Submission/BabySoC%20Synthesis%20and%20GLS/README.md)
-
----
-
 ### Sequence Detector
 **Topics Covered:**
 
@@ -144,6 +139,10 @@ This repository documents my learning journey and hands-on experiments completed
 - Testbench Verification
 - RTL Simulation
 - Synthesis and GLS
+
+➡️ **Documentation:** [Mid Term Submission README](./Mid%20Term%20Submission/README.md)
+
+---
 
 ## Tools Used
 
