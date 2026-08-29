@@ -120,6 +120,31 @@ This repository documents my learning journey and hands-on experiments completed
 
 ---
 
+## Mid Term Submission
+
+### BabySoC Synthesis and GLS
+**Topics Covered:**
+
+- RTL Simulation
+- Yosys Synthesis
+- Gate-Level Netlist
+- Gate-Level Simulation (GLS)
+- GTKWave Analysis
+
+  
+➡️ **Documentation:** [BabySoC Synthesis and GLS README](./Mid%20Term%20Submission/BabySoC%20Synthesis%20and%20GLS/README.md)
+
+---
+
+### Sequence Detector
+**Topics Covered:**
+
+- FSM Design
+- Sequence Detection (`1111001`)
+- Testbench Verification
+- RTL Simulation
+- Synthesis and GLS
+
 ## Tools Used
 
 - Verilog
