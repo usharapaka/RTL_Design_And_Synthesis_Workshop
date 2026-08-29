@@ -355,10 +355,9 @@ This flow demonstrates the complete progression from:
 
 **RTL Design → Synthesis → Technology Mapping → Gate-Level Netlist Generation → Post-Synthesis Simulation → Functional Verification**
 
-
+---
 
 # Assignment 
-
 
 # Sequence Detector – RTL Design, Synthesis and Gate Level Simulation
 
