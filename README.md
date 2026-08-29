@@ -131,6 +131,8 @@ This repository documents my learning journey and hands-on experiments completed
 - Gate-Level Simulation (GLS)
 - GTKWave Analysis
 
+### Assignment
+
 ### Sequence Detector
 **Topics Covered:**
 
