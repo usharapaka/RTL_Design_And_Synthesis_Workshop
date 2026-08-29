@@ -41,7 +41,9 @@ The `vsdbabysoc` module represents the top-level design, while `rvmyth` and `clk
 
 ### Figure 1: RTL Design Loading in Yosys
 
-<!-- Insert Screenshot 1 here -->
+
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/be80524e-5f66-49d8-bf79-24ba47af4333" />
+
 
 This step confirms that the RTL source files are successfully loaded into the Yosys synthesis environment.
 
@@ -65,7 +67,9 @@ The `synth` command performs RTL synthesis using `vsdbabysoc` as the top-level m
 
 ### Figure 2: Initial Design Hierarchy
 
-<!-- Insert Screenshot 2 here -->
+
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/08abefc6-1854-435e-b297-a831388c2553" />
+
 
 The hierarchy visualization provides an initial view of the relationship between the major modules in the BabySoC design.
 
@@ -77,7 +81,9 @@ After synthesis, Yosys reports information about the synthesized design, includi
 
 ### Figure 3: Synthesis Statistics and Design Hierarchy
 
-<!-- Insert Screenshot 3 here -->
+
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/fca7327c-12ef-43e0-9d46-a691bdb3cbe1" />
+
 
 The synthesis statistics provide an overview of the complexity and composition of the synthesized BabySoC design.
 
@@ -97,7 +103,9 @@ This confirms that no obvious structural problems were detected in the synthesiz
 
 ### Figure 4: Successful Yosys CHECK Pass
 
-<!-- Insert Screenshot 4 here -->
+
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/f93166d7-9dc7-46ba-b4d5-47413e41932f" />
+
 
 ---
 
@@ -121,7 +129,9 @@ The resulting implementation contains mapped standard cells such as AND, OR, NAN
 
 ### Figure 5: SKY130 Technology Mapping Results
 
-<!-- Insert Screenshot 5 here -->
+
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/804e5497-7e5b-4fcc-bb97-55c9526f8df8" />
+
 
 The `ABC RESULTS` output shows the different SKY130 standard cells selected during technology mapping.
 
@@ -139,7 +149,9 @@ The complete visualization displays the internal connectivity of the synthesized
 
 ### Figure 6: Complete Synthesized Design Visualization
 
-<!-- Insert Screenshot 6 here -->
+
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/5e189e6c-5e49-45a6-a953-3f81abe6baff" />
+
 
 This visualization represents the complete synthesized circuit and its internal standard-cell-level connections.
 
@@ -179,14 +191,6 @@ VCO_IN ─┘
        OUT
 ```
 
-### Figure 7: Synthesized BabySoC Block Connectivity
-
-<!-- Insert Screenshot 7 here -->
-
-This view clearly shows the connection between the PLL, RISC-V core, and DAC blocks.
-
----
-
 ## 8. Preparing the Design for Netlist Generation
 
 Before generating the final gate-level netlist, the design was flattened and cleaned.
@@ -219,9 +223,11 @@ write_verilog -noattr baby_soc_netlist3.v
 
 The generated netlist contains the flattened implementation of the BabySoC design, including internal wires and mapped logic cells.
 
-### Figure 8: Generated Gate-Level Netlist
+### Figure 7: Generated Gate-Level Netlist
 
-<!-- Insert Screenshot 8 here -->
+
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/8cd53d63-3940-4309-bdb7-f7e0a5365ecf" />
+
 
 The generated Verilog netlist is used as the design representation for post-synthesis simulation.
 
@@ -254,9 +260,11 @@ The testbench initializes important signals such as:
 - `ENb_VCO`
 - `VCO_IN`
 
-### Figure 9: Gate-Level Simulation Testbench
+### Figure 8: Gate-Level Simulation Testbench
 
-<!-- Insert Screenshot 9 here -->
+
+ <img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/e7cd2cc5-6f0f-4e62-8fed-d30faf6cde9e" />
+
 
 The testbench generates simulation waveforms for verifying the functionality of the BabySoC design before and after synthesis.
 
@@ -305,9 +313,11 @@ The important signals observed include:
 - `OUT`
 - `RV_TO_DAC`
 
-### Figure 10: Pre-Synthesis and Post-Synthesis Waveform Comparison
+### Figure 9: Pre-Synthesis and Post-Synthesis Waveform Comparison
 
-<!-- Insert Screenshot 10 here -->
+
+<img width="1592" height="768" alt="post and pre" src="https://github.com/user-attachments/assets/2c49be38-d656-429b-9763-c303e018534f" />
+
 
 The waveforms were compared using GTKWave to verify that the synthesized implementation maintains the intended functional behavior of the RTL design.
 
