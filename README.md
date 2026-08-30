@@ -162,6 +162,7 @@ This repository documents my learning journey and hands-on experiments completed
 - GTKWave Analysis
 
 ➡️ **Documentation:** [Session 3 README](./Session%203/README.md)
+
 ---
 
 # Assignment: Sequence Detector
