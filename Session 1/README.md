@@ -115,8 +115,6 @@ This helps in understanding:
 
 ### Disassembly Output
 
-![RISC-V objdump Output](images/03-riscv-objdump-output.jpg)
-
 <img width="1536" height="691" alt="WhatsApp Image 2026-08-30 at 11 16 23 PM" src="https://github.com/user-attachments/assets/aae59e3e-3a3b-496f-82e5-a059554161ea" />
 
 ---
