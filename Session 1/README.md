@@ -35,7 +35,7 @@ The RISC-V development environment was set up using GitHub Codespaces. This prov
 
 The repository contains sample programs and instructions for compiling and executing programs using the RISC-V toolchain.
 
-<img width="1536" height="691" alt="WhatsApp Image 2026-08-30 at 11 16 20 PM" src="https://github.com/user-attachments/assets/cc340fe7-ac40-438c-ade1-973a68a400c7" />
+<img width="1536" height="691" alt="WhatsApp Image 2026-08-30 at 11 16 21 PM" src="https://github.com/user-attachments/assets/cf7ac644-923a-4f4e-b5ab-2eead902e789" />
 
 ---
 
@@ -53,7 +53,8 @@ The general setup process includes:
 4. Accessing the terminal.
 5. Exploring the available sample files.
 
-![Getting Started with RISC-V](images/02_getting_started_riscv.jpg)
+<img width="1536" height="691" alt="WhatsApp Image 2026-08-30 at 11 16 20 PM" src="https://github.com/user-attachments/assets/30f3683f-1930-4b79-8ae4-b1fb7d7caf73" />
+
 
 ## Sample Files
 
@@ -69,7 +70,7 @@ The files explored include:
 
 The `sum1ton.c` file was used as the example program for compilation and execution.
 
-![Sample Files and Initial Compilation](images/03_riscv_sample_files.jpg)
+<img width="1536" height="691" alt="WhatsApp Image 2026-08-30 at 11 16 23 PM" src="https://github.com/user-attachments/assets/7786bdd2-05f4-45c1-a5b9-b0541b9b2d05" />
 
 ---
 
@@ -96,7 +97,7 @@ riscv64-unknown-elf-gcc -o sum1ton.o sum1ton.c
 
 The successful compilation generates a RISC-V compatible executable from the C source program.
 
-<img width="1536" height="691" alt="WhatsApp Image 2026-08-30 at 11 16 21 PM" src="https://github.com/user-attachments/assets/dcc5c8a5-f725-4121-be37-1bbfacf20a4e" />
+<img width="1536" height="691" alt="WhatsApp Image 2026-08-30 at 11 16 21 PM (2)" src="https://github.com/user-attachments/assets/4fd69f95-8ba8-48a4-9cee-74052e70f460" />
 
 ---
 
@@ -132,7 +133,8 @@ Sum from 1 to 9 is 45
 
 This confirms that the C program was successfully compiled for the RISC-V architecture and executed correctly in the simulation environment.
 
-<img width="1536" height="691" alt="WhatsApp Image 2026-08-30 at 11 16 23 PM" src="https://github.com/user-attachments/assets/59ecdfaf-bff7-4a5a-8388-667e6deb2823" />
+<img width="1536" height="691" alt="WhatsApp Image 2026-08-30 at 11 16 21 PM (2)" src="https://github.com/user-attachments/assets/27612fe1-0ee6-437f-9ba4-0b1698b5a8cc" />
+
 
 ## RISC-V Execution Flow
 
@@ -245,7 +247,7 @@ The configuration files specify parameters required for different stages of the 
 
 These configurations help organize the flow according to the selected technology and design.
 
-![OpenROAD Design Configuration](images/11_openroad_configuration.jpg)
+<img width="1536" height="691" alt="WhatsApp Image 2026-08-30 at 11 16 23 PM (1)" src="https://github.com/user-attachments/assets/b1904370-ad00-4b10-a356-266bed110e7a" />
 
 ---
 
