@@ -1,86 +1,82 @@
-# RISC-V, RTL Simulation and OpenROAD RTL-to-GDS Exploration
+# RISC-V, RTL Simulation and OpenROAD RTL-to-GDS Flow
 
-This repository documents hands-on exploration of open-source tools used in RISC-V development, RTL simulation, waveform analysis, and RTL-to-GDS physical design flows.
+## Overview
 
-The work includes:
+This repository documents hands-on learning and practical experiments performed using open-source tools for RISC-V development, RTL simulation, waveform analysis, and physical design.
 
-- RISC-V development environment setup using GitHub Codespaces
-- Compiling and executing a RISC-V C program
-- Binary inspection using `objdump`
+The work covers:
+
+- RISC-V development using GitHub Codespaces
+- Cross-compiling a C program for RISC-V
+- Binary disassembly using `objdump`
+- Program execution using Spike
 - RTL simulation using Icarus Verilog
 - Waveform analysis using GTKWave
-- Exploring the OpenROAD RTL-to-GDS flow
+- OpenROAD RTL-to-GDS flow exploration
+- Makefile-based design configuration
+- Final GDS layout visualization using KLayout
 
 ---
 
-# Table of Contents
+# Part 1: RISC-V Development Environment
 
-- [1. RISC-V Development Environment Setup](#1-risc-v-development-environment-setup)
-- [2. Creating and Exploring the Codespace](#2-creating-and-exploring-the-codespace)
-- [3. RISC-V Program Compilation](#3-risc-v-program-compilation)
-- [4. Binary Inspection Using objdump](#4-binary-inspection-using-objdump)
-- [5. Program Execution Using Spike](#5-program-execution-using-spike)
-- [6. RTL Simulation Using Icarus Verilog](#6-rtl-simulation-using-icarus-verilog)
-- [7. Waveform Analysis Using GTKWave](#7-waveform-analysis-using-gtkwave)
-- [8. OpenROAD RTL-to-GDS Flow Exploration](#8-openroad-rtl-to-gds-flow-exploration)
-- [9. Key Learnings](#9-key-learnings)
-- [10. Tools Used](#10-tools-used)
-- [11. Conclusion](#11-conclusion)
+## Step 1: Open the RISC-V Repository
+
+The RISC-V repository was opened on GitHub. The repository contains the required files, sample programs, and environment configuration needed to experiment with RISC-V software development.
+
+The GitHub Codespaces feature was used to create a cloud-based development environment.
+
+### Repository View
+
+<img width="1536" height="691" alt="WhatsApp Image 2026-08-31 at 12 50 51 AM" src="https://github.com/user-attachments/assets/9c2ac25c-8e4b-4fc7-a92e-795bb8113d5e" />
 
 ---
 
-# 1. RISC-V Development Environment Setup
+## Step 2: Create a GitHub Codespace
 
-The RISC-V development environment was set up using GitHub Codespaces. This provides a cloud-based development environment where the required tools can be accessed without manually installing the complete toolchain on a local system.
+A new GitHub Codespace was created from the repository.
 
-The repository contains sample programs and instructions for compiling and executing programs using the RISC-V toolchain.
+### Procedure
 
-<img width="1536" height="691" alt="WhatsApp Image 2026-08-30 at 11 16 21 PM" src="https://github.com/user-attachments/assets/cf7ac644-923a-4f4e-b5ab-2eead902e789" />
+1. Open the RISC-V repository.
+2. Click the green **Code** button.
+3. Select **Codespaces**.
+4. Create a new Codespace.
+5. Wait for the development environment to initialize.
 
----
+GitHub Codespaces provides a browser-based VS Code environment with terminal access.
 
-# 2. Creating and Exploring the Codespace
-
-After creating the Codespace, the repository was opened in the browser-based VS Code environment.
-
-The repository README provides instructions for setting up the environment and running RISC-V programs.
-
-The general setup process includes:
-
-1. Opening the repository.
-2. Creating a GitHub Codespace.
-3. Waiting for the environment to initialize.
-4. Accessing the terminal.
-5. Exploring the available sample files.
-
-<img width="1536" height="691" alt="WhatsApp Image 2026-08-30 at 11 16 20 PM" src="https://github.com/user-attachments/assets/30f3683f-1930-4b79-8ae4-b1fb7d7caf73" />
-
-
-## Sample Files
-
-The `samples` directory contains example programs and supporting files.
-
-The files explored include:
-
-- `sum1ton.c`
-- `sum1ton.o`
-- `sum1ton_custom.c`
-- `Makefile`
-- `load.S`
-
-The `sum1ton.c` file was used as the example program for compilation and execution.
-
-<img width="1536" height="691" alt="WhatsApp Image 2026-08-30 at 11 16 23 PM" src="https://github.com/user-attachments/assets/7786bdd2-05f4-45c1-a5b9-b0541b9b2d05" />
+<img width="1536" height="691" alt="WhatsApp Image 2026-08-30 at 11 16 20 PM" src="https://github.com/user-attachments/assets/bc37547c-3bcd-4e26-93c4-180a61179de0" />
 
 ---
 
-# 3. RISC-V Program Compilation
+## Step 3: Verify the Development Environment
 
-An initial compilation attempt resulted in an error because the input and output files were incorrectly specified.
+After the Codespace was initialized, the terminal was used to access the project files and execute the required commands.
 
-This highlighted the importance of using the correct RISC-V cross-compiler and command syntax.
+The development environment provides access to the sample programs and required RISC-V tools.
 
-The program was then compiled using the RISC-V cross-compiler.
+<img width="1536" height="691" alt="WhatsApp Image 2026-08-30 at 11 16 23 PM" src="https://github.com/user-attachments/assets/8330d74b-a1c0-4e37-904d-c6850aa7ddfd" />
+
+---
+
+# Part 2: RISC-V Program Compilation
+
+## Step 4: Navigate to the Samples Directory
+
+The sample programs are available inside the `samples` directory.
+
+```bash
+cd samples/
+```
+
+The directory contains example C programs that can be compiled and executed for the RISC-V architecture.
+
+---
+
+## Step 5: Compile the RISC-V Program
+
+The RISC-V cross compiler was used to compile the C program.
 
 ```bash
 riscv64-unknown-elf-gcc -o sum1ton.o sum1ton.c
@@ -88,138 +84,162 @@ riscv64-unknown-elf-gcc -o sum1ton.o sum1ton.c
 
 ### Command Description
 
-| Component | Description |
-|---|---|
-| `riscv64-unknown-elf-gcc` | RISC-V cross-compiler |
-| `-o` | Specifies the output file |
-| `sum1ton.o` | Generated output file |
-| `sum1ton.c` | Input C source program |
+- `riscv64-unknown-elf-gcc` – RISC-V cross compiler
+- `-o sum1ton.o` – Specifies the output file
+- `sum1ton.c` – Input C source file
 
-The successful compilation generates a RISC-V compatible executable from the C source program.
+The successful compilation generates an executable that can be analyzed and executed using RISC-V tools.
 
-<img width="1536" height="691" alt="WhatsApp Image 2026-08-30 at 11 16 21 PM (2)" src="https://github.com/user-attachments/assets/4fd69f95-8ba8-48a4-9cee-74052e70f460" />
+<img width="1536" height="691" alt="WhatsApp Image 2026-08-30 at 11 16 22 PM" src="https://github.com/user-attachments/assets/3b069b2b-0f76-4aed-bcc3-f6e1903ed50b" />
 
 ---
 
-# 4. Binary Inspection Using objdump
+# Part 3: Binary Disassembly
 
-After compilation, the generated binary was inspected using the `objdump` utility.
+## Step 6: Analyze the Generated Executable
+
+The compiled program was analyzed using the `objdump` utility.
 
 ```bash
 objdump -d sum1ton.o
 ```
 
-The `-d` option disassembles the binary and displays the corresponding low-level instructions.
+The `objdump` command displays the machine instructions and their corresponding assembly representation.
 
-This step helps in understanding how the compiled program is represented at the instruction level.
+This helps in understanding:
 
-<img width="1536" height="691" alt="WhatsApp Image 2026-08-30 at 11 16 21 PM (1)" src="https://github.com/user-attachments/assets/c32dbfd0-e07c-4a15-9f84-3ef26995f58d" />
+- Generated assembly instructions
+- Register operations
+- Function execution
+- Machine-level program flow
+
+### Disassembly Output
+
+![RISC-V objdump Output](images/03-riscv-objdump-output.jpg)
+
+<img width="1536" height="691" alt="WhatsApp Image 2026-08-30 at 11 16 23 PM" src="https://github.com/user-attachments/assets/aae59e3e-3a3b-496f-82e5-a059554161ea" />
 
 ---
 
-# 5. Program Execution Using Spike
+# Part 4: Running the RISC-V Program
 
-The compiled RISC-V program was executed using the Spike RISC-V simulator.
+## Step 7: Execute the Program Using Spike
+
+The compiled RISC-V executable was executed using the Spike RISC-V simulator.
 
 ```bash
 spike pk sum1ton.o
 ```
 
-The program executed successfully and produced the expected output:
+The expected output of the program is:
 
 ```text
 Sum from 1 to 9 is 45
 ```
 
-This confirms that the C program was successfully compiled for the RISC-V architecture and executed correctly in the simulation environment.
+The successful execution confirms that the program was correctly compiled for the RISC-V architecture.
 
-<img width="1536" height="691" alt="WhatsApp Image 2026-08-30 at 11 16 21 PM (2)" src="https://github.com/user-attachments/assets/27612fe1-0ee6-437f-9ba4-0b1698b5a8cc" />
+<img width="1536" height="691" alt="WhatsApp Image 2026-08-30 at 11 16 20 PM (1)" src="https://github.com/user-attachments/assets/df37322c-fa10-4a87-92d4-42b6f37dff57" />
 
 
-## RISC-V Execution Flow
-
-```text
-C Source Code
-      ↓
-RISC-V Cross Compilation
-      ↓
-RISC-V Executable
-      ↓
-Binary Inspection
-      ↓
-Spike Simulation
-      ↓
-Program Output
-```
+<img width="1536" height="691" alt="WhatsApp Image 2026-08-31 at 12 50 53 AM" src="https://github.com/user-attachments/assets/9261f031-e13a-472b-9ad0-ce68ddaba431" />
 
 ---
 
-# 6. RTL Simulation Using Icarus Verilog
+# Part 5: RTL Simulation
 
-The next part of the work focused on RTL simulation using Icarus Verilog.
+## Overview
 
-The Verilog design and its corresponding testbench were compiled using the following command:
+RTL simulation was performed to verify the functional behavior of a Verilog design.
+
+The RTL verification flow includes:
+
+1. Writing the RTL design
+2. Creating a testbench
+3. Compiling the Verilog files
+4. Running the simulation
+5. Generating waveform output
+6. Analyzing the waveform
+
+---
+
+## Step 8: Compile the Verilog Design
+
+The Verilog design and testbench were compiled using Icarus Verilog.
 
 ```bash
 iverilog -o gmux verilog_files/good_mux.v verilog_files/tb_good_mux.v
 ```
 
-### Command Description
+### Purpose
 
-| Component | Description |
-|---|---|
-| `iverilog` | Verilog compiler |
-| `-o gmux` | Specifies the simulation output |
-| `good_mux.v` | RTL design file |
-| `tb_good_mux.v` | Testbench file |
+- `iverilog` compiles the Verilog source files.
+- `good_mux.v` contains the RTL design.
+- `tb_good_mux.v` contains the testbench.
+- The generated simulation output is used for functional verification.
 
-The simulation was successfully compiled and generated the waveform data required for functional verification.
-
-<img width="1536" height="691" alt="WhatsApp Image 2026-08-30 at 11 16 22 PM" src="https://github.com/user-attachments/assets/98da1075-3677-4247-9c2c-3ae0d2b6d136" />
+<img width="1408" height="460" alt="WhatsApp Image 2026-08-30 at 11 28 05 PM" src="https://github.com/user-attachments/assets/646e882e-11c7-49d2-b927-d56cfd37d7d3" />
 
 ---
 
-# 7. Waveform Analysis Using GTKWave
+# Part 6: Waveform Analysis Using GTKWave
 
-After simulation, the generated waveform file was opened using GTKWave.
+## Step 9: Analyze the Simulation Waveform
 
-GTKWave is used to visualize and analyze digital signal transitions during simulation.
+The generated waveform was opened using GTKWave.
 
-The waveform displays the following signals:
+GTKWave provides a graphical representation of signal transitions during simulation.
 
-- `i0`
-- `i1`
-- `sel`
-- `y`
+The waveform allows verification of:
 
-The signal transitions can be observed over time to verify the functional behavior of the design.
+- Input signal behavior
+- Select signal transitions
+- Output response
+- Timing relationships
 
-<img width="1408" height="460" alt="WhatsApp Image 2026-08-30 at 11 28 05 PM" src="https://github.com/user-attachments/assets/d0f26a85-419f-4c9e-bdc6-ef122f14e7cc" />
+The observed waveform confirms the functional behavior of the RTL design.
 
-## Observation
-
-The waveform demonstrates the relationship between the input signals, select signal, and output signal.
-
-The output changes according to the selected input, confirming the expected functionality of the RTL design.
+<img width="1536" height="1156" alt="WhatsApp Image 2026-08-31 at 12 50 55 AM (1)" src="https://github.com/user-attachments/assets/eba8326a-bfce-479d-a545-4e261e0de256" />
 
 ---
 
-# 8. OpenROAD RTL-to-GDS Flow Exploration
+# Part 7: OpenROAD RTL-to-GDS Flow
 
-The OpenROAD RTL-to-GDS flow was explored using the SCL180 technology platform.
+## Overview
 
-The repository provides a complete environment for exploring the physical design flow and contains scripts, configurations, and supporting files required for the RTL-to-GDS process.
+The OpenROAD project was explored to understand the complete RTL-to-GDS physical design flow.
 
-<img width="1536" height="691" alt="WhatsApp Image 2026-08-30 at 11 16 20 PM (1)" src="https://github.com/user-attachments/assets/ba898b66-570d-422d-a339-0e3dc585f0a2" />
+The OpenROAD flow automates multiple stages of digital IC physical design.
 
-## Repository Structure
+### Major Stages
 
-The OpenROAD repository contains several directories and files used to organize the complete flow.
+```text
+RTL Design
+    ↓
+Logic Synthesis
+    ↓
+Floorplanning
+    ↓
+Placement
+    ↓
+Clock Tree Synthesis
+    ↓
+Routing
+    ↓
+GDS Generation
+```
+
+---
+
+## Step 10: Explore the OpenROAD Repository
+
+The OpenROAD RTL-to-GDS repository was opened in GitHub Codespaces.
+
+The repository contains the OpenROAD-flow-scripts infrastructure and configuration files required for executing physical design flows.
 
 Important directories include:
 
 ```text
-.devcontainer/
 images/
 orfs/
 designs/
@@ -227,123 +247,98 @@ scripts/
 tools/
 ```
 
-Important files include:
+The repository provides support for multiple technologies and design configurations.
+
+<img width="1536" height="691" alt="WhatsApp Image 2026-08-30 at 11 16 23 PM (1)" src="https://github.com/user-attachments/assets/8bc54af3-5001-4011-b9e9-940245a3dc2a" />
+
+---
+
+# Part 8: Design Configuration
+
+## Step 11: Explore the Makefile Configuration
+
+The Makefile contains configuration paths for different technology libraries and design implementations.
+
+Example configuration entries include:
 
 ```text
-Makefile
-Dockerfile
-README.md
+DESIGN_CONFIG=./designs/gf12/aes/config.mk
+DESIGN_CONFIG=./designs/sky130hd/aes/config.mk
+DESIGN_CONFIG=./designs/scl180/fs120/config.mk
 ```
 
-Each component has a specific role in supporting the design and implementation flow.
+### Purpose of the Configuration
 
-<img width="1536" height="691" alt="WhatsApp Image 2026-08-30 at 11 16 23 PM" src="https://github.com/user-attachments/assets/03e1d3cb-ea62-46f6-925f-7799e754fbd6" />
+The configuration files are used to:
 
-## Design Configuration
+- Select the target design
+- Define technology parameters
+- Specify design configuration files
+- Automate the RTL-to-GDS flow
+- Control different physical design stages
 
-The Makefile was explored to understand how different technology platforms and design configurations are defined.
-
-The configuration files specify parameters required for different stages of the physical design flow.
-
-These configurations help organize the flow according to the selected technology and design.
-
-<img width="1536" height="691" alt="WhatsApp Image 2026-08-30 at 11 16 23 PM (1)" src="https://github.com/user-attachments/assets/b1904370-ad00-4b10-a356-266bed110e7a" />
+<img width="1536" height="691" alt="WhatsApp Image 2026-08-31 at 12 50 55 AM (2)" src="https://github.com/user-attachments/assets/0520f858-34c8-4b8a-8a4d-798de9f73535" />
 
 ---
 
-## Final Layout Visualization
+# Part 9: Final GDS Layout Visualization
 
-After completing the physical design flow, the generated GDS file was opened using **KLayout** for final layout verification.
+## Step 12: View the Generated GDS Layout
 
-The screenshot below shows the final chip layout with multiple SKY130 technology layers visible.
+The final physical layout was visualized using KLayout.
 
-### Final GDS Layout
+KLayout is used to inspect the GDS layout generated after the physical design flow.
 
-<img width="1600" height="720" alt="WhatsApp Image 2026-08-30 at 11 25 18 PM" src="https://github.com/user-attachments/assets/24be5188-de64-436e-b803-cf7f807f0f59" />
+The layout contains multiple technology layers representing different physical components of the integrated circuit.
 
-**Observation:**
-- The final GDS layout was successfully generated.
-- The design was visualized using KLayout.
-- Multiple SKY130 layers are visible in the layout.
-- This confirms the successful completion of the physical design flow up to the final layout stage.
+### Physical Layers Include
 
-# 9. Overall Workflow
+- Metal layers
+- Poly layers
+- Diffusion layers
+- Well layers
+- Contact layers
+- Routing layers
 
-```text
-                 ┌───────────────────────┐
-                 │ GitHub Codespaces     │
-                 │ Development Setup     │
-                 └───────────┬───────────┘
-                             │
-                             ▼
-                 ┌───────────────────────┐
-                 │ RISC-V Sample Program │
-                 └───────────┬───────────┘
-                             │
-                             ▼
-                 ┌───────────────────────┐
-                 │ RISC-V Cross Compiler │
-                 └───────────┬───────────┘
-                             │
-                             ▼
-                 ┌───────────────────────┐
-                 │ Binary Inspection     │
-                 │ using objdump         │
-                 └───────────┬───────────┘
-                             │
-                             ▼
-                 ┌───────────────────────┐
-                 │ Spike Simulation      │
-                 └───────────┬───────────┘
-                             │
-                             ▼
-                 ┌───────────────────────┐
-                 │ RTL Simulation        │
-                 │ using Icarus Verilog  │
-                 └───────────┬───────────┘
-                             │
-                             ▼
-                 ┌───────────────────────┐
-                 │ GTKWave Analysis      │
-                 └───────────┬───────────┘
-                             │
-                             ▼
-                 ┌───────────────────────┐
-                 │ OpenROAD Exploration  │
-                 │ RTL-to-GDS Flow       │
-                 └───────────────────────┘
-```
+The final layout visualization demonstrates the physical implementation result of the RTL-to-GDS flow.
+
+<img width="1536" height="864" alt="WhatsApp Image 2026-08-31 at 12 50 55 AM" src="https://github.com/user-attachments/assets/a106ac83-e7c4-4a8c-adee-1df9b950706e" />
 
 ---
 
-# 10. Key Learnings
+# Key Learning Outcomes
 
-Through this hands-on exploration, the following concepts were learned:
+Through these hands-on experiments, the following concepts were explored:
 
-- Setting up a cloud-based development environment using GitHub Codespaces.
-- Exploring a RISC-V development repository.
-- Understanding RISC-V cross-compilation.
-- Compiling C programs for the RISC-V architecture.
-- Inspecting compiled binaries using `objdump`.
-- Understanding instruction-level program representation.
-- Executing RISC-V programs using Spike.
-- Using Icarus Verilog for RTL compilation and simulation.
-- Understanding the relationship between RTL design and testbench.
-- Analyzing simulation waveforms using GTKWave.
-- Exploring the OpenROAD RTL-to-GDS flow.
-- Understanding repository organization for physical design flows.
-- Exploring technology-specific design configurations.
+- Setting up a RISC-V development environment
+- Using GitHub Codespaces
+- Compiling C programs for RISC-V
+- Understanding executable disassembly
+- Executing programs using Spike
+- Performing RTL simulation
+- Using testbenches for functional verification
+- Analyzing waveforms using GTKWave
+- Understanding the OpenROAD RTL-to-GDS flow
+- Exploring technology and design configuration files
+- Understanding Makefile-based automation
+- Visualizing final GDS layouts using KLayout
 
 ---
 
-# 11. Conclusion
+# Conclusion
 
-This hands-on exploration provided practical exposure to different stages of computer architecture and VLSI design workflows.
+This hands-on work provided practical exposure to multiple stages of digital and VLSI design.
 
-The RISC-V section demonstrated the complete flow from a C source program to RISC-V cross-compilation, binary inspection, and execution using the Spike simulator.
+The experiments covered the complete learning path from RISC-V software development and RTL simulation to physical design and GDS layout visualization.
 
-The RTL simulation section demonstrated the use of Icarus Verilog for compiling a Verilog design and testbench, followed by functional waveform analysis using GTKWave.
+By using open-source tools such as RISC-V GCC, Spike, Icarus Verilog, GTKWave, OpenROAD, and KLayout, practical understanding was gained in:
 
-Finally, the OpenROAD exploration provided an understanding of the repository structure and configuration organization used in an RTL-to-GDS physical design flow.
+- Software compilation for RISC-V
+- Instruction-level analysis
+- RTL functional verification
+- Digital waveform analysis
+- Physical design automation
+- RTL-to-GDS implementation
+- Final layout visualization
 
-Overall, this work helped build practical familiarity with open-source tools used in RISC-V development, RTL verification, waveform analysis, and VLSI physical design.
+This workflow demonstrates how different open-source tools can be integrated to understand the broader semiconductor design ecosystem.
