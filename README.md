@@ -120,10 +120,10 @@ This repository documents my learning journey and hands-on experiments completed
 
 ---
 
-## Mid Term Submission
+# Mid Term Submission
 
-### Session 1:
- ## Topics Covered
+## Session 1:
+ **Topics Covered:**
 
 - RISC-V Development Environment Setup using GitHub Codespaces
 - Compiling a RISC-V C Program
@@ -136,8 +136,8 @@ This repository documents my learning journey and hands-on experiments completed
 
  ➡️ **Documentation:** [Session 1 README](./Session%201/README.md)
 
-### Session 2:
-## Topics Covered 
+## Session 2:
+**Topics Covered:** 
 
 - Introduction to Yosys synthesis flow
 - RTL simulation using Icarus Verilog
@@ -152,8 +152,8 @@ This repository documents my learning journey and hands-on experiments completed
  ➡️ **Documentation:** [Session 2 README](./Session%202/README.md)
 
 
-### Session 3: 
-## Topics Covered
+## Session 3: 
+**Topics Covered:**
 
 - RTL Simulation
 - Yosys Synthesis
@@ -164,7 +164,7 @@ This repository documents my learning journey and hands-on experiments completed
 ➡️ **Documentation:** [Session 3 README](./Session%203/README.md)
 ---
 
-## Assignment: Sequence Detector
+# Assignment: Sequence Detector
 **Topics Covered:**
 
 - FSM Design
