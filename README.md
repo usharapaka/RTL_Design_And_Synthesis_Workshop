@@ -122,14 +122,47 @@ This repository documents my learning journey and hands-on experiments completed
 
 ## Mid Term Submission
 
-### BabySoC Synthesis and GLS
-**Topics Covered:**
+### Session 1:
+ ## Topics Covered
+
+- RISC-V Development Environment Setup using GitHub Codespaces
+- Compiling a RISC-V C Program
+- Viewing Assembly Code using `objdump`
+- Running Programs using Spike Simulator
+- RTL Simulation using Icarus Verilog
+- Waveform Analysis using GTKWave
+- Introduction to OpenROAD RTL-to-GDS Flow
+- Exploring OpenROAD Repository Structure and Configuration
+
+ ➡️ **Documentation:** [Session 1 README](./Session%201/README.md)
+
+### Session 2:
+## Topics Covered 
+
+- Introduction to Yosys synthesis flow
+- RTL simulation using Icarus Verilog
+- Waveform analysis using GTKWave
+- Good MUX and Bad MUX design comparison
+- Writing Verilog testbenches
+- Logic synthesis using Yosys
+- Viewing synthesized netlists and schematics
+- Gate-Level Simulation (GLS)
+- Comparing RTL and synthesized design behavior
+
+ ➡️ **Documentation:** [Session 2 README](./Session%202/README.md)
+
+
+### Session 3: 
+## Topics Covered
 
 - RTL Simulation
 - Yosys Synthesis
 - Gate-Level Netlist
 - Gate-Level Simulation (GLS)
 - GTKWave Analysis
+
+➡️ **Documentation:** [Session 3 README](./Session%203/README.md)
+---
 
 ### Assignment: Sequence Detector
 **Topics Covered:**
@@ -140,9 +173,9 @@ This repository documents my learning journey and hands-on experiments completed
 - RTL Simulation
 - Synthesis and GLS
 
-➡️ **Documentation:** [Mid Term Submission README](./Mid%20Term%20Submission/README.md)
+➡️ **Documentation:** [Assignment README](./Assignment/README.md)
 
----
+
 
 ## Tools Used
 
