@@ -48,7 +48,7 @@ Examples of IPs include:
 - GPIO
 - PLLs
 
-### Basic Hierarchy
+## Basic Hierarchy
 
 ```text
 QFN Package
@@ -66,11 +66,14 @@ QFN Package
    IP Blocks
 ```
 
-### Key Learning
+## Key Learning
 
 The physical structure of a chip can be understood as a hierarchy from the package level down to the internal IP blocks. Understanding this hierarchy provides the foundation for learning ASIC physical design.
 
-Screenshot
+## Screenshot
+1.<img width="933" height="630" alt="Screenshot 2026-08-30 152730" src="https://github.com/user-attachments/assets/2052e399-6c98-47c2-b67d-c47ad4f99118" />
+
+2.<img width="1200" height="677" alt="Screenshot 2026-08-30 152645" src="https://github.com/user-attachments/assets/dc5a0b13-6a38-4007-8f51-7702e257bb7e" />
 
 # 2. SKY_L2 - Introduction to RISC-V
 ## Objective
@@ -111,11 +114,12 @@ RISC-V Processor
      v
 Hardware
 ```
-### Key Learning
+## Key Learning
 
 RISC-V provides an open instruction-set architecture that enables designers and researchers to develop and customize processor hardware.
 
-### Screenshot
+## Screenshot
+1.<img width="1377" height="828" alt="Screenshot 2026-08-30 153432" src="https://github.com/user-attachments/assets/91d9d8a9-9893-4875-b32b-ed1f0ff913d6" />
 
 # 3. SKY_L3 - From Software Applications to Hardware
 ## Objective
@@ -162,7 +166,10 @@ Memory Interface
 
 The Instruction Set Architecture acts as an interface between software and hardware. It defines the instructions that software can use and the hardware must implement.
 
-### Screenshot
+## Screenshot
+1.<img width="1380" height="823" alt="Screenshot 2026-08-30 154711" src="https://github.com/user-attachments/assets/95516c70-87b0-454c-8787-a1b0bc51c371" />
+
+2.<img width="1328" height="822" alt="Screenshot 2026-08-30 155531" src="https://github.com/user-attachments/assets/07eccebb-f9b0-4e05-bc08-8ad96404c95c" />
 
 # 4. SKY_L1 - Introduction to All Components of Open-Source Digital ASIC Design
 ## Objective
@@ -240,6 +247,9 @@ GDSII
 The open-source ASIC flow provides a complete path from RTL description to a physical chip layout.
 
 ## Screenshot
+1.<img width="685" height="742" alt="Screenshot 2026-08-30 161303" src="https://github.com/user-attachments/assets/9d37a452-05cf-4041-9546-e69b5f1f661f" />
+
+2.<img width="1292" height="715" alt="Screenshot 2026-08-30 161603" src="https://github.com/user-attachments/assets/21d8f833-d489-42c8-aa77-aeef22d17f94" />
 
 # 5. SKY_L2 - Simplified RTL2GDS Flow
 ## Objective
@@ -309,6 +319,8 @@ The RTL2GDS flow transforms an abstract RTL design into a physical representatio
 
 ## Screenshot
 
+1.<img width="835" height="455" alt="Screenshot 2026-09-05 191423" src="https://github.com/user-attachments/assets/9509afcd-2890-4134-a817-2813490a4aa4" />
+
 # 6. SKY_L3 - Introduction to OpenLANE and Strive Chipsets
 ## Objective
 
@@ -355,7 +367,7 @@ These projects demonstrate how open-source EDA tools and open PDKs can be used f
 
 OpenLANE provides automation for the RTL-to-GDSII flow and enables digital ASIC implementation using open-source tools.
 
-Screenshot
+## Screenshot
 
 # 7. SKY_L4 - Introduction to OpenLANE Detailed ASIC Design Flow
 ## Objective
