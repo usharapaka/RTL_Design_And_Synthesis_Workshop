@@ -511,7 +511,13 @@ GDSII files
 Understanding the OpenLANE directory structure helps in locating design files, configuration files, scripts, reports, and generated implementation results.
 
 ## Screenshot
-1./home/vsduser/Pictures/Screenshot from 2026-09-04 21-39-33.png
+
+1.<img width="885" height="480" alt="Screenshot 2026-09-05 213358" src="https://github.com/user-attachments/assets/399d4400-b4cc-4c7d-9e12-6e207add69d4" />
+
+2.<img width="892" height="490" alt="Screenshot 2026-09-05 213454" src="https://github.com/user-attachments/assets/302bef97-8e44-4ffd-943b-b189699329a1" />
+
+3.<img width="885" height="492" alt="Screenshot 2026-09-05 213542" src="https://github.com/user-attachments/assets/6b9c597a-be15-4055-b58c-0360b80bbefb" />
+
 
 # 9. SKY_L2 - Design Preparation Step
 ## Objective
@@ -557,6 +563,10 @@ Design preparation is an important initial step because incorrect or missing con
 
 ## Screenshot
 
+1.<img width="890" height="493" alt="Screenshot 2026-09-05 213601" src="https://github.com/user-attachments/assets/f43fa440-ac7b-4a47-b04e-70d050f22a7f" />
+
+2.<img width="885" height="487" alt="Screenshot 2026-09-05 213621" src="https://github.com/user-attachments/assets/7c4bfba7-ef3e-45aa-9087-e4d5a9c57b03" />
+
 # 10. SKY_L3 - Review Files After Design Prep and Run Synthesis
 ## Objective
 
@@ -600,6 +610,14 @@ Clock information
 Synthesis converts the RTL design into a gate-level implementation and provides important information about the hardware complexity, area, and timing characteristics of the design.
 
 ## Screenshot
+
+1.<img width="885" height="492" alt="Screenshot 2026-09-05 213711" src="https://github.com/user-attachments/assets/53f921b8-4a80-4d92-8c35-fd6d4a5ca07b" />
+
+2.<img width="886" height="487" alt="Screenshot 2026-09-05 213657" src="https://github.com/user-attachments/assets/7c6d1610-0aa9-446c-984d-96cb21f946e0" />
+
+3.<img width="891" height="492" alt="Screenshot 2026-09-05 213732" src="https://github.com/user-attachments/assets/ddec2c78-772f-4beb-9a88-13044ae75d96" />
+
+4.<img width="883" height="491" alt="Screenshot 2026-09-05 213949" src="https://github.com/user-attachments/assets/917c46ca-4fee-45a3-a50a-b279de4ca7df" />
 
 # 11. SKY_L4 - OpenLANE Project Git Link Description
 ## Objective
@@ -647,8 +665,6 @@ The GitHub repository can contain the theory covered in the workshop, commands u
 ## Key Learning
 
 Git and GitHub provide an organized way to maintain and share the OpenLANE project and its documentation.
-
-## Screenshot
 
 # 12. SKY_L5 - Steps to Characterize Synthesis Results
 ## Objective
@@ -705,6 +721,20 @@ Reports
 Characterizing synthesis results helps determine whether the design satisfies the required area, timing, and power constraints before proceeding to later physical-design stages.
 
 ## Screenshot
+
+1.<img width="890" height="490" alt="Screenshot 2026-09-05 214009" src="https://github.com/user-attachments/assets/5c395ca9-dc4a-4d62-a13e-6b9228c75098" />
+
+2.<img width="878" height="487" alt="Screenshot 2026-09-05 214100" src="https://github.com/user-attachments/assets/6616a5b0-2b2b-4926-a344-c5fd2d2504dc" />
+
+3.<img width="881" height="487" alt="Screenshot 2026-09-05 214122" src="https://github.com/user-attachments/assets/4de89ed7-2158-4e8b-83ee-5bfa0063261a" />
+
+4.<img width="880" height="487" alt="Screenshot 2026-09-05 214140" src="https://github.com/user-attachments/assets/be6fc1b1-8009-4dfb-a0c1-f606c1aa67de" />
+
+5.<img width="887" height="491" alt="Screenshot 2026-09-05 214231" src="https://github.com/user-attachments/assets/61d442ea-4822-41fe-a598-7fba77f217da" />
+
+6.<img width="885" height="492" alt="Screenshot 2026-09-05 214247" src="https://github.com/user-attachments/assets/a2dca1bd-4912-48ac-b1f3-aac89b630f24" />
+
+7.<img width="883" height="487" alt="Screenshot 2026-09-05 214311" src="https://github.com/user-attachments/assets/1b93915d-962b-45bc-a59c-d98a7a32ba3e" />
 
 # Module 1 - Overall Learning
 
