@@ -811,7 +811,7 @@ Design preparation
 Synthesis
 Synthesis result characterization
 Git and GitHub project documentation
-## Conclusion
+# Conclusion
 
 This module provided the foundation required to understand open-source ASIC design. The theoretical concepts were supported by hands-on experiments involving OpenLANE, design preparation, synthesis, file review, and analysis of synthesis results.
 
