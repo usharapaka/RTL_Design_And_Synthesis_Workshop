@@ -369,6 +369,13 @@ OpenLANE provides automation for the RTL-to-GDSII flow and enables digital ASIC 
 
 ## Screenshot
 
+1.<img width="1367" height="772" alt="Screenshot 2026-09-04 180144" src="https://github.com/user-attachments/assets/4593ec26-b411-4886-98ea-3833cbcde838" />
+
+2.<img width="1370" height="770" alt="Screenshot 2026-09-04 180425" src="https://github.com/user-attachments/assets/1249e1fd-a320-4082-9c8b-50d4684a36df" />
+
+3.<img width="1372" height="771" alt="Screenshot 2026-09-04 180508" src="https://github.com/user-attachments/assets/2370ff05-083a-48cd-89bb-c30e2f59854e" />
+
+
 # 7. SKY_L4 - Introduction to OpenLANE Detailed ASIC Design Flow
 ## Objective
 
@@ -437,6 +444,15 @@ OpenLANE automates the major stages of the ASIC physical design flow, from desig
 
 ## Screenshot
 
+1.<img width="1372" height="767" alt="Screenshot 2026-09-04 181600" src="https://github.com/user-attachments/assets/56b7dbeb-62a3-4454-9f46-0b23a3882947" />
+
+2.<img width="1597" height="866" alt="Screenshot 2026-09-04 182500" src="https://github.com/user-attachments/assets/e1cd250d-bf66-4813-8130-05718759b154" />
+
+3.<img width="1672" height="803" alt="Screenshot 2026-09-04 182541" src="https://github.com/user-attachments/assets/7c04730e-07c3-4c9d-9ea1-53e063f3f3fb" />
+
+4.<img width="1306" height="702" alt="Screenshot 2026-09-04 182714" src="https://github.com/user-attachments/assets/1a2730b9-f675-4712-9546-fd2b0f4a4724" />
+
+
 # 8. SKY_L1 - OpenLANE Directory Structure in Detail
 ## Objective
 
@@ -495,6 +511,7 @@ GDSII files
 Understanding the OpenLANE directory structure helps in locating design files, configuration files, scripts, reports, and generated implementation results.
 
 ## Screenshot
+1./home/vsduser/Pictures/Screenshot from 2026-09-04 21-39-33.png
 
 # 9. SKY_L2 - Design Preparation Step
 ## Objective
