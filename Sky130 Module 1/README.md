@@ -77,7 +77,7 @@ The physical structure of a chip can be understood as a hierarchy from the packa
 
 ### figure 2:
 
-2.<img width="1200" height="677" alt="Screenshot 2026-08-30 152645" src="https://github.com/user-attachments/assets/dc5a0b13-6a38-4007-8f51-7702e257bb7e" />
+<img width="1200" height="677" alt="Screenshot 2026-08-30 152645" src="https://github.com/user-attachments/assets/dc5a0b13-6a38-4007-8f51-7702e257bb7e" />
 
 # 2. SKY_L2 - Introduction to RISC-V
 ## Objective
