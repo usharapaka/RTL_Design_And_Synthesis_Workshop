@@ -125,7 +125,7 @@ RISC-V provides an open instruction-set architecture that enables designers and 
 ## Screenshot
 ### figure 1:
 
-1.<img width="1377" height="828" alt="Screenshot 2026-08-30 153432" src="https://github.com/user-attachments/assets/91d9d8a9-9893-4875-b32b-ed1f0ff913d6" />
+<img width="1377" height="828" alt="Screenshot 2026-08-30 153432" src="https://github.com/user-attachments/assets/91d9d8a9-9893-4875-b32b-ed1f0ff913d6" />
 
 # 3. SKY_L3 - From Software Applications to Hardware
 ## Objective
@@ -175,11 +175,11 @@ The Instruction Set Architecture acts as an interface between software and hardw
 ## Screenshot
 ### figure 1:
 
-1.<img width="1380" height="823" alt="Screenshot 2026-08-30 154711" src="https://github.com/user-attachments/assets/95516c70-87b0-454c-8787-a1b0bc51c371" />
+<img width="1380" height="823" alt="Screenshot 2026-08-30 154711" src="https://github.com/user-attachments/assets/95516c70-87b0-454c-8787-a1b0bc51c371" />
 
 ### figure 2:
 
-2.<img width="1328" height="822" alt="Screenshot 2026-08-30 155531" src="https://github.com/user-attachments/assets/07eccebb-f9b0-4e05-bc08-8ad96404c95c" />
+<img width="1328" height="822" alt="Screenshot 2026-08-30 155531" src="https://github.com/user-attachments/assets/07eccebb-f9b0-4e05-bc08-8ad96404c95c" />
 
 # 4. SKY_L1 - Introduction to All Components of Open-Source Digital ASIC Design
 ## Objective
@@ -259,11 +259,11 @@ The open-source ASIC flow provides a complete path from RTL description to a phy
 ## Screenshot
 ### figure 1:
 
-1.<img width="685" height="742" alt="Screenshot 2026-08-30 161303" src="https://github.com/user-attachments/assets/9d37a452-05cf-4041-9546-e69b5f1f661f" />
+<img width="685" height="742" alt="Screenshot 2026-08-30 161303" src="https://github.com/user-attachments/assets/9d37a452-05cf-4041-9546-e69b5f1f661f" />
 
 ### figure 2:
 
-2.<img width="1292" height="715" alt="Screenshot 2026-08-30 161603" src="https://github.com/user-attachments/assets/21d8f833-d489-42c8-aa77-aeef22d17f94" />
+<img width="1292" height="715" alt="Screenshot 2026-08-30 161603" src="https://github.com/user-attachments/assets/21d8f833-d489-42c8-aa77-aeef22d17f94" />
 
 # 5. SKY_L2 - Simplified RTL2GDS Flow
 ## Objective
@@ -333,7 +333,8 @@ The RTL2GDS flow transforms an abstract RTL design into a physical representatio
 
 ## Screenshot
 ### figure 1:
-1.<img width="835" height="455" alt="Screenshot 2026-09-05 191423" src="https://github.com/user-attachments/assets/9509afcd-2890-4134-a817-2813490a4aa4" />
+
+<img width="835" height="455" alt="Screenshot 2026-09-05 191423" src="https://github.com/user-attachments/assets/9509afcd-2890-4134-a817-2813490a4aa4" />
 
 # 6. SKY_L3 - Introduction to OpenLANE and Strive Chipsets
 ## Objective
@@ -384,15 +385,15 @@ OpenLANE provides automation for the RTL-to-GDSII flow and enables digital ASIC 
 ## Screenshot
 ### figure 1:
 
-1.<img width="1367" height="772" alt="Screenshot 2026-09-04 180144" src="https://github.com/user-attachments/assets/4593ec26-b411-4886-98ea-3833cbcde838" />
+<img width="1367" height="772" alt="Screenshot 2026-09-04 180144" src="https://github.com/user-attachments/assets/4593ec26-b411-4886-98ea-3833cbcde838" />
 
 ### figure 2:
 
-2.<img width="1370" height="770" alt="Screenshot 2026-09-04 180425" src="https://github.com/user-attachments/assets/1249e1fd-a320-4082-9c8b-50d4684a36df" />
+<img width="1370" height="770" alt="Screenshot 2026-09-04 180425" src="https://github.com/user-attachments/assets/1249e1fd-a320-4082-9c8b-50d4684a36df" />
 
 ### figure 3:
 
-3.<img width="1372" height="771" alt="Screenshot 2026-09-04 180508" src="https://github.com/user-attachments/assets/2370ff05-083a-48cd-89bb-c30e2f59854e" />
+<img width="1372" height="771" alt="Screenshot 2026-09-04 180508" src="https://github.com/user-attachments/assets/2370ff05-083a-48cd-89bb-c30e2f59854e" />
 
 
 # 7. SKY_L4 - Introduction to OpenLANE Detailed ASIC Design Flow
@@ -464,19 +465,19 @@ OpenLANE automates the major stages of the ASIC physical design flow, from desig
 ## Screenshot
 ### figure 1:
 
-1.<img width="1372" height="767" alt="Screenshot 2026-09-04 181600" src="https://github.com/user-attachments/assets/56b7dbeb-62a3-4454-9f46-0b23a3882947" />
+<img width="1372" height="767" alt="Screenshot 2026-09-04 181600" src="https://github.com/user-attachments/assets/56b7dbeb-62a3-4454-9f46-0b23a3882947" />
 
 ### figure 2:
 
-2.<img width="1597" height="866" alt="Screenshot 2026-09-04 182500" src="https://github.com/user-attachments/assets/e1cd250d-bf66-4813-8130-05718759b154" />
+<img width="1597" height="866" alt="Screenshot 2026-09-04 182500" src="https://github.com/user-attachments/assets/e1cd250d-bf66-4813-8130-05718759b154" />
 
 ### figure 3:
 
-3.<img width="1672" height="803" alt="Screenshot 2026-09-04 182541" src="https://github.com/user-attachments/assets/7c04730e-07c3-4c9d-9ea1-53e063f3f3fb" />
+<img width="1672" height="803" alt="Screenshot 2026-09-04 182541" src="https://github.com/user-attachments/assets/7c04730e-07c3-4c9d-9ea1-53e063f3f3fb" />
 
 ### figure 4:
 
-4.<img width="1306" height="702" alt="Screenshot 2026-09-04 182714" src="https://github.com/user-attachments/assets/1a2730b9-f675-4712-9546-fd2b0f4a4724" />
+<img width="1306" height="702" alt="Screenshot 2026-09-04 182714" src="https://github.com/user-attachments/assets/1a2730b9-f675-4712-9546-fd2b0f4a4724" />
 
 
 # 8. SKY_L1 - OpenLANE Directory Structure in Detail
@@ -539,15 +540,15 @@ Understanding the OpenLANE directory structure helps in locating design files, c
 ## Screenshot
 ### figure 1:
 
-1.<img width="885" height="480" alt="Screenshot 2026-09-05 213358" src="https://github.com/user-attachments/assets/399d4400-b4cc-4c7d-9e12-6e207add69d4" />
+<img width="885" height="480" alt="Screenshot 2026-09-05 213358" src="https://github.com/user-attachments/assets/399d4400-b4cc-4c7d-9e12-6e207add69d4" />
 
 ### figure 2:
 
-2.<img width="892" height="490" alt="Screenshot 2026-09-05 213454" src="https://github.com/user-attachments/assets/302bef97-8e44-4ffd-943b-b189699329a1" />
+<img width="892" height="490" alt="Screenshot 2026-09-05 213454" src="https://github.com/user-attachments/assets/302bef97-8e44-4ffd-943b-b189699329a1" />
 
 ### figure 3:
 
-3.<img width="885" height="492" alt="Screenshot 2026-09-05 213542" src="https://github.com/user-attachments/assets/6b9c597a-be15-4055-b58c-0360b80bbefb" />
+<img width="885" height="492" alt="Screenshot 2026-09-05 213542" src="https://github.com/user-attachments/assets/6b9c597a-be15-4055-b58c-0360b80bbefb" />
 
 
 # 9. SKY_L2 - Design Preparation Step
@@ -595,11 +596,11 @@ Design preparation is an important initial step because incorrect or missing con
 ## Screenshot
 ### figure 1:
 
-1.<img width="890" height="493" alt="Screenshot 2026-09-05 213601" src="https://github.com/user-attachments/assets/f43fa440-ac7b-4a47-b04e-70d050f22a7f" />
+<img width="890" height="493" alt="Screenshot 2026-09-05 213601" src="https://github.com/user-attachments/assets/f43fa440-ac7b-4a47-b04e-70d050f22a7f" />
 
 ### figure 2:
 
-2.<img width="885" height="487" alt="Screenshot 2026-09-05 213621" src="https://github.com/user-attachments/assets/7c4bfba7-ef3e-45aa-9087-e4d5a9c57b03" />
+<img width="885" height="487" alt="Screenshot 2026-09-05 213621" src="https://github.com/user-attachments/assets/7c4bfba7-ef3e-45aa-9087-e4d5a9c57b03" />
 
 # 10. SKY_L3 - Review Files After Design Prep and Run Synthesis
 ## Objective
@@ -646,19 +647,19 @@ Synthesis converts the RTL design into a gate-level implementation and provides 
 ## Screenshot
 ### figure 1:
 
-1.<img width="885" height="492" alt="Screenshot 2026-09-05 213711" src="https://github.com/user-attachments/assets/53f921b8-4a80-4d92-8c35-fd6d4a5ca07b" />
+<img width="885" height="492" alt="Screenshot 2026-09-05 213711" src="https://github.com/user-attachments/assets/53f921b8-4a80-4d92-8c35-fd6d4a5ca07b" />
 
 ### figure 2:
 
-2.<img width="886" height="487" alt="Screenshot 2026-09-05 213657" src="https://github.com/user-attachments/assets/7c6d1610-0aa9-446c-984d-96cb21f946e0" />
+<img width="886" height="487" alt="Screenshot 2026-09-05 213657" src="https://github.com/user-attachments/assets/7c6d1610-0aa9-446c-984d-96cb21f946e0" />
 
 ### figure 3:
 
-3.<img width="891" height="492" alt="Screenshot 2026-09-05 213732" src="https://github.com/user-attachments/assets/ddec2c78-772f-4beb-9a88-13044ae75d96" />
+<img width="891" height="492" alt="Screenshot 2026-09-05 213732" src="https://github.com/user-attachments/assets/ddec2c78-772f-4beb-9a88-13044ae75d96" />
 
 ### figure 4:
 
-4.<img width="883" height="491" alt="Screenshot 2026-09-05 213949" src="https://github.com/user-attachments/assets/917c46ca-4fee-45a3-a50a-b279de4ca7df" />
+<img width="883" height="491" alt="Screenshot 2026-09-05 213949" src="https://github.com/user-attachments/assets/917c46ca-4fee-45a3-a50a-b279de4ca7df" />
 
 # 11. SKY_L4 - OpenLANE Project Git Link Description
 ## Objective
@@ -764,31 +765,31 @@ Characterizing synthesis results helps determine whether the design satisfies th
 ## Screenshot
 ### figure 1:
 
-1.<img width="890" height="490" alt="Screenshot 2026-09-05 214009" src="https://github.com/user-attachments/assets/5c395ca9-dc4a-4d62-a13e-6b9228c75098" />
+<img width="890" height="490" alt="Screenshot 2026-09-05 214009" src="https://github.com/user-attachments/assets/5c395ca9-dc4a-4d62-a13e-6b9228c75098" />
 
 ### figure 2:
 
-2.<img width="878" height="487" alt="Screenshot 2026-09-05 214100" src="https://github.com/user-attachments/assets/6616a5b0-2b2b-4926-a344-c5fd2d2504dc" />
+<img width="878" height="487" alt="Screenshot 2026-09-05 214100" src="https://github.com/user-attachments/assets/6616a5b0-2b2b-4926-a344-c5fd2d2504dc" />
 
 ### figure 3:
 
-3.<img width="881" height="487" alt="Screenshot 2026-09-05 214122" src="https://github.com/user-attachments/assets/4de89ed7-2158-4e8b-83ee-5bfa0063261a" />
+<img width="881" height="487" alt="Screenshot 2026-09-05 214122" src="https://github.com/user-attachments/assets/4de89ed7-2158-4e8b-83ee-5bfa0063261a" />
 
 ### figure 4:
 
-4.<img width="880" height="487" alt="Screenshot 2026-09-05 214140" src="https://github.com/user-attachments/assets/be6fc1b1-8009-4dfb-a0c1-f606c1aa67de" />
+<img width="880" height="487" alt="Screenshot 2026-09-05 214140" src="https://github.com/user-attachments/assets/be6fc1b1-8009-4dfb-a0c1-f606c1aa67de" />
 
 ### figure 5:
 
-5.<img width="887" height="491" alt="Screenshot 2026-09-05 214231" src="https://github.com/user-attachments/assets/61d442ea-4822-41fe-a598-7fba77f217da" />
+<img width="887" height="491" alt="Screenshot 2026-09-05 214231" src="https://github.com/user-attachments/assets/61d442ea-4822-41fe-a598-7fba77f217da" />
 
 ### figure 6:
 
-6.<img width="885" height="492" alt="Screenshot 2026-09-05 214247" src="https://github.com/user-attachments/assets/a2dca1bd-4912-48ac-b1f3-aac89b630f24" />
+<img width="885" height="492" alt="Screenshot 2026-09-05 214247" src="https://github.com/user-attachments/assets/a2dca1bd-4912-48ac-b1f3-aac89b630f24" />
 
 ### figure 7:
 
-7.<img width="883" height="487" alt="Screenshot 2026-09-05 214311" src="https://github.com/user-attachments/assets/1b93915d-962b-45bc-a59c-d98a7a32ba3e" />
+<img width="883" height="487" alt="Screenshot 2026-09-05 214311" src="https://github.com/user-attachments/assets/1b93915d-962b-45bc-a59c-d98a7a32ba3e" />
 
 # Module 1 - Overall Learning
 
