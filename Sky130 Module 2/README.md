@@ -235,10 +235,6 @@ Decoupling capacitors are important for maintaining a stable local power supply,
 
 <img width="865" height="477" alt="Screenshot 2026-09-06 111353" src="https://github.com/user-attachments/assets/526fa50d-b822-414a-ab25-a4ab0725142b" />
 
-### Figure 2:
-
-<img width="830" height="480" alt="Screenshot 2026-09-06 111647" src="https://github.com/user-attachments/assets/c4e24590-6acf-403b-839f-d29f6c4f2f35" />
-
 ---
 
 # 5. SKY_L4 - Power Planning
@@ -355,11 +351,11 @@ Correct pin placement and suitable placement blockages help improve routing, tim
 <img width="830" height="480" alt="Screenshot 2026-09-06 111647" src="https://github.com/user-attachments/assets/b170939b-2ea7-4c18-92b5-378643d462b2" />
 
 
-### Figure 1:
+### Figure 2:
 
 <img width="678" height="482" alt="Screenshot 2026-09-06 111950" src="https://github.com/user-attachments/assets/07b02ac5-4c1f-47d5-a18e-1b795657a54d" />
 
-### Figure 2:
+### Figure 3:
 <img width="586" height="495" alt="Screenshot 2026-09-06 112011" src="https://github.com/user-attachments/assets/a334898f-376d-4df3-9498-14fb73261f05" />
 
 ---
@@ -521,8 +517,17 @@ Viewing the floorplan helps verify whether the physical implementation matches t
 Magic provides a graphical representation of the physical layout, making it easier to inspect the floorplan and identify physical design issues.
 
 ## Screenshot
+### Figure 1:
 
-![Floorplan in Magic](images/magic_floorplan.png)
+<img width="882" height="487" alt="Screenshot 2026-09-06 104750" src="https://github.com/user-attachments/assets/254e9d66-03fb-4f84-891c-62b4fe33d441" />
+
+### Figure 2:
+
+<img width="891" height="487" alt="Screenshot 2026-09-06 104815" src="https://github.com/user-attachments/assets/1e21ebe8-246a-48d1-bf17-d70656af3bb9" />
+
+### Figure 3:
+
+<img width="891" height="491" alt="Screenshot 2026-09-06 104838" src="https://github.com/user-attachments/assets/460115f5-a740-4f00-ba52-635881684e34" />
 
 ---
 
@@ -571,8 +576,13 @@ Initial Placement
 Library binding connects the logical representation of cells to their physical library definitions, enabling physical placement.
 
 ## Screenshot
+### Figure 1:
 
-![Netlist Binding and Initial Placement](images/netlist_binding.png)
+<img width="808" height="505" alt="Screenshot 2026-09-06 121349" src="https://github.com/user-attachments/assets/5108d167-2aab-4657-9537-f3f8fabe2925" />
+
+### Figure 2:
+
+<img width="900" height="457" alt="Screenshot 2026-09-06 121730" src="https://github.com/user-attachments/assets/cddf8c1a-b49d-40fd-9526-18ef81f0be6e" />
 
 ---
 
@@ -630,8 +640,13 @@ Optimized Placement
 Optimizing cell placement helps reduce interconnect delay and congestion while improving the timing characteristics of the design.
 
 ## Screenshot
+### Figure 1:
 
-![Placement Optimization](images/placement_optimization.png)
+<img width="891" height="472" alt="Screenshot 2026-09-06 121048" src="https://github.com/user-attachments/assets/3d4c2b7c-267b-4408-865a-60865bbfb947" />
+
+### Figure 2:
+
+<img width="880" height="477" alt="Screenshot 2026-09-06 122156" src="https://github.com/user-attachments/assets/922b5463-4d64-40e8-abe3-a06cb09ce245" />
 
 ---
 
@@ -683,8 +698,9 @@ Final Placement
 Final placement optimization improves the quality of the placement before the design proceeds to clock tree synthesis and routing.
 
 ## Screenshot
+### Figure 1:
 
-![Final Placement Optimization](images/final_placement.png)
+<img width="908" height="497" alt="Screenshot 2026-09-06 122433" src="https://github.com/user-attachments/assets/429ec707-d231-4360-87cf-d9c21f205110" />
 
 ---
 
@@ -727,8 +743,9 @@ A standard cell may have different timing behavior depending on:
 Accurate library information and characterization are essential for making correct synthesis, timing, placement, and optimization decisions.
 
 ## Screenshot
+### Figure 1:
 
-![Libraries and Characterization](images/library_characterization.png)
+<img width="867" height="497" alt="Screenshot 2026-09-06 122636" src="https://github.com/user-attachments/assets/abf6d227-0d2a-41d4-8f8b-453f30f60a36" />
 
 ---
 
@@ -780,8 +797,17 @@ Congestion-Aware Placement
 Congestion-aware placement is important because a placement that looks good based only on cell density may still create routing problems.
 
 ## Screenshot
+### Figure 1:
 
-![RePlAce Congestion Aware Placement](images/replace_placement.png)
+<img width="886" height="487" alt="Screenshot 2026-09-06 104914" src="https://github.com/user-attachments/assets/4f0f1132-f003-4183-be60-47115a820509" />
+
+### Figure 2:
+
+<img width="883" height="487" alt="Screenshot 2026-09-06 105000" src="https://github.com/user-attachments/assets/8f6886a9-daa8-42a3-b271-91e23e6d275b" />
+
+### Figure 3:
+
+<img width="887" height="492" alt="Screenshot 2026-09-06 105019" src="https://github.com/user-attachments/assets/9f6a7f5d-6b39-4c92-bfd5-b013b6e5f1cb" />
 
 ---
 
@@ -829,10 +855,6 @@ Library Model
 ## Key Learning
 
 Cell design and characterization provide the physical and electrical information required by digital ASIC design tools.
-
-## Screenshot
-
-![Cell Design and Characterization Flow](images/cell_design_flow.png)
 
 ---
 
@@ -882,8 +904,13 @@ Transistor-Level Circuit
 Correct input information is necessary to design a cell that meets the required functional, physical, and electrical specifications.
 
 ## Screenshot
+### Figure 1:
 
-![Inputs for Cell Design](images/cell_design_inputs.png)
+<img width="1352" height="802" alt="Screenshot 2026-09-05 175629" src="https://github.com/user-attachments/assets/4e25e1f2-f549-454f-bbb7-d3496165d85d" />
+
+### Figure 2:
+
+<img width="1412" height="806" alt="Screenshot 2026-09-05 175759" src="https://github.com/user-attachments/assets/0e7d7a19-c151-4214-93fd-836628a5bdcf" />
 
 ---
 
@@ -932,8 +959,9 @@ The circuit is simulated to verify:
 The circuit design stage converts the required logic function into a transistor-level implementation and verifies its behavior before layout.
 
 ## Screenshot
+### Figure 1:
 
-![Circuit Design](images/circuit_design.png)
+<img width="846" height="497" alt="Screenshot 2026-09-06 123757" src="https://github.com/user-attachments/assets/9d3fda31-b9f8-408b-8c48-a692a47f1e2b" />
 
 ---
 
@@ -987,8 +1015,13 @@ The layout should satisfy:
 The layout design step converts the circuit schematic into a physical representation that can be used in the ASIC layout flow.
 
 ## Screenshot
+### Figure 1:
 
-![Cell Layout Design](images/layout_design.png)
+<img width="1301" height="767" alt="Screenshot 2026-09-05 180123" src="https://github.com/user-attachments/assets/6f709aa5-e0b7-4faf-8869-4bd76dd23911" />
+
+### Figure 2:
+
+<img width="1327" height="747" alt="Screenshot 2026-09-05 180146" src="https://github.com/user-attachments/assets/88dcacca-3e0d-4c54-a63e-80a883d71dd4" />
 
 ---
 
@@ -1037,8 +1070,17 @@ The results are stored in library models used by EDA tools.
 Cell characterization provides accurate timing and power information required for synthesis and physical design.
 
 ## Screenshot
+### Figure 1:
 
-![Typical Characterization Flow](images/characterization_flow.png)
+<img width="1440" height="817" alt="Screenshot 2026-09-05 180403" src="https://github.com/user-attachments/assets/7ae32576-86f7-49de-946d-0e7a61c9820d" />
+
+### Figure 2:
+
+<img width="1417" height="810" alt="Screenshot 2026-09-05 180456" src="https://github.com/user-attachments/assets/30ff454b-59a7-4312-8035-fe0c0a2e6996" />
+
+### Figure 3:
+
+<img width="1377" height="796" alt="Screenshot 2026-09-05 180603" src="https://github.com/user-attachments/assets/904f9cbd-e406-4146-b4f3-5a29a8bb58e9" />
 
 ---
 
@@ -1077,10 +1119,6 @@ Cell delay is affected by factors such as:
 ## Key Learning
 
 Timing characterization allows EDA tools to accurately estimate the timing behavior of standard cells during synthesis and physical design.
-
-## Screenshot
-
-![Timing Characterization Parameters](images/timing_parameters.png)
 
 ---
 
@@ -1124,8 +1162,13 @@ Correct threshold definitions are necessary to obtain consistent and comparable 
 Timing thresholds provide reference points for measuring signal transitions and propagation delays.
 
 ## Screenshot
+### Figure 1:
 
-![Timing Threshold Definitions](images/timing_thresholds.png)
+<img width="1397" height="818" alt="Screenshot 2026-09-05 180734" src="https://github.com/user-attachments/assets/a0630b67-fa45-4f4c-87d2-81a41ff297bc" />
+
+### Figure 2:
+
+<img width="1372" height="817" alt="Screenshot 2026-09-05 180713" src="https://github.com/user-attachments/assets/8d6a9004-7ea7-4c37-b421-80fca26bf92e" />
 
 ---
 
@@ -1177,8 +1220,13 @@ Propagation delay and transition time depend on:
 Propagation delay determines how long a signal takes to propagate through a cell, while transition time describes the speed of the signal transition itself.
 
 ## Screenshot
+### Figure 1:
 
-![Propagation Delay and Transition Time](images/propagation_delay.png)
+<img width="1472" height="806" alt="Screenshot 2026-09-05 180851" src="https://github.com/user-attachments/assets/ae168e48-2469-4bdd-b2fa-3d330305e187" />
+
+### Figure 2:
+
+<img width="1482" height="810" alt="Screenshot 2026-09-05 181048" src="https://github.com/user-attachments/assets/5861cee9-f4d7-41c1-a395-91952f8f4dca" />
 
 ---
 
