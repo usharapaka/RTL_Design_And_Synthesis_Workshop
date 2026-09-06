@@ -176,7 +176,7 @@ This repository documents my learning journey and hands-on experiments completed
 
 ➡️ **Documentation:** [Assignment README](./Assignment/README.md)
 
-
+---
 
 ## Tools Used
 
@@ -187,6 +187,79 @@ This repository documents my learning journey and hands-on experiments completed
 - SKY130 Standard-Cell Library
 - Git
 - GitHub
+
+---
+
+# Sky130 Modules
+
+## Module 1 - Inception of Open-Source EDA, OpenLANE and Sky130 PDK
+
+1. QFN-48 Package, Chip, Pads, Core, Die & IPs
+2. Introduction to RISC-V
+3. From Software Applications to Hardware
+4. Open-Source Digital ASIC Design Components
+5. Simplified RTL2GDS Flow
+6. OpenLANE and STRIVE Chipsets
+7. OpenLANE Detailed ASIC Design Flow
+8. OpenLANE Directory Structure
+9. Design Preparation
+10. Review Files After Design Prep & Synthesis
+11. OpenLANE Project Git Link
+12. Synthesis Results Characterization
+
+➡️ **Documentation:** [Sky130 Module 1 README](./Sky130%20Module%201/README.md)
+
+---
+
+## Module 2 - Good Floorplan vs Bad Floorplan and Introduction to Library Cells
+
+### Part 1 - Chip Floorplanning Considerations
+
+1. Chip Floorplanning Considerations
+2. Utilization Factor & Aspect Ratio
+3. Pre-Placed Cells
+4. De-coupling Capacitors
+5. Power Planning
+6. Pin Placement & Placement Blockages
+7. Run Floorplan Using OpenLANE
+8. Review Floorplan Files
+9. Review Floorplan Layout in Magic
+
+### Part 2 - Library Binding and Placement
+
+10. Netlist Binding & Initial Placement
+11. Wire-Length & Capacitance Optimization
+12. Final Placement Optimization
+13. Need for Libraries & Characterization
+14. Congestion-Aware Placement Using RePlAce
+
+### Part 3 - Cell Design and Characterization Flows
+
+15. Cell Design & Characterization Flows
+16. Inputs for Cell Design Flow
+17. Circuit Design
+18. Layout Design
+19. Typical Characterization Flow
+
+### Part 4 - General Timing Characterization Parameters
+
+20. General Timing Characterization Parameters
+21. Timing Threshold Definitions
+22. Propagation Delay & Transition Time
+    
+➡️ **Documentation:** [Sky130 Module 2 README](./Sky130%20Module%202/README.md)
+
+---
+
+## Tools Used
+
+- OpenLANE – RTL-to-GDSII ASIC design flow
+- Sky130 PDK – Open-source process design kit
+- OpenROAD – Physical design and placement
+- RePlAce – Placement optimization
+- Magic – VLSI layout visualization
+- Git & GitHub – Version control and project documentation
+- Linux Terminal – Running commands and executing the design flow
 
 ---
 
