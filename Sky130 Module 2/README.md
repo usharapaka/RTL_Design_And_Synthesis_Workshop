@@ -300,10 +300,7 @@ Power planning is essential for providing stable and reliable power to every par
 ## Screenshot
 ### Figure 1:
 
-<img width="678" height="482" alt="Screenshot 2026-09-06 111950" src="https://github.com/user-attachments/assets/07b02ac5-4c1f-47d5-a18e-1b795657a54d" />
-
-### Figure 2:
-<img width="586" height="495" alt="Screenshot 2026-09-06 112011" src="https://github.com/user-attachments/assets/a334898f-376d-4df3-9498-14fb73261f05" />
+<img width="830" height="480" alt="Screenshot 2026-09-06 111647" src="https://github.com/user-attachments/assets/b170939b-2ea7-4c18-92b5-378643d462b2" />
 
 ---
 
@@ -357,6 +354,12 @@ Blockages may be used to:
 Correct pin placement and suitable placement blockages help improve routing, timing, and overall floorplan quality.
 
 ## Screenshot
+### Figure 1:
+
+<img width="678" height="482" alt="Screenshot 2026-09-06 111950" src="https://github.com/user-attachments/assets/07b02ac5-4c1f-47d5-a18e-1b795657a54d" />
+
+### Figure 2:
+<img width="586" height="495" alt="Screenshot 2026-09-06 112011" src="https://github.com/user-attachments/assets/a334898f-376d-4df3-9498-14fb73261f05" />
 
 ---
 
