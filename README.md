@@ -2,7 +2,6 @@
 
 This repository documents my learning journey and hands-on experiments completed during the RTL Design Workshop. It contains module-wise documentation, practical exercises, simulation results, waveform analysis, and Verilog RTL design implementations.
 
----
 
 ## Repository Contents
 
@@ -15,7 +14,6 @@ This repository documents my learning journey and hands-on experiments completed
 
 ➡️**Documentation:** [Module 0 README](./Module%200/README.md)
 
----
 
 ## Module-1 –  Introduction to Verilog RTL design and Synthesis
 
@@ -32,7 +30,6 @@ This repository documents my learning journey and hands-on experiments completed
 
 ➡️ **Documentation:** [Module 1 README](./Module%201/README.md)
 
----
 
 ## Module-2.1 –  Timing libs, hierarchical vs flat synthesis and efficient flop coding styles
 
@@ -49,7 +46,6 @@ This repository documents my learning journey and hands-on experiments completed
 
 ➡️ **Documentation:** [Module 2.1 README](./Module%202.1/README.md)
 
----
 
 ## Module-2.2 
 
@@ -64,7 +60,6 @@ This repository documents my learning journey and hands-on experiments completed
 
 ➡️ **Documentation:** [Module 2.2 README](./Module%202.2/README.md)
 
----
 
 ## Module-3 – Combinational and sequential optmizations
 
@@ -78,7 +73,7 @@ This repository documents my learning journey and hands-on experiments completed
 
 ➡️ **Documentation:** [Module 3 README](./Module%203/README.md)
 
----
+
 
 ## Module-4 – GLS,blocking vs non-blocking and Synthesis Simulation mismatch
 
@@ -96,7 +91,7 @@ This repository documents my learning journey and hands-on experiments completed
 
 ➡️ **Documentation:** [Module 4 README](./Module%204/README.md)
 
----
+
 
 ## Module-5 – Optimization in synthesis
 
@@ -209,7 +204,7 @@ This repository documents my learning journey and hands-on experiments completed
 
 ➡️ **Documentation:** [Sky130 Module 1 README](./Sky130%20Module%201/README.md)
 
----
+
 
 ## Module 2 - Good Floorplan vs Bad Floorplan and Introduction to Library Cells
 
@@ -249,7 +244,7 @@ This repository documents my learning journey and hands-on experiments completed
     
 ➡️ **Documentation:** [Sky130 Module 2 README](./Sky130%20Module%202/README.md)
 
----
+
 
 ## Tools Used
 
