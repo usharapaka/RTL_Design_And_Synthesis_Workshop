@@ -69,8 +69,13 @@ A poor floorplan may result in:
 Floorplanning should be performed carefully because decisions made at this stage influence the placement, routing, timing, power, and final quality of the chip.
 
 ## Screenshot
+### Figure 1:
 
-![Chip Floorplanning Considerations](images/floorplanning_considerations.png)
+<img width="662" height="486" alt="Screenshot 2026-09-06 105619" src="https://github.com/user-attachments/assets/d33692c5-7dd5-4205-a6eb-bf579837bc78" />
+
+### Figure 2:
+
+<img width="808" height="487" alt="Screenshot 2026-09-06 111152" src="https://github.com/user-attachments/assets/caab2008-077e-4948-84d9-31f3465e8d3f" />
 
 ---
 
@@ -125,8 +130,13 @@ Proper selection of utilization and aspect ratio helps achieve:
 Utilization factor determines how much of the core area is occupied, while aspect ratio determines the shape of the core.
 
 ## Screenshot
+### Figure 1:
 
-![Utilization Factor and Aspect Ratio](images/utilization_aspect_ratio.png)
+<img width="666" height="487" alt="Screenshot 2026-09-06 111231" src="https://github.com/user-attachments/assets/4edfa80d-9a2c-43ad-87a6-71cb883efb57" />
+
+### Figure 2:
+
+<img width="718" height="487" alt="Screenshot 2026-09-06 111257" src="https://github.com/user-attachments/assets/c7dd120a-666c-4c8a-b0b7-53350ac136c5" />
 
 ---
 
@@ -177,8 +187,13 @@ Floorplan
 Pre-placed cells and macros must be carefully positioned because their locations affect routing, congestion, timing, and power planning.
 
 ## Screenshot
+### Figure 1:
 
-![Pre-Placed Cells](images/preplaced_cells.png)
+<img width="865" height="477" alt="Screenshot 2026-09-06 111353" src="https://github.com/user-attachments/assets/526fa50d-b822-414a-ab25-a4ab0725142b" />
+
+### Figure 2:
+
+<img width="830" height="480" alt="Screenshot 2026-09-06 111647" src="https://github.com/user-attachments/assets/c4e24590-6acf-403b-839f-d29f6c4f2f35" />
 
 ---
 
@@ -225,8 +240,9 @@ Decoupling capacitors help:
 Decoupling capacitors are important for maintaining a stable local power supply, especially during switching activity.
 
 ## Screenshot
+### Figure 1:
 
-![Decoupling Capacitors](images/decap.png)
+<img width="665" height="490" alt="Screenshot 2026-09-06 111712" src="https://github.com/user-attachments/assets/487cf9d8-15cd-4f66-b389-c74230e64885" />
 
 ---
 
@@ -282,8 +298,12 @@ Proper power planning helps:
 Power planning is essential for providing stable and reliable power to every part of the chip.
 
 ## Screenshot
+### Figure 1:
 
-![Power Planning](images/power_planning.png)
+<img width="678" height="482" alt="Screenshot 2026-09-06 111950" src="https://github.com/user-attachments/assets/07b02ac5-4c1f-47d5-a18e-1b795657a54d" />
+
+### Figure 2:
+<img width="586" height="495" alt="Screenshot 2026-09-06 112011" src="https://github.com/user-attachments/assets/a334898f-376d-4df3-9498-14fb73261f05" />
 
 ---
 
@@ -337,8 +357,6 @@ Blockages may be used to:
 Correct pin placement and suitable placement blockages help improve routing, timing, and overall floorplan quality.
 
 ## Screenshot
-
-![Pin Placement and Blockages](images/pin_placement.png)
 
 ---
 
@@ -401,8 +419,17 @@ Review Results
 OpenLANE automates the floorplanning process and generates the required physical design files for subsequent placement stages.
 
 ## Screenshot
+### Figure 1:
 
-![OpenLANE Floorplan Execution](images/run_floorplan.png)
+<img width="822" height="458" alt="Screenshot 2026-09-06 104349" src="https://github.com/user-attachments/assets/1ca04591-cdbc-4509-ac33-3a8b096aa4aa" />
+
+### Figure 2:
+
+<img width="880" height="483" alt="Screenshot 2026-09-06 104418" src="https://github.com/user-attachments/assets/d5a90b3e-fd54-43a6-a1b5-53b98d923d18" />
+
+### Figure 3:
+
+<img width="896" height="492" alt="Screenshot 2026-09-06 104505" src="https://github.com/user-attachments/assets/461f913f-6840-4985-99cc-1fac17330c70" />
 
 ---
 
@@ -443,8 +470,17 @@ A floorplan can be examined to check:
 Reviewing the floorplan helps identify problems early, before proceeding to placement and routing.
 
 ## Screenshot
+### Figure 1:
 
-![Review Floorplan Files](images/review_floorplan.png)
+<img width="880" height="487" alt="Screenshot 2026-09-06 104644" src="https://github.com/user-attachments/assets/2352562d-8f6c-48da-9897-691f2ea73b77" />
+
+### Figure 2:
+
+<img width="885" height="488" alt="Screenshot 2026-09-06 104710" src="https://github.com/user-attachments/assets/677488e6-ca18-4e2c-abb8-ece402c6b389" />
+
+### Figure 3:
+
+<img width="887" height="482" alt="Screenshot 2026-09-06 104729" src="https://github.com/user-attachments/assets/aa1cf489-f53f-4513-95d4-3d80c2ba4a5f" />
 
 ---
 
