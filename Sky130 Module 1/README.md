@@ -92,12 +92,12 @@ RISC-V follows the Reduced Instruction Set Computer (RISC) approach.
 
 ### Important Features
 
--Open and freely available ISA
--Modular instruction-set architecture
--Suitable for academic and industrial applications
--Supports custom extensions
--Can be implemented in hardware
--Useful for processor and SoC development
+- Open and freely available ISA
+- Modular instruction-set architecture
+- Suitable for academic and industrial applications
+- Supports custom extensions
+- Can be implemented in hardware
+- Useful for processor and SoC development
 
 ### RISC-V and Hardware
 
@@ -163,11 +163,11 @@ For a RISC-V based system, the compiler generates instructions according to the 
 The processor fetches, decodes, and executes these instructions using different hardware units.
 
 ## Important Processor Blocks
--ALU
--Registers
--Control Unit
--Program Counter
--Memory Interface
+- ALU
+- Registers
+- Control Unit
+- Program Counter
+- Memory Interface
 ## Key Learning
 
 The Instruction Set Architecture acts as an interface between software and hardware. It defines the instructions that software can use and the hardware must implement.
@@ -526,13 +526,13 @@ During execution, OpenLANE generates run directories containing intermediate and
 
 These may include:
 
-Synthesis reports
-Netlists
-Floorplan data
-Placement results
-Routing results
-Timing reports
-GDSII files
+- Synthesis reports
+- Netlists
+- Floorplan data
+- Placement results
+- Routing results
+- Timing reports
+- GDSII files
 ## Key Learning
 
 Understanding the OpenLANE directory structure helps in locating design files, configuration files, scripts, reports, and generated implementation results.
@@ -564,12 +564,12 @@ Before starting the main ASIC flow, the required design files, configuration par
 
 Typical design preparation includes:
 
--RTL source files
--Top module
--Clock information
--Timing constraints
--Configuration parameters
--Technology libraries
+- RTL source files
+- Top module
+- Clock information
+- Timing constraints
+- Configuration parameters
+- Technology libraries
 ### Basic Design Structure
 ```text
 Design
@@ -613,11 +613,11 @@ After preparing the design, the generated files and configuration should be revi
 
 Important files include:
 
--RTL source files
--Configuration files
--Timing constraints
--Technology information
--Library information
+- RTL source files
+- Configuration files
+- Timing constraints
+- Technology information
+- Library information
 
 ## Synthesis
 
@@ -635,12 +635,12 @@ Gate-Level Netlist
 
 The synthesis stage provides information such as:
 
--Number of cells
--Sequential cells
--Combinational cells
--Cell area
--Timing information
--Clock information
+- Number of cells
+- Sequential cells
+- Combinational cells
+- Cell area
+- Timing information
+- Clock information
 ## Key Learning
 
 Synthesis converts the RTL design into a gate-level implementation and provides important information about the hardware complexity, area, and timing characteristics of the design.
@@ -695,12 +695,12 @@ README.md
 
 GitHub helps to:
 
---Maintain project history
--Track changes
--Organize project files
--Share the project
--Document experiments
--Collaborate with others
+- Maintain project history
+- Track changes
+- Organize project files
+- Share the project
+- Document experiments
+- Collaborate with others
 ## Workshop Documentation
 
 The GitHub repository can contain the theory covered in the workshop, commands used during practical sessions, screenshots, observations, and results.
@@ -733,11 +733,11 @@ Timing analysis determines whether the design can operate at the required clock 
 
 Important timing parameters include:
 
--Clock period
--Setup timing
--Hold timing
--Slack
--Critical path
+- Clock period
+- Setup timing
+- Hold timing
+- Slack
+- Critical path
 
 ### 4. Power
 
@@ -799,20 +799,20 @@ Through this module, I learned the fundamentals of open-source digital ASIC desi
 
 The module covered:
 
--QFN-48 package and chip structure
--Pads, core, die, and IPs
--RISC-V instruction set architecture
--Software-to-hardware flow
--Open-source digital ASIC design components
--RTL-to-GDSII flow
--OpenLANE
--STRIVE chipsets
--OpenLANE detailed ASIC flow
--OpenLANE directory structure
--Design preparation
--Synthesis
--Synthesis result characterization
--Git and GitHub project documentation
+- QFN-48 package and chip structure
+- Pads, core, die, and IPs
+- RISC-V instruction set architecture
+- Software-to-hardware flow
+- Open-source digital ASIC design components
+- RTL-to-GDSII flow
+- OpenLANE
+- STRIVE chipsets
+- OpenLANE detailed ASIC flow
+- OpenLANE directory structure
+- Design preparation
+- Synthesis
+- Synthesis result characterization
+- Git and GitHub project documentation
 # Conclusion
 
 This module provided the foundation required to understand open-source ASIC design. The theoretical concepts were supported by hands-on experiments involving OpenLANE, design preparation, synthesis, file review, and analysis of synthesis results.
