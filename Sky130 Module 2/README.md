@@ -68,15 +68,6 @@ A poor floorplan may result in:
 
 Floorplanning should be performed carefully because decisions made at this stage influence the placement, routing, timing, power, and final quality of the chip.
 
-## Screenshot
-### Figure 1:
-
-<img width="662" height="486" alt="Screenshot 2026-09-06 105619" src="https://github.com/user-attachments/assets/d33692c5-7dd5-4205-a6eb-bf579837bc78" />
-
-### Figure 2:
-
-<img width="808" height="487" alt="Screenshot 2026-09-06 111152" src="https://github.com/user-attachments/assets/caab2008-077e-4948-84d9-31f3465e8d3f" />
-
 ---
 
 # 2. SKY_L1 - Utilization Factor and Aspect Ratio
@@ -132,11 +123,11 @@ Utilization factor determines how much of the core area is occupied, while aspec
 ## Screenshot
 ### Figure 1:
 
-<img width="666" height="487" alt="Screenshot 2026-09-06 111231" src="https://github.com/user-attachments/assets/4edfa80d-9a2c-43ad-87a6-71cb883efb57" />
+<img width="662" height="486" alt="Screenshot 2026-09-06 105619" src="https://github.com/user-attachments/assets/d33692c5-7dd5-4205-a6eb-bf579837bc78" />
 
 ### Figure 2:
 
-<img width="718" height="487" alt="Screenshot 2026-09-06 111257" src="https://github.com/user-attachments/assets/c7dd120a-666c-4c8a-b0b7-53350ac136c5" />
+<img width="808" height="487" alt="Screenshot 2026-09-06 111152" src="https://github.com/user-attachments/assets/caab2008-077e-4948-84d9-31f3465e8d3f" />
 
 ---
 
@@ -189,11 +180,11 @@ Pre-placed cells and macros must be carefully positioned because their locations
 ## Screenshot
 ### Figure 1:
 
-<img width="865" height="477" alt="Screenshot 2026-09-06 111353" src="https://github.com/user-attachments/assets/526fa50d-b822-414a-ab25-a4ab0725142b" />
+<img width="666" height="487" alt="Screenshot 2026-09-06 111231" src="https://github.com/user-attachments/assets/4edfa80d-9a2c-43ad-87a6-71cb883efb57" />
 
 ### Figure 2:
 
-<img width="830" height="480" alt="Screenshot 2026-09-06 111647" src="https://github.com/user-attachments/assets/c4e24590-6acf-403b-839f-d29f6c4f2f35" />
+<img width="718" height="487" alt="Screenshot 2026-09-06 111257" src="https://github.com/user-attachments/assets/c7dd120a-666c-4c8a-b0b7-53350ac136c5" />
 
 ---
 
@@ -242,7 +233,11 @@ Decoupling capacitors are important for maintaining a stable local power supply,
 ## Screenshot
 ### Figure 1:
 
-<img width="665" height="490" alt="Screenshot 2026-09-06 111712" src="https://github.com/user-attachments/assets/487cf9d8-15cd-4f66-b389-c74230e64885" />
+<img width="865" height="477" alt="Screenshot 2026-09-06 111353" src="https://github.com/user-attachments/assets/526fa50d-b822-414a-ab25-a4ab0725142b" />
+
+### Figure 2:
+
+<img width="830" height="480" alt="Screenshot 2026-09-06 111647" src="https://github.com/user-attachments/assets/c4e24590-6acf-403b-839f-d29f6c4f2f35" />
 
 ---
 
@@ -300,7 +295,7 @@ Power planning is essential for providing stable and reliable power to every par
 ## Screenshot
 ### Figure 1:
 
-<img width="830" height="480" alt="Screenshot 2026-09-06 111647" src="https://github.com/user-attachments/assets/b170939b-2ea7-4c18-92b5-378643d462b2" />
+<img width="665" height="490" alt="Screenshot 2026-09-06 111712" src="https://github.com/user-attachments/assets/487cf9d8-15cd-4f66-b389-c74230e64885" />
 
 ---
 
@@ -354,6 +349,12 @@ Blockages may be used to:
 Correct pin placement and suitable placement blockages help improve routing, timing, and overall floorplan quality.
 
 ## Screenshot
+
+### Figure 1:
+
+<img width="830" height="480" alt="Screenshot 2026-09-06 111647" src="https://github.com/user-attachments/assets/b170939b-2ea7-4c18-92b5-378643d462b2" />
+
+
 ### Figure 1:
 
 <img width="678" height="482" alt="Screenshot 2026-09-06 111950" src="https://github.com/user-attachments/assets/07b02ac5-4c1f-47d5-a18e-1b795657a54d" />
