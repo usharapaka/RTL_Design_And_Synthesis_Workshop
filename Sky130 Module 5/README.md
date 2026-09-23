@@ -3,7 +3,7 @@
 > **VLSI Design & Implementation Workshop**
 > **Focus:** Routing • DRC • Power Distribution Network • TritonRoute • RTL-to-GDSII
 
----
+
 
 #  Module Overview
 
@@ -31,7 +31,7 @@ Post-Route Verification
 Final Routed Design
 ```
 
----
+
 
 # 1. Routing & Design Rule Check
 
@@ -47,7 +47,7 @@ This section introduces the fundamentals of routing and physical verification af
 | `SKY_L2` | Lee's Algorithm — Conclusion                   |
 | `SKY_L3` | Design Rule Check                              |
 
----
+
 
 ## 1.1 Maze Routing — Lee's Algorithm
 
@@ -81,7 +81,7 @@ The algorithm explores available routing locations systematically until the dest
 * Backtracking
 * Route generation
 
----
+
 
 ## 1.2 Lee's Algorithm — Conclusion
 
@@ -97,7 +97,7 @@ Important observations include:
 
 The concepts provide a foundation for understanding modern routing engines used in physical design.
 
----
+
 
 ## 1.3 Design Rule Check — DRC
 
@@ -149,7 +149,7 @@ This section focuses on building the **Power Distribution Network (PDN)** and un
 | `SKY_L2` | From power straps to standard-cell power                          |
 | `SKY_L3` | Basics of global and detailed routing and configuring TritonRoute |
 
----
+
 
 ## 2.1 Power Distribution Network
 
@@ -171,7 +171,7 @@ Standard Cells
 
 The PDN provides reliable electrical connectivity between the power source and the individual standard cells.
 
----
+
 
 ## 2.2 From Power Straps to Standard-Cell Power
 
@@ -191,7 +191,7 @@ Standard Cell GND
 
 This ensures that standard cells placed throughout the design receive the required power and ground connections.
 
----
+
 
 ## 2.3 Global Routing & Detailed Routing
 
@@ -242,7 +242,7 @@ This section explores the internal routing concepts and important features of **
 | `SKY_L3` | TritonRoute method to handle connectivity                                            |
 | `SKY_L4` | Routing topology algorithm and final files after routing                             |
 
----
+
 
 ## 3.1 TritonRoute — Pre-Processed Route Guides
 
@@ -262,7 +262,7 @@ Detailed Routing
 
 The routing engine uses these guides while generating the final physical routes.
 
----
+
 
 ## 3.2 Inter-Guide Connectivity
 
@@ -281,7 +281,7 @@ Guide B
 Complete Net
 ```
 
----
+
 
 ## 3.3 Intra-Layer & Inter-Layer Routing
 
@@ -314,7 +314,7 @@ Metal Layer 1
 
 These routing mechanisms allow complex nets to be connected across multiple routing layers.
 
----
+
 
 ## 3.4 TritonRoute Connectivity Handling
 
@@ -336,7 +336,7 @@ Connectivity Verification
 
 The objective is to ensure that all required source and destination pins belonging to a net are physically connected.
 
----
+
 
 ## 3.5 Routing Topology Algorithm
 
@@ -354,7 +354,7 @@ For multi-terminal nets, the routing topology must provide a connected structure
 
 The final routing topology is converted into physical wires and vias.
 
----
+
 
 ## 3.6 Final Files After Routing
 
@@ -372,7 +372,7 @@ Typical post-route information includes:
 
 These files represent the physical implementation after the routing stage.
 
----
+
 
 # 🏁 Conclusion
 
@@ -382,4 +382,4 @@ The module covers the fundamentals of **maze routing, Lee's algorithm, Design Ru
 
 By completing these labs, the routing stage of the **RTL-to-GDSII flow** is understood from both algorithmic and practical perspectives, including how routing guides, connectivity, metal layers, vias, power networks, and design rules contribute to the final physical implementation.
 
----
+
