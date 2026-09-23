@@ -288,6 +288,14 @@ The lab introduces:
 * Cell-level changes
 * Timing verification after ECO
 
+<img width="1917" height="1136" alt="Screenshot 2026-09-20 141647" src="https://github.com/user-attachments/assets/db309a48-6447-4190-93be-4ca2ce6635a6" />
+<img width="957" height="1135" alt="Screenshot 2026-09-20 215729" src="https://github.com/user-attachments/assets/60456558-530d-453d-af5b-ea55c2bf7227" />
+<img width="1917" height="1140" alt="Screenshot 2026-09-20 220101" src="https://github.com/user-attachments/assets/57c9fd11-8d9d-486b-99b3-147ea15ef66a" />
+<img width="1917" height="1136" alt="Screenshot 2026-09-20 222800" src="https://github.com/user-attachments/assets/04a603fe-40e2-4d4e-84ba-ed55159a1ec3" />
+<img width="1917" height="1142" alt="Screenshot 2026-09-20 222826" src="https://github.com/user-attachments/assets/72fc9d27-c57d-4a80-b16c-53a61bbe947e" />
+<img width="1917" height="1141" alt="Screenshot 2026-09-20 222841" src="https://github.com/user-attachments/assets/54eb5a12-2d94-42b2-973c-2df614b6caa9" />
+<img width="1917" height="1141" alt="Screenshot 2026-09-20 222841" src="https://github.com/user-attachments/assets/717881fe-f1c2-4c61-81d9-725379147ea8" />
+
 ---
 
 #  3. Clock Tree Synthesis — TritonCTS & Signal Integrity
@@ -394,6 +402,7 @@ Important checks include:
 * Clock skew
 * Clock routing
 * Clock transition
+
 
 ---
 
