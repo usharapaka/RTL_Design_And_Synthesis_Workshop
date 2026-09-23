@@ -81,6 +81,13 @@ The algorithm explores available routing locations systematically until the dest
 * Backtracking
 * Route generation
 
+## Figure 1:
+
+<img width="1637" height="801" alt="Screenshot 2026-09-23 212855" src="https://github.com/user-attachments/assets/18a4e712-8774-45f3-b410-588decd048ee" />
+
+## Figure 2:
+
+<img width="1447" height="790" alt="Screenshot 2026-09-23 212948" src="https://github.com/user-attachments/assets/3b81063e-7e00-440b-97a9-e249edb2502a" />
 
 
 ## 1.2 Lee's Algorithm — Conclusion
@@ -97,7 +104,13 @@ Important observations include:
 
 The concepts provide a foundation for understanding modern routing engines used in physical design.
 
+## Figure 1:
 
+<img width="1538" height="767" alt="Screenshot 2026-09-23 213117" src="https://github.com/user-attachments/assets/bbce778c-5157-4564-91f5-5f3f2a13f2a7" />
+
+## Figure 2:
+
+<img width="1592" height="777" alt="Screenshot 2026-09-23 213213" src="https://github.com/user-attachments/assets/d278f1d3-e751-4632-ab01-0a8341ad932c" />
 
 ## 1.3 Design Rule Check — DRC
 
@@ -132,6 +145,14 @@ Corrected Layout
 ```
 
 DRC is an essential step before the design can proceed toward final physical verification.
+
+## Figure 1:
+
+<img width="1750" height="777" alt="Screenshot 2026-09-23 213327" src="https://github.com/user-attachments/assets/ecf4dde3-047f-4527-a1e6-8334b5068271" />
+
+## Figure 2:
+
+<img width="1680" height="780" alt="Screenshot 2026-09-23 213401" src="https://github.com/user-attachments/assets/fc980407-5e43-40dc-aaf8-eec7ceae6acf" />
 
 ---
 
@@ -170,8 +191,6 @@ Standard Cells
 ```
 
 The PDN provides reliable electrical connectivity between the power source and the individual standard cells.
-
-
 
 ## 2.2 From Power Straps to Standard-Cell Power
 
@@ -224,6 +243,26 @@ Detailed Routing
      ↓
 Physical Wires & Vias
 ```
+
+## Figure 1:
+
+<img width="1916" height="1145" alt="Screenshot 2026-09-23 144723" src="https://github.com/user-attachments/assets/45391458-7b9e-4d13-92e5-34887d4a2e91" />
+
+## Figure 2:
+
+<img width="1917" height="1143" alt="Screenshot 2026-09-23 144755" src="https://github.com/user-attachments/assets/19a52e9b-1fd0-4a2d-8bce-f46d62b5b7b6" />
+
+## Figure 3:
+
+<img width="1917" height="1137" alt="Screenshot 2026-09-23 144823" src="https://github.com/user-attachments/assets/93fc87fb-c004-41d3-8d9a-09b2ecdeaa8e" />
+
+## Figure 4:
+
+<img width="1917" height="1140" alt="Screenshot 2026-09-23 144839" src="https://github.com/user-attachments/assets/72daa02b-9120-471b-8460-0811cd41563d" />
+
+## Figure 5:
+
+<img width="1913" height="1137" alt="Screenshot 2026-09-23 144943" src="https://github.com/user-attachments/assets/1820a3fa-4353-4b7f-bc5b-2a23e3f4d757" />
 
 ---
 
@@ -372,7 +411,33 @@ Typical post-route information includes:
 
 These files represent the physical implementation after the routing stage.
 
+## Figure 1:
 
+<img width="1917" height="1141" alt="Screenshot 2026-09-23 145001" src="https://github.com/user-attachments/assets/72cb65ec-3385-4a5d-9ce0-cc49ef3ef9d1" />
+
+## Figure 2:
+
+<img width="1917" height="1140" alt="Screenshot 2026-09-23 151609" src="https://github.com/user-attachments/assets/55e0c50c-447a-4909-a91a-5912c2cbd1bc" />
+
+## Figure 3:
+
+<img width="1917" height="1137" alt="Screenshot 2026-09-23 151935" src="https://github.com/user-attachments/assets/e3145c4d-1681-489f-bb1f-4e73c45d75af" />
+
+## Figure 4:
+
+<img width="951" height="595" alt="Screenshot 2026-09-23 154659" src="https://github.com/user-attachments/assets/07b67dd6-17b2-43f7-a9c9-15d402857ad5" />
+
+## Figure 5:
+
+<img width="1917" height="1142" alt="Screenshot 2026-09-23 175528" src="https://github.com/user-attachments/assets/821fe5ad-8edb-4a1a-92ba-9b169f15a997" />
+
+## Figure 6:
+
+<img width="1917" height="1142" alt="Screenshot 2026-09-23 175758" src="https://github.com/user-attachments/assets/b74c59a5-c843-457f-b856-1fd7ee474840" />
+
+## Figure 7:
+
+<img width="1912" height="1137" alt="Screenshot 2026-09-23 175822" src="https://github.com/user-attachments/assets/232aee50-5bc1-42b2-abad-729acc7da07e" />
 
 # 🏁 Conclusion
 
