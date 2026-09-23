@@ -439,7 +439,7 @@ These files represent the physical implementation after the routing stage.
 
 <img width="1912" height="1137" alt="Screenshot 2026-09-23 175822" src="https://github.com/user-attachments/assets/232aee50-5bc1-42b2-abad-729acc7da07e" />
 
-# 🏁 Conclusion
+#  Conclusion
 
 **SKY130 Module 5** provides practical exposure to the final routing stages of the physical-design flow.
 
