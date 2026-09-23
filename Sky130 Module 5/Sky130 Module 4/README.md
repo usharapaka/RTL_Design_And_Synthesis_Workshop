@@ -168,7 +168,7 @@ The effect of synthesis changes on timing slack is analyzed.
 <img width="1917" height="1136" alt="Screenshot 2026-09-13 164238" src="https://github.com/user-attachments/assets/6d55e9cd-026d-49f8-94be-6f7a2230fbc1" />
 <img width="1913" height="1140" alt="Screenshot 2026-09-20 120559" src="https://github.com/user-attachments/assets/896c8f60-dc4c-4fbb-b4d1-f6a83e688018" />
 <img width="1917" height="1138" alt="Screenshot 2026-09-20 121744" src="https://github.com/user-attachments/assets/cd04a912-ce6c-4a00-aac5-3129b7505872" />
-<img width="1917" height="1138" alt="Screenshot 2026-09-20 121744" src="https://github.com/user-attachments/assets/c7776286-eabe-4b8e-ae02-bf423f1c5aa3" />
+<img width="946" height="1142" alt="Screenshot 2026-09-20 122332" src="https://github.com/user-attachments/assets/38ef90c0-808e-470d-93c2-08560042002f" />
 <img width="1917" height="1148" alt="Screenshot 2026-09-20 135045" src="https://github.com/user-attachments/assets/39a45006-3170-4c61-8867-57232137bb40" />
 <img width="1917" height="1140" alt="Screenshot 2026-09-20 135237" src="https://github.com/user-attachments/assets/b0a1b735-349b-4fa9-b0f5-dacccd0e878b" />
 <img width="1917" height="1142" alt="Screenshot 2026-09-20 140422" src="https://github.com/user-attachments/assets/7119bd19-b31d-4321-aab3-74d542056164" />
