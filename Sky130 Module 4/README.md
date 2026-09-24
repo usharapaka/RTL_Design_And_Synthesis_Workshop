@@ -831,6 +831,54 @@ Therefore, CTS optimization requires considering the complete timing picture rat
 ## Figure 6:
 <img width="1915" height="1141" alt="Screenshot 2026-09-21 192844" src="https://github.com/user-attachments/assets/1a08c54a-c492-40b2-911b-07c4e7f3752d" />
 
+## Figure 7:
+<img width="1917" height="1142" alt="Screenshot 2026-09-21 192903" src="https://github.com/user-attachments/assets/d7376139-c30f-4f18-b3ba-dd903d5523fe" />
+
+## Figure 8:
+<img width="1917" height="1142" alt="Screenshot 2026-09-21 194534" src="https://github.com/user-attachments/assets/f5362a68-a73c-4413-aa22-ad9cb7d4fd1a" />
+
+## Figure 9:
+<img width="1917" height="1138" alt="Screenshot 2026-09-21 194557" src="https://github.com/user-attachments/assets/d9419def-3c42-4e55-857e-56da10ba3fba" />
+
+## Figure 10:
+<img width="1917" height="1140" alt="Screenshot 2026-09-21 195842" src="https://github.com/user-attachments/assets/9a43b0aa-cb28-480b-a5e3-5bc82ca5e225" />
+
+## Figure 11:
+<img width="1917" height="1140" alt="Screenshot 2026-09-21 195902" src="https://github.com/user-attachments/assets/8196a322-3450-45be-be99-d918f88dd0b0" />
+
+## Figure 12:
+<img width="1917" height="1140" alt="Screenshot 2026-09-21 201938" src="https://github.com/user-attachments/assets/4b75fd2f-56be-4771-a7cf-744162016c10" />
+
+## Figure 13:
+<img width="1908" height="1135" alt="Screenshot 2026-09-21 212920" src="https://github.com/user-attachments/assets/5b64b242-d069-453f-b998-1c4f67637549" />
+
+## Figure 14:
+<img width="1917" height="1140" alt="Screenshot 2026-09-21 212944" src="https://github.com/user-attachments/assets/ea5cd937-5871-4c87-93f3-a56c8d94ad28" />
+
+## Figure 15:
+<img width="1913" height="1138" alt="Screenshot 2026-09-21 213824" src="https://github.com/user-attachments/assets/3ab248f9-490d-485f-a30e-0434866f84a6" />
+
+## Figure 16:
+<img width="1917" height="1137" alt="Screenshot 2026-09-21 214132" src="https://github.com/user-attachments/assets/33a3d7c7-0798-44e6-ac98-5a30fe1739f2" />
+
+## Figure 17:
+<img width="1917" height="1142" alt="Screenshot 2026-09-21 221340" src="https://github.com/user-attachments/assets/32c700cc-4b00-4019-9972-17bc3913b8e7" />
+
+## Figure 18:
+<img width="1917" height="1141" alt="Screenshot 2026-09-21 221359" src="https://github.com/user-attachments/assets/cf76de46-74af-4181-9fc8-c31ddb203e68" />
+
+## Figure 19:
+<img width="1917" height="1140" alt="Screenshot 2026-09-21 223307" src="https://github.com/user-attachments/assets/69279b1b-ffba-419d-a59f-14599d3a9b60" />
+
+## Figure 20:
+<img width="955" height="1142" alt="Screenshot 2026-09-21 232724" src="https://github.com/user-attachments/assets/5f73d185-1269-4d53-bf49-e1808536321a" />
+
+## Figure 21:
+<img width="1917" height="1135" alt="Screenshot 2026-09-23 143147" src="https://github.com/user-attachments/assets/50eba49f-694f-492f-b327-a0e1e8daf60e" />
+
+## Figure 22:
+<img width="1917" height="1140" alt="Screenshot 2026-09-23 143226" src="https://github.com/user-attachments/assets/e7095fc9-2639-435e-8024-9606d85106ad" />
+
 ---
 
 # Ideal Clock vs Real Clock
