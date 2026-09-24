@@ -70,14 +70,14 @@ The CMOS inverter is simulated using ngspice and the appropriate Sky130 model fi
 
 The simulation helps analyze:
 
-Input voltage
-Output voltage
-Voltage transfer characteristics
-Switching behavior
-Current
-Rise and fall behavior
-Delay
-Power-related characteristics
+* Input voltage
+* Output voltage
+* Voltage transfer characteristics
+* Switching behavior
+* Current
+* Rise and fall behavior
+* Delay
+* Power-related characteristics
 
 The simulation waveforms can be observed to understand how the output changes with respect to the input.
 
@@ -91,11 +91,11 @@ The switching threshold can be obtained from the Voltage Transfer Characteristic
 
 Important parameters associated with the VTC include:
 
-VOH – Output High Voltage
-VOL – Output Low Voltage
-VIH – Input High Voltage
-VIL – Input Low Voltage
-Vm – Switching Threshold
+* VOH – Output High Voltage
+* VOL – Output Low Voltage
+* VIH – Input High Voltage
+* VIL – Input Low Voltage
+* Vm – Switching Threshold
 
 The switching threshold is an important parameter for understanding the logic behavior and noise margins of a CMOS inverter.
 
@@ -109,13 +109,13 @@ Static analysis studies the DC characteristics of the inverter.
 
 Important parameters include:
 
-VOH
-VOL
-VIH
-VIL
-Switching threshold Vm
-Noise margins
-DC transfer characteristics
+* VOH
+* VOL
+* VIH
+* VIL
+* Switching threshold Vm
+* Noise margins
+* DC transfer characteristics
 
 The Voltage Transfer Characteristic (VTC) is particularly useful for understanding the static behavior of the inverter.
 
@@ -125,12 +125,12 @@ Dynamic analysis studies the time-dependent behavior of the inverter.
 
 Important parameters include:
 
-Propagation delay
-Rise time
-Fall time
-Charging behavior
-Discharging behavior
-Dynamic power consumption
+* Propagation delay
+* Rise time
+* Fall time
+* Charging behavior
+* Discharging behavior
+* Dynamic power consumption
 
 Dynamic analysis is important because standard cells must operate correctly at the required operating frequency.
 
@@ -140,16 +140,16 @@ The standard-cell design repository is cloned using Git to obtain the required d
 
 A typical Git workflow is:
 
-git clone <repository-url>
-cd <repository-directory>
+* git clone <repository-url>
+* cd <repository-directory>
 
 Git is useful for:
 
-Obtaining the design files
-Maintaining different versions
-Tracking changes
-Sharing the project
-Managing the standard-cell design environment
+* Obtaining the design files
+* Maintaining different versions
+* Tracking changes
+* Sharing the project
+* Managing the standard-cell design environment
 
 The cloned repository provides the starting environment for the standard-cell layout and characterization flow.
 
@@ -157,7 +157,7 @@ The cloned repository provides the starting environment for the standard-cell la
 
 This section explains how a CMOS device is physically fabricated and how the fabrication steps relate to the physical layout of a standard cell.
 
-### The major fabrication concepts covered are:
+ The major fabrication concepts covered are:
 
 * Active region formation
 * N-well and P-well formation
@@ -177,8 +177,8 @@ The active region is an important part of CMOS transistor formation.
 
 For CMOS technology:
 
-NMOS is formed in the appropriate P-type region.
-PMOS is formed inside the N-well.
+* NMOS is formed in the appropriate P-type region.
+* PMOS is formed inside the N-well.
 
 The active region therefore determines where the transistor can be formed and where the source and drain regions are created.
 
@@ -194,13 +194,14 @@ P-Well
 
 The P-well provides the region in which NMOS transistors are formed.
 
-### The wells are important for:
+The wells are important for:
 
 * Transistor formation
 * Body connections
 * Device isolation
 * CMOS operation
 * Substrate biasing
+  
 ## 2.3 SKY_L3 – Formation of Gate Terminal
 
 The transistor gate is formed using polysilicon over the active region.
@@ -211,9 +212,9 @@ The gate controls the flow of carriers between the source and drain.
 
 For a CMOS inverter:
 
-PMOS gate and NMOS gate are connected together.
-This common connection forms the input.
-The drains are connected together to form the output.
+* PMOS gate and NMOS gate are connected together.
+* This common connection forms the input.
+* The drains are connected together to form the output.
 
 Therefore, the gate formation step is essential for creating the switching behavior of the transistor.
 
@@ -225,10 +226,10 @@ The main purpose of LDD is to reduce the electric field near the drain region.
 
 LDD helps improve:
 
-Device reliability
-Hot-carrier performance
-Breakdown characteristics
-Long-term transistor operation
+* Device reliability
+* Hot-carrier performance
+* Breakdown characteristics
+* Long-term transistor operation
 
 This step is part of the transistor fabrication process before the final source and drain regions are completed.
 
@@ -238,17 +239,17 @@ The source and drain regions are formed using appropriate doping.
 
 For NMOS:
 
-Source is N-type.
-Drain is N-type.
+* Source is N-type.
+* Drain is N-type.
 
 For PMOS:
 
-Source is P-type.
-Drain is P-type.
+* Source is P-type.
+* Drain is P-type.
 
 The source and drain provide electrical connections to the transistor channel.
 
-### The final transistor structure is determined by the relationship between:
+The final transistor structure is determined by the relationship between:
 
 * Source
 * Drain
@@ -260,7 +261,7 @@ The source and drain provide electrical connections to the transistor channel.
 
 Local interconnect structures are used to electrically connect transistor terminals.
 
-### They provide connections between:
+ They provide connections between:
 
 * Source
 * Drain
@@ -274,7 +275,7 @@ Local interconnects help create the required connectivity while maintaining the 
 
 Higher-level metal layers are used for routing signals and power across the chip.
 
-### They are used for:
+ They are used for:
 
 * Signal routing
 * VDD distribution
@@ -288,23 +289,23 @@ Using multiple metal layers allows complex circuits to be routed efficiently whi
 
 The Sky130 PDK provides technology-specific layers required to create physical layouts.
 
-### Important layers include:
+ Important layers include:
 
-*Active / Diffusion
-*Poly
-*Contact
-*Metal1
-*Metal2
-*Higher metal layers
-*N-well
-*Implant layers
-*Tap layers
+* Active / Diffusion
+* Poly
+* Contact
+* Metal1
+* Metal2
+* Higher metal layers
+* N-well
+* Implant layers
+* Tap layers
 
 A CMOS inverter layout is created using these layers according to the Sky130 design rules.
 
 # Standard Cell Layout
 
-### A CMOS inverter standard-cell layout contains:
+ A CMOS inverter standard-cell layout contains:
 
 * PMOS transistor
 * NMOS transistor
@@ -325,14 +326,14 @@ Library Exchange Format
 
 LEF provides an abstract physical representation of a standard cell that can be used by physical-design tools.
 
-### LEF contains information such as:
+LEF contains information such as:
 
-*Cell dimensions
-*Pin locations
-*Pin names
-*Routing layers
-*Obstructions
-*Placement information
+* Cell dimensions
+* Pin locations
+* Pin names
+* Routing layers
+* Obstructions
+* Placement information
 
 The detailed transistor geometry is not represented in the same way as the complete layout database.
 
@@ -340,7 +341,7 @@ The detailed transistor geometry is not represented in the same way as the compl
 
 After creating the CMOS inverter layout, the physical design can be checked and extracted.
 
-### The standard-cell layout contains:
+ The standard-cell layout contains:
 
 * PMOS
 * NMOS
@@ -353,7 +354,7 @@ After creating the CMOS inverter layout, the physical design can be checked and 
 
 After layout creation, the design can be extracted into a SPICE netlist.
 
-### The extraction process identifies:
+The extraction process identifies:
 
 * Transistors
 * Connections
@@ -387,7 +388,7 @@ The extracted CMOS inverter is characterized using the Sky130 model files.
 
 Characterization is used to determine the electrical and timing behavior of the standard cell.
 
-### Important characteristics include:
+Important characteristics include:
 
 * Cell delay
 * Rise delay
@@ -420,7 +421,7 @@ Cell Characterization
 
 Magic is an open-source VLSI layout tool used for creating and verifying integrated-circuit layouts.
 
-### Magic provides features for:
+ Magic provides features for:
 
 * Layout creation
 * Layout editing
@@ -437,7 +438,7 @@ Magic is an open-source VLSI layout tool used for creating and verifying integra
 
 DRC verifies whether a layout follows the physical design rules defined by the technology.
 
-### Common DRC rules include:
+ Common DRC rules include:
 
 * Minimum width
 * Minimum spacing
@@ -452,7 +453,7 @@ A layout must pass the required DRC checks before it can be considered physicall
 
 The Sky130 PDK provides the technology information required to design circuits using the SkyWater 130 nm CMOS process.
 
-### The PDK contains technology-specific information such as:
+ The PDK contains technology-specific information such as:
 
 * Layer definitions
 * Design rules
@@ -472,7 +473,7 @@ The laboratory environment requires the appropriate Sky130 files and tools to be
 
 Magic requires the appropriate Sky130 technology files to correctly interpret the layout.
 
-### The technology rules provide information about:
+ The technology rules provide information about:
 
 * Layer names
 * Layer types
@@ -505,7 +506,7 @@ During layout verification, DRC violations can occur when the physical geometry 
 
 One of the exercises involves understanding and fixing a poly.9 DRC error.
 
-### The debugging process includes:
+ The debugging process includes:
 
 * Identify the reported DRC location.
 * Inspect the affected geometry in Magic.
@@ -519,7 +520,7 @@ This exercise helps understand how Magic interprets technology-specific DRC rule
 
 ## 3.6 SKY_L7 – Lab Exercise to Implement Poly Resistor Spacing to Diff and Tap
 
-### This exercise focuses on understanding the spacing requirements between:
+This exercise focuses on understanding the spacing requirements between:
 
 * Polysilicon resistor structures
 * Diffusion regions
@@ -529,7 +530,7 @@ Incorrect spacing can produce DRC violations.
 
 The layout must satisfy the minimum spacing requirements specified by the Sky130 technology rules.
 
-### This exercise helps understand:
+ This exercise helps understand:
 
 * Poly geometry
 * Diffusion geometry
@@ -541,7 +542,7 @@ The layout must satisfy the minimum spacing requirements specified by the Sky130
 
 A DRC error should be understood as a physical or geometrical violation rather than simply an error message.
 
-### For example, a DRC rule may specify:
+ For example, a DRC rule may specify:
 
 * Minimum width
 * Minimum spacing
@@ -549,7 +550,7 @@ A DRC error should be understood as a physical or geometrical violation rather t
 * Minimum overlap
 * Minimum extension
 
-### The DRC error can therefore be analyzed by identifying:
+ The DRC error can therefore be analyzed by identifying:
 
 * The affected layers.
 * The geometrical relationship between those layers.
