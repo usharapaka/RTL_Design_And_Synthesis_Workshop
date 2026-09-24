@@ -641,7 +641,7 @@ The complete Module 3 flow can be summarized as:
 * Sky130 Model Files	Device-level simulation and characterization
 * Standard Cell Library	Reusable digital logic cells
 
-#6. Conclusion
+# 6. Conclusion
 
 Sky130 Module 3 provides practical knowledge of standard-cell design using Magic Layout and ngspice characterization.
 
