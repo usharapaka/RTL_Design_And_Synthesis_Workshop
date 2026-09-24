@@ -402,6 +402,18 @@ Extracted SPICE Netlist
       ↓
 Simulation
 ```
+### Figure 1: CMOS inverter standard-cell layout
+<img width="1917" height="1138" alt="Screenshot 2026-09-13 133152" src="https://github.com/user-attachments/assets/31cf049f-ee2e-44e9-9e99-ecd9e7eb4abd" />
+
+### Figure 2: Sky130 SPICE/model file content used for transistor simulation
+<img width="1913" height="1140" alt="Screenshot 2026-09-13 142936" src="https://github.com/user-attachments/assets/9f4d5d8a-527a-42bf-ae65-e50ae139df87" />
+
+### Figure 3: Extracted .ext/SPICE file creation and ngspice installation/setup
+<img width="1916" height="1135" alt="Screenshot 2026-09-13 150014" src="https://github.com/user-attachments/assets/c5311e92-3cb8-497a-83bf-55cf8d691b27" />
+
+### Figure 4: Extracted SPICE netlist showing PMOS/NMOS devices and parasitic capacitors
+<img width="1917" height="1136" alt="Screenshot 2026-09-13 140615" src="https://github.com/user-attachments/assets/19a42134-8cc6-4f90-99eb-3b4f82758a89" />
+
 # 3. SKY130_D3_SK2 – Characterization, Magic and DRC
 
 This section focuses on characterization of the inverter using Sky130 model files and understanding the Magic layout tool and Sky130 DRC rules.
