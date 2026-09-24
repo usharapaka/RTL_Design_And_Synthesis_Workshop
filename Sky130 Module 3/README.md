@@ -152,6 +152,23 @@ Git is useful for:
 * Managing the standard-cell design environment
 
 The cloned repository provides the starting environment for the standard-cell layout and characterization flow.
+### Figures 1:OpenLane placement results and placement statistics
+<img width="886" height="487" alt="Screenshot 2026-09-06 104914" src="https://github.com/user-attachments/assets/1dac006f-b5d0-48e1-a2a8-35fa25c0007c" />
+### Figure 2:Magic DRC/error debugging
+<img width="957" height="1198" alt="Screenshot 2026-09-09 212731" src="https://github.com/user-attachments/assets/34c591b5-0cee-4e0e-a2d0-060a90a82f01" />
+### Figure 3:OpenLane configuration and synthesis variables
+<img width="1916" height="1192" alt="Screenshot 2026-09-09 213040" src="https://github.com/user-attachments/assets/11747688-25eb-4720-ad8e-60d4a4c5be43" />
+### Figure 4:Floorplan parameters and defaults
+<img width="1911" height="1137" alt="Screenshot 2026-09-09 213230" src="https://github.com/user-attachments/assets/7780f304-5bae-4167-8f1f-a0d65c7c8333" />
+### Figure 5:Power Distribution Network generation
+<img width="1915" height="1137" alt="Screenshot 2026-09-09 214535" src="https://github.com/user-attachments/assets/abd22a9a-f2ef-459a-9a2c-613936e19bde" />
+### Figure 6:Loading Sky130 technology in Magic
+<img width="1916" height="1138" alt="Screenshot 2026-09-09 220931" src="https://github.com/user-attachments/assets/998dbc2c-93a4-468f-98bc-b914db3689c3" />
+### Figure 7:Sky130 Magic technology files and sky130A.tech
+<img width="1916" height="1142" alt="Screenshot 2026-09-13 132545" src="https://github.com/user-attachments/assets/9bf3e53f-7c83-4c96-aa14-40beff52f6a3" />
+### Figure 8:CMOS inverter standard-cell layout
+<img width="1917" height="1138" alt="Screenshot 2026-09-13 133152" src="https://github.com/user-attachments/assets/f464718b-56c2-400a-bb2a-99481f01b269" />
+
 
 # 2. SKY130_D3_SK2 – Inception of Layout – CMOS Fabrication Process
 
