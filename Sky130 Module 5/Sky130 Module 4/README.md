@@ -432,6 +432,13 @@ Important checks include:
 <img width="1917" height="1133" alt="Screenshot 2026-09-21 173840" src="https://github.com/user-attachments/assets/a67cdfe1-37ac-444a-84b4-2b6016c2d024" />
 <img width="1917" height="1142" alt="Screenshot 2026-09-21 174226" src="https://github.com/user-attachments/assets/db53a7ee-eec8-4382-8cc3-d461cb31fa5c" />
 
+<img width="1917" height="1140" alt="Screenshot 2026-09-21 174416" src="https://github.com/user-attachments/assets/d4994101-492d-4c27-acd2-55693be75739" />
+
+<img width="958" height="1137" alt="Screenshot 2026-09-21 182623" src="https://github.com/user-attachments/assets/1d1d34e6-dddd-46a5-ae29-09f4f5195609" />
+<img width="958" height="1141" alt="Screenshot 2026-09-21 182638" src="https://github.com/user-attachments/assets/c364ad90-389b-441b-b529-b115ab88a4fa" />
+<img width="953" height="1138" alt="Screenshot 2026-09-21 182702" src="https://github.com/user-attachments/assets/e2f7b78c-ec19-441a-a3b8-4304e1dc5a0e" />
+<img width="932" height="1121" alt="Screenshot 2026-09-21 182844" src="https://github.com/user-attachments/assets/3ef357de-57d2-4868-a12c-1dc91b52e333" />
+
 ---
 
 #  4. Timing Analysis with Real Clocks Using OpenSTA
