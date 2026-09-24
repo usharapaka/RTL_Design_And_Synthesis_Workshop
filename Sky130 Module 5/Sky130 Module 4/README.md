@@ -554,6 +554,16 @@ Changing CTS buffer characteristics can affect:
 
 This demonstrates the trade-offs involved in clock-tree optimization.
 
+## Figures:
+<img width="1917" height="1093" alt="Screenshot 2026-09-21 183939" src="https://github.com/user-attachments/assets/1324671f-d1dd-42f1-b9d3-89582c7dbe47" />
+<img width="1906" height="1198" alt="Screenshot 2026-09-21 184013" src="https://github.com/user-attachments/assets/453aeb38-e820-4588-a84a-0c7b3786f3e5" />
+<img width="1917" height="1187" alt="Screenshot 2026-09-21 185434" src="https://github.com/user-attachments/assets/d58324d5-446a-4d84-8782-413d325800de" />
+<img width="1917" height="1140" alt="Screenshot 2026-09-21 190119" src="https://github.com/user-attachments/assets/913d85dc-f772-4f39-8b32-7c6af20a64bb" />
+<img width="1917" height="1077" alt="Screenshot 2026-09-21 190140" src="https://github.com/user-attachments/assets/8f32056c-3b52-425f-bf95-48de65c58456" />
+<img width="1913" height="1138" alt="Screenshot 2026-09-21 190202" src="https://github.com/user-attachments/assets/f9ecc67f-6785-45df-8aab-5e088df8389b" />
+<img width="1917" height="1140" alt="Screenshot 2026-09-21 190221" src="https://github.com/user-attachments/assets/584c4ac9-6ddf-49f9-852a-d2f504b28ee2" />
+<img width="1917" height="1138" alt="Screenshot 2026-09-21 192824" src="https://github.com/user-attachments/assets/6484891b-41d9-4806-be50-a0c3dfc69293" />
+
 ---
 
 #  Timing Concepts Covered
