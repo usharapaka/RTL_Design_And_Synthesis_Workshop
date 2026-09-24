@@ -402,6 +402,35 @@ Important checks include:
 * Clock routing
 * Clock transition
 
+##  Figure 1
+<img width="1917" height="1140" alt="Screenshot 2026-09-20 225948" src="https://github.com/user-attachments/assets/ec2f095e-072f-4530-9632-363645882412" />
+
+<img width="1917" height="1133" alt="Screenshot 2026-09-20 231422" src="https://github.com/user-attachments/assets/93b45b3f-b3ac-4f12-a169-bd3e27900870" />
+<img width="1917" height="1137" alt="Screenshot 2026-09-20 232210" src="https://github.com/user-attachments/assets/1362f413-7a86-40e2-991a-a57be826bf9f" />
+<img width="1917" height="1141" alt="Screenshot 2026-09-20 232238" src="https://github.com/user-attachments/assets/10fa2bce-4b8d-4203-b322-9884acbff60d" />
+<img width="1917" height="1142" alt="Screenshot 2026-09-20 234221" src="https://github.com/user-attachments/assets/3deacd1d-80a7-41da-a6e7-6ed9515204b9" />
+<img width="1917" height="1137" alt="Screenshot 2026-09-20 234313" src="https://github.com/user-attachments/assets/c2b6cfd9-005f-412b-b685-0f414177b67d" />
+<img width="1917" height="1138" alt="Screenshot 2026-09-21 001044" src="https://github.com/user-attachments/assets/1e55c445-6e9e-4b9f-81b1-e0b432b6ffaf" />
+<img width="1917" height="1136" alt="Screenshot 2026-09-21 001109" src="https://github.com/user-attachments/assets/857901ee-e496-4368-af49-3566817a69e0" />
+<img width="1917" height="1143" alt="Screenshot 2026-09-21 002305" src="https://github.com/user-attachments/assets/65381f89-014f-4ad8-a781-340079927861" />
+
+<img width="1917" height="1140" alt="Screenshot 2026-09-21 002331" src="https://github.com/user-attachments/assets/70e2d45c-c3f4-4bff-9c5b-094e396e6fa5" />
+
+<img width="1917" height="1141" alt="Screenshot 2026-09-21 002349" src="https://github.com/user-attachments/assets/70e47010-592d-4b63-a101-bc65f06a9aee" />
+
+<img width="1917" height="1138" alt="Screenshot 2026-09-21 002915" src="https://github.com/user-attachments/assets/0a4a06c9-9279-43d6-a46d-c565f5eaa0bc" />
+<img width="1917" height="1142" alt="Screenshot 2026-09-21 143349" src="https://github.com/user-attachments/assets/3ab67004-ed5c-4414-aad4-5a4752e64f7e" />
+
+<img width="1917" height="1138" alt="Screenshot 2026-09-21 143420" src="https://github.com/user-attachments/assets/db1eb709-e51d-44b0-8f99-697b5c563f5f" />
+
+<img width="1917" height="1137" alt="Screenshot 2026-09-21 143436" src="https://github.com/user-attachments/assets/6f629762-0153-482c-8aa4-0c71ae4cf757" />
+<img width="1912" height="1143" alt="Screenshot 2026-09-21 144002" src="https://github.com/user-attachments/assets/a55568ac-ea0d-405a-848e-fe4e1ba3ccb1" />
+<img width="1917" height="1140" alt="Screenshot 2026-09-21 144019" src="https://github.com/user-attachments/assets/88474760-09e9-4a78-acd9-671afd4991bf" />
+
+<img width="1917" height="1138" alt="Screenshot 2026-09-21 144038" src="https://github.com/user-attachments/assets/2204d950-237c-4346-ba29-1804d31f0420" />
+
+<img width="1917" height="1133" alt="Screenshot 2026-09-21 173840" src="https://github.com/user-attachments/assets/a67cdfe1-37ac-444a-84b4-2b6016c2d024" />
+<img width="1917" height="1142" alt="Screenshot 2026-09-21 174226" src="https://github.com/user-attachments/assets/db53a7ee-eec8-4382-8cc3-d461cb31fa5c" />
 
 ---
 
