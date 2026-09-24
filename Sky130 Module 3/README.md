@@ -61,7 +61,7 @@ Vin ----------|------ Vout
              NMOS
               |
              GND
-
+```
 The gates of the PMOS and NMOS are connected together to form the input, while their drains are connected together to form the output.
 
 1.3 SKY_L2 – SPICE Simulation Lab for CMOS Inverter
