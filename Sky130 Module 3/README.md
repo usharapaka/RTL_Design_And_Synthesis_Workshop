@@ -616,6 +616,15 @@ The debugging process involves:
 
 Layout Geometry → Technology Rules → DRC Engine → Verification Result
 
+### Figure 1: CMOS inverter input/output transient waveform
+<img width="1917" height="1138" alt="Screenshot 2026-09-13 150459" src="https://github.com/user-attachments/assets/08b6bfeb-4fc3-4276-91ad-e7f3c4480fca" />
+### Figure 2: Running the extracted SPICE netlist in ngspice
+<img width="1917" height="1140" alt="Screenshot 2026-09-13 150033" src="https://github.com/user-attachments/assets/5352b948-7659-4826-a794-50047fa2d026" />
+### Figure 3: ngspice transient analysis and simulation results
+<img width="1917" height="1133" alt="Screenshot 2026-09-13 150329" src="https://github.com/user-attachments/assets/85c420ed-5139-42c7-b104-1fa033550368" />
+### Figure 4: CMOS inverter layout in Magic with Sky130 technology/DRC environment
+<img width="1911" height="1132" alt="Screenshot 2026-09-13 153133" src="https://github.com/user-attachments/assets/3c608d84-c205-44f2-9cb9-cd639bab997b" />
+
 # 4. Overall Sky130 Module 3 Flow
 
 The complete Module 3 flow can be summarized as:
