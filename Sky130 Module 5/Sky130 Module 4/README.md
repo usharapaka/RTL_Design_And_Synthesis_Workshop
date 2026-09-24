@@ -294,7 +294,6 @@ The lab introduces:
 <img width="1917" height="1136" alt="Screenshot 2026-09-20 222800" src="https://github.com/user-attachments/assets/04a603fe-40e2-4d4e-84ba-ed55159a1ec3" />
 <img width="1917" height="1142" alt="Screenshot 2026-09-20 222826" src="https://github.com/user-attachments/assets/72fc9d27-c57d-4a80-b16c-53a61bbe947e" />
 <img width="1917" height="1141" alt="Screenshot 2026-09-20 222841" src="https://github.com/user-attachments/assets/54eb5a12-2d94-42b2-973c-2df614b6caa9" />
-<img width="1917" height="1141" alt="Screenshot 2026-09-20 222841" src="https://github.com/user-attachments/assets/717881fe-f1c2-4c61-81d9-725379147ea8" />
 
 ---
 
