@@ -244,23 +244,23 @@ Detailed Routing
 Physical Wires & Vias
 ```
 
-## Figure 1:
+## Figure 1: Timing report showing a setup slack violation and OpenROAD routing activity
 
 <img width="1916" height="1145" alt="Screenshot 2026-09-23 144723" src="https://github.com/user-attachments/assets/45391458-7b9e-4d13-92e5-34887d4a2e91" />
 
-## Figure 2:
+## Figure 2: OpenROAD detailed-routing initialization, LEF/DEF reading and design information
 
 <img width="1917" height="1143" alt="Screenshot 2026-09-23 144755" src="https://github.com/user-attachments/assets/19a52e9b-1fd0-4a2d-8bce-f46d62b5b7b6" />
 
-## Figure 3:
+## Figure 3: Track assignment and routing guide processing
 
 <img width="1917" height="1137" alt="Screenshot 2026-09-23 144823" src="https://github.com/user-attachments/assets/93fc87fb-c004-41d3-8d9a-09b2ecdeaa8e" />
 
-## Figure 4:
+## Figure 4: Detailed-routing optimization iterations and violation reduction
 
 <img width="1917" height="1140" alt="Screenshot 2026-09-23 144839" src="https://github.com/user-attachments/assets/72daa02b-9120-471b-8460-0811cd41563d" />
 
-## Figure 5:
+## Figure 5: Final detailed-routing summary with wire length, vias, runtime and routing statistics
 
 <img width="1913" height="1137" alt="Screenshot 2026-09-23 144943" src="https://github.com/user-attachments/assets/1820a3fa-4353-4b7f-bc5b-2a23e3f4d757" />
 
@@ -411,33 +411,33 @@ Typical post-route information includes:
 
 These files represent the physical implementation after the routing stage.
 
-## Figure 1:
+## Figure 1: Routing complete ayyaka OpenSTA run, RC extraction and timing analysis
 
 <img width="1917" height="1141" alt="Screenshot 2026-09-23 145001" src="https://github.com/user-attachments/assets/72cb65ec-3385-4a5d-9ce0-cc49ef3ef9d1" />
 
-## Figure 2:
+## Figure 2: 35-fastroute.guide routing guide file contents
 
 <img width="1917" height="1140" alt="Screenshot 2026-09-23 151609" src="https://github.com/user-attachments/assets/55e0c50c-447a-4909-a91a-5912c2cbd1bc" />
 
-## Figure 3:
+## Figure 3: SPEF_EXTRACTOR GitHub repository clone and files
 
 <img width="1917" height="1137" alt="Screenshot 2026-09-23 151935" src="https://github.com/user-attachments/assets/e3145c4d-1681-489f-bb1f-4e73c45d75af" />
 
-## Figure 4:
+## Figure 4: OpenLane tmp directory lo routing-related intermediate files
 
 <img width="951" height="595" alt="Screenshot 2026-09-23 154659" src="https://github.com/user-attachments/assets/07b67dd6-17b2-43f7-a9c9-15d402857ad5" />
 
-## Figure 5:
+## Figure 5: Final results/routing directory with DEF, SPEF and routed design files
 
 <img width="1917" height="1142" alt="Screenshot 2026-09-23 175528" src="https://github.com/user-attachments/assets/821fe5ad-8edb-4a1a-92ba-9b169f15a997" />
 
-## Figure 6:
+## Figure 6: spef_extraction_setup_and_results
 
-<img width="1917" height="1142" alt="Screenshot 2026-09-23 175758" src="https://github.com/user-attachments/assets/b74c59a5-c843-457f-b856-1fd7ee474840" />
+<img width="1917" height="1142" alt="Screenshot 2026-09-23 175758" src="https://github.com/user-attachments/assets/a9fbabed-4e3e-42f6-a3a0-84132a45b532" />
 
-## Figure 7:
+## Figure 7: openlane_synthesis_and_routing_results
 
-<img width="1912" height="1137" alt="Screenshot 2026-09-23 175822" src="https://github.com/user-attachments/assets/232aee50-5bc1-42b2-abad-729acc7da07e" />
+<img width="1912" height="1137" alt="Screenshot 2026-09-23 175822" src="https://github.com/user-attachments/assets/bcb8c050-7cc3-43ff-8124-0db1205d3c62" />
 
 #  Conclusion
 
