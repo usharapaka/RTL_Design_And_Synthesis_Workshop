@@ -286,35 +286,35 @@ Interpretation:
 * **Zero slack** → path is exactly at the timing limit.
 * **Negative slack** → timing violation exists.
 
-## Figure 1:
+##  Figure 1:
 <img width="1917" height="1177" alt="Screenshot 2026-09-13 153809" src="https://github.com/user-attachments/assets/5121a554-8d1f-43b3-95d5-7f4f3c6bccc9" />
-## Figure 2:
+##  Figure 2:
 <img width="1912" height="1138" alt="Screenshot 2026-09-13 155136" src="https://github.com/user-attachments/assets/e3427810-74c1-4dfd-95f4-3a5edd2a1b66" />
-## Figure 3:
+##  Figure 3:
 <img width="1917" height="1142" alt="Screenshot 2026-09-13 162325" src="https://github.com/user-attachments/assets/7dbed75d-b67c-48e8-bb49-3ab3101427c4" />
-## Figure 4:
+##  Figure 4:
 <img width="1917" height="1145" alt="Screenshot 2026-09-13 162433" src="https://github.com/user-attachments/assets/ff5f190b-fb10-49ff-8091-6b033873ea0a" />
-## Figure 5:
+##  Figure 5:
 <img width="946" height="1142" alt="Screenshot 2026-09-20 122332" src="https://github.com/user-attachments/assets/6077dde2-20b6-4c24-8d21-7087e5562324" />
-## Figure 6:
+##  Figure 6:
 <img width="1917" height="1140" alt="Screenshot 2026-09-13 163652" src="https://github.com/user-attachments/assets/e38ee9e7-e9e7-43fd-8d5f-1464a44488d0" />
-## Figure 7:
+##  Figure 7:
 <img width="1912" height="1140" alt="Screenshot 2026-09-13 164023" src="https://github.com/user-attachments/assets/957bb53a-5e44-43bb-bf45-80f1aef10c08" />
-## Figure 8:
+##  Figure 8:
 <img width="1895" height="835" alt="Screenshot 2026-09-13 164213" src="https://github.com/user-attachments/assets/abc0a46a-1102-4629-bc69-2569ad6e66f0" />
-## Figure 9:
+##  Figure 9:
 <img width="1917" height="1136" alt="Screenshot 2026-09-13 164238" src="https://github.com/user-attachments/assets/04d238b7-92e0-4b6e-a6aa-e6179495085f" />
-## Figure 10:
+##  Figure 10:
 <img width="1917" height="1140" alt="Screenshot 2026-09-20 225948" src="https://github.com/user-attachments/assets/98e2c81b-61b4-45c8-ba42-58404cc40221" />
-## Figure 11:
+##  Figure 11:
 <img width="1913" height="1140" alt="Screenshot 2026-09-20 120559" src="https://github.com/user-attachments/assets/abb3b967-d7b0-4e83-bcf2-d18415424240" />
-## Figure 12:
+##  Figure 12:
 <img width="1917" height="1138" alt="Screenshot 2026-09-20 121744" src="https://github.com/user-attachments/assets/cc453655-a3e6-4eb5-b22b-01f496921472" />
-## Figure 13:
+##  Figure 13:
 <img width="1910" height="810" alt="Screenshot 2026-09-20 231843" src="https://github.com/user-attachments/assets/4cedd3b2-c445-46d9-9a8f-73ef449666d1" />
-## Figure 14:
+##  Figure 14:
 <img width="1917" height="1140" alt="Screenshot 2026-09-20 141054" src="https://github.com/user-attachments/assets/1f69f4dd-f5d6-45d1-83dc-1af56f37b24a" />
-## Figure 15:
+##  Figure 15:
 <img width="1917" height="1142" alt="Screenshot 2026-09-20 140422" src="https://github.com/user-attachments/assets/56bf78a0-8360-46ec-ad74-af41fadf0b6b" />
 
 ---
@@ -460,33 +460,33 @@ Typical timing ECO operations can include:
 
 The objective is to correct timing problems while minimizing unnecessary changes.
 
-## Figure 1:
+##  Figure 1:
 <img width="1917" height="1136" alt="Screenshot 2026-09-20 141647" src="https://github.com/user-attachments/assets/60d413a2-0b54-40f5-87cd-19d27eb3cac8" />
-## Figure 2:
+##  Figure 2:
 <img width="1917" height="1140" alt="Screenshot 2026-09-20 220101" src="https://github.com/user-attachments/assets/9ed624fa-dfd5-40d6-8b4e-69034391c974" />
-## Figure 3:
+##  Figure 3:
 <img width="957" height="1135" alt="Screenshot 2026-09-20 215729" src="https://github.com/user-attachments/assets/c583f6fe-790b-4916-a624-7f06ade4f882" />
-## Figure 4:
+##  Figure 4:
 <img width="1917" height="1136" alt="Screenshot 2026-09-20 222800" src="https://github.com/user-attachments/assets/a21a4ad3-9189-44d3-94ec-36d074301274" />
-## Figure 5:
+##  Figure 5:
 <img width="1917" height="1142" alt="Screenshot 2026-09-20 222826" src="https://github.com/user-attachments/assets/271ed54f-c02a-4127-9c0c-26e470eddac8" />
-## Figure 6:
+##  Figure 6:
 <img width="1917" height="1141" alt="Screenshot 2026-09-20 222841" src="https://github.com/user-attachments/assets/5780e850-7b2c-483b-82ba-66b79bb7162d" />
-## Figure 7:
+##  Figure 7:
 <img width="1910" height="810" alt="Screenshot 2026-09-20 231843" src="https://github.com/user-attachments/assets/07377d8d-f155-4b97-9b0a-9acc64b010da" />
-## Figure 8:
+##  Figure 8:
 <img width="1917" height="1142" alt="Screenshot 2026-09-20 234221" src="https://github.com/user-attachments/assets/cca8715d-90b0-4c01-a298-669af7981173" />
-## Figure 9:
+##  Figure 9:
 <img width="1917" height="1138" alt="Screenshot 2026-09-21 001044" src="https://github.com/user-attachments/assets/7b4e48b5-7cb1-4ef3-9fae-adbdc6ca17a8" />
-## Figure 10:
+##  Figure 10:
 <img width="1917" height="1136" alt="Screenshot 2026-09-21 001109" src="https://github.com/user-attachments/assets/3d715a25-02b7-452f-b47b-4cace4d3846c" />
-## Figure 11:
+##  Figure 11:
 <img width="1917" height="1143" alt="Screenshot 2026-09-21 002305" src="https://github.com/user-attachments/assets/fe462f48-66e3-488b-bc61-9a04c2b71b3d" />
-## Figure 12:
+##  Figure 12:
 <img width="1917" height="1140" alt="Screenshot 2026-09-21 002331" src="https://github.com/user-attachments/assets/e75c8f90-6338-4488-bd9a-d19876e2f2a4" />
-## Figure 13:
+##  Figure 13:
 <img width="1917" height="1138" alt="Screenshot 2026-09-21 002915" src="https://github.com/user-attachments/assets/6af30de3-47ef-418b-bfac-76c28032a9d7" />
-## Figure 14:
+##  Figure 14:
 <img width="1917" height="1142" alt="Screenshot 2026-09-21 143349" src="https://github.com/user-attachments/assets/f93af6dd-088c-43b9-aa51-a5c9abf1355b" />
 
 ---
@@ -615,7 +615,32 @@ Important parameters include:
 
 The CTS result must be checked before proceeding to further physical-design stages.
 
-## Figure 1
+##  Figure 1:
+<img width="1917" height="1138" alt="Screenshot 2026-09-21 143420" src="https://github.com/user-attachments/assets/eb8a7c70-25aa-4675-94a4-7642d7ab6b18" />
+##  Figure 2:
+<img width="1917" height="1137" alt="Screenshot 2026-09-21 143436" src="https://github.com/user-attachments/assets/80735e18-1b96-4660-83f2-523415dce5c5" />
+##  Figure 3:
+<img width="1912" height="1143" alt="Screenshot 2026-09-21 144002" src="https://github.com/user-attachments/assets/c7c5ceb5-0d39-42da-87a2-e8adb24b7ec4" />
+##  Figure 4:
+<img width="1917" height="1140" alt="Screenshot 2026-09-21 144019" src="https://github.com/user-attachments/assets/6cbf77fd-1cfe-44fd-82f1-17ec92a0e2ef" />
+##  Figure 5:
+<img width="1917" height="1138" alt="Screenshot 2026-09-21 144038" src="https://github.com/user-attachments/assets/d2dcdeed-4d0d-4248-b01c-739d7c57c8bd" />
+##  Figure 6:
+<img width="1917" height="1142" alt="Screenshot 2026-09-21 174226" src="https://github.com/user-attachments/assets/9b5c6364-f3ed-4036-8f1d-7ef954272204" />
+##  Figure 7:
+<img width="1917" height="1140" alt="Screenshot 2026-09-21 174416" src="https://github.com/user-attachments/assets/c2e27513-5cc0-4e75-bbae-425aace09340" />
+##  Figure 8:
+<img width="1917" height="1138" alt="Screenshot 2026-09-21 175009" src="https://github.com/user-attachments/assets/c08d2a4d-ffc2-4d53-94b2-41c5271a6399" />
+##  Figure 9:
+<img width="1917" height="1093" alt="Screenshot 2026-09-21 183939" src="https://github.com/user-attachments/assets/9323d245-9f13-42b2-9039-b8a94ba13356" />
+##  Figure 10:
+<img width="958" height="1137" alt="Screenshot 2026-09-21 182623" src="https://github.com/user-attachments/assets/30be88a8-b49f-427a-b5be-6f11a44c1f3e" />
+##  Figure 11:
+<img width="958" height="1141" alt="Screenshot 2026-09-21 182638" src="https://github.com/user-attachments/assets/42603242-f933-423a-a3e4-c910ed2fbbd0" />
+##  Figure 12:
+<img width="953" height="1138" alt="Screenshot 2026-09-21 182702" src="https://github.com/user-attachments/assets/a375df75-159a-40f3-8909-09a830eb6ae9" />
+##  Figure 13:
+<img width="932" height="1121" alt="Screenshot 2026-09-21 182844" src="https://github.com/user-attachments/assets/423aed43-422d-4be7-9cb0-4a1af7f0075a" />
 
 ---
 
