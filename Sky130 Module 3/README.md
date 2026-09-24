@@ -152,30 +152,31 @@ Git is useful for:
 * Managing the standard-cell design environment
 
 The cloned repository provides the starting environment for the standard-cell layout and characterization flow.
-### Figure 1: OpenLane placement results and placement statistics
+## Figure 1: OpenLane placement results and placement statistics
 <img width="886" height="487" alt="Screenshot 2026-09-06 104914" src="https://github.com/user-attachments/assets/1dac006f-b5d0-48e1-a2a8-35fa25c0007c" />
 
-### Figure 2: Magic DRC/error debugging
+## Figure 2: Magic DRC/error debugging
 <img width="957" height="1198" alt="Screenshot 2026-09-09 212731" src="https://github.com/user-attachments/assets/34c591b5-0cee-4e0e-a2d0-060a90a82f01" />
 
-### Figure 3: OpenLane configuration and synthesis variables
+## Figure 3: OpenLane configuration and synthesis variables
 <img width="1916" height="1192" alt="Screenshot 2026-09-09 213040" src="https://github.com/user-attachments/assets/11747688-25eb-4720-ad8e-60d4a4c5be43" />
 
-### Figure 4: Floorplan parameters and defaults
+## Figure 4: Floorplan parameters and defaults
 <img width="1911" height="1137" alt="Screenshot 2026-09-09 213230" src="https://github.com/user-attachments/assets/7780f304-5bae-4167-8f1f-a0d65c7c8333" />
 
-### Figure 5: Power Distribution Network generation
+## Figure 5: Power Distribution Network generation
 <img width="1915" height="1137" alt="Screenshot 2026-09-09 214535" src="https://github.com/user-attachments/assets/abd22a9a-f2ef-459a-9a2c-613936e19bde" />
 
-### Figure 6: Loading Sky130 technology in Magic
+## Figure 6: Loading Sky130 technology in Magic
 <img width="1916" height="1138" alt="Screenshot 2026-09-09 220931" src="https://github.com/user-attachments/assets/998dbc2c-93a4-468f-98bc-b914db3689c3" />
 
-### Figure 7: Sky130 Magic technology files and sky130A.tech
+## Figure 7: Sky130 Magic technology files and sky130A.tech
 <img width="1916" height="1142" alt="Screenshot 2026-09-13 132545" src="https://github.com/user-attachments/assets/9bf3e53f-7c83-4c96-aa14-40beff52f6a3" />
 
-### Figure 8: CMOS inverter standard-cell layout
+## Figure 8: CMOS inverter standard-cell layout
 <img width="1917" height="1138" alt="Screenshot 2026-09-13 133152" src="https://github.com/user-attachments/assets/f464718b-56c2-400a-bb2a-99481f01b269" />
 
+---
 
 # 2. SKY130_D3_SK2 – Inception of Layout – CMOS Fabrication Process
 
@@ -402,17 +403,19 @@ Extracted SPICE Netlist
       ↓
 Simulation
 ```
-### Figure 1: CMOS inverter standard-cell layout
+## Figure 1: CMOS inverter standard-cell layout
 <img width="1917" height="1138" alt="Screenshot 2026-09-13 133152" src="https://github.com/user-attachments/assets/31cf049f-ee2e-44e9-9e99-ecd9e7eb4abd" />
 
-### Figure 2: Sky130 SPICE/model file content used for transistor simulation
+## Figure 2: Sky130 SPICE/model file content used for transistor simulation
 <img width="1913" height="1140" alt="Screenshot 2026-09-13 142936" src="https://github.com/user-attachments/assets/9f4d5d8a-527a-42bf-ae65-e50ae139df87" />
 
-### Figure 3: Extracted .ext/SPICE file creation and ngspice installation/setup
+## Figure 3: Extracted .ext/SPICE file creation and ngspice installation/setup
 <img width="1916" height="1135" alt="Screenshot 2026-09-13 150014" src="https://github.com/user-attachments/assets/c5311e92-3cb8-497a-83bf-55cf8d691b27" />
 
-### Figure 4: Extracted SPICE netlist showing PMOS/NMOS devices and parasitic capacitors
+## Figure 4: Extracted SPICE netlist showing PMOS/NMOS devices and parasitic capacitors
 <img width="1917" height="1136" alt="Screenshot 2026-09-13 140615" src="https://github.com/user-attachments/assets/19a42134-8cc6-4f90-99eb-3b4f82758a89" />
+
+---
 
 # 3. SKY130_D3_SK2 – Characterization, Magic and DRC
 
@@ -616,14 +619,19 @@ The debugging process involves:
 
 Layout Geometry → Technology Rules → DRC Engine → Verification Result
 
-### Figure 1: CMOS inverter input/output transient waveform
+## Figure 1: CMOS inverter input/output transient waveform
 <img width="1917" height="1138" alt="Screenshot 2026-09-13 150459" src="https://github.com/user-attachments/assets/08b6bfeb-4fc3-4276-91ad-e7f3c4480fca" />
-### Figure 2: Running the extracted SPICE netlist in ngspice
+
+## Figure 2: Running the extracted SPICE netlist in ngspice
 <img width="1917" height="1140" alt="Screenshot 2026-09-13 150033" src="https://github.com/user-attachments/assets/5352b948-7659-4826-a794-50047fa2d026" />
-### Figure 3: ngspice transient analysis and simulation results
+
+## Figure 3: ngspice transient analysis and simulation results
 <img width="1917" height="1133" alt="Screenshot 2026-09-13 150329" src="https://github.com/user-attachments/assets/85c420ed-5139-42c7-b104-1fa033550368" />
-### Figure 4: CMOS inverter layout in Magic with Sky130 technology/DRC environment
+
+## Figure 4: CMOS inverter layout in Magic with Sky130 technology/DRC environment
 <img width="1911" height="1132" alt="Screenshot 2026-09-13 153133" src="https://github.com/user-attachments/assets/3c608d84-c205-44f2-9cb9-cd639bab997b" />
+
+---
 
 # 4. Overall Sky130 Module 3 Flow
 
