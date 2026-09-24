@@ -563,6 +563,22 @@ This demonstrates the trade-offs involved in clock-tree optimization.
 <img width="1913" height="1138" alt="Screenshot 2026-09-21 190202" src="https://github.com/user-attachments/assets/f9ecc67f-6785-45df-8aab-5e088df8389b" />
 <img width="1917" height="1140" alt="Screenshot 2026-09-21 190221" src="https://github.com/user-attachments/assets/584c4ac9-6ddf-49f9-852a-d2f504b28ee2" />
 <img width="1917" height="1138" alt="Screenshot 2026-09-21 192824" src="https://github.com/user-attachments/assets/6484891b-41d9-4806-be50-a0c3dfc69293" />
+<img width="1917" height="1142" alt="Screenshot 2026-09-21 192903" src="https://github.com/user-attachments/assets/29dbe7e0-f3f1-4740-bd9c-f8a01beb475a" />
+<img width="1917" height="1142" alt="Screenshot 2026-09-21 194534" src="https://github.com/user-attachments/assets/ae6428c4-fed4-421d-9a15-f8f5042531b8" />
+<img width="1917" height="1138" alt="Screenshot 2026-09-21 194557" src="https://github.com/user-attachments/assets/3fac11b6-20a6-4e63-b6f5-8d9f1bb4a6cc" />
+<img width="1917" height="1140" alt="Screenshot 2026-09-21 195842" src="https://github.com/user-attachments/assets/f79f3dca-3b24-4f8c-ad44-d3ab38e25e67" />
+<img width="1917" height="1140" alt="Screenshot 2026-09-21 195902" src="https://github.com/user-attachments/assets/92a387a9-ef95-41a6-9068-7c4de91341fd" />
+<img width="1917" height="1140" alt="Screenshot 2026-09-21 201938" src="https://github.com/user-attachments/assets/9fff5b1d-3f06-4aab-a948-6a74fe3a50b2" />
+<img width="1908" height="1135" alt="Screenshot 2026-09-21 212920" src="https://github.com/user-attachments/assets/7fcc262b-a562-47f6-ba57-52c728a0671e" />
+<img width="1917" height="1140" alt="Screenshot 2026-09-21 212944" src="https://github.com/user-attachments/assets/4bf378d4-f363-4549-aaa0-de7acd871db2" />
+<img width="1913" height="1138" alt="Screenshot 2026-09-21 213824" src="https://github.com/user-attachments/assets/fca5a6fe-263a-487e-b66c-aeff99c31586" />
+<img width="1917" height="1142" alt="Screenshot 2026-09-21 221340" src="https://github.com/user-attachments/assets/2506ab61-8566-462e-8497-997d22c1b039" />
+<img width="1917" height="1141" alt="Screenshot 2026-09-21 221359" src="https://github.com/user-attachments/assets/d13970e4-cd88-4649-aba9-6e2cabdb0487" />
+<img width="1917" height="1145" alt="Screenshot 2026-09-21 221420" src="https://github.com/user-attachments/assets/743e4731-f669-44fb-8d85-6d2a04996ee6" />
+<img width="1907" height="1146" alt="Screenshot 2026-09-21 222709" src="https://github.com/user-attachments/assets/a121ded1-4aee-4066-bc18-d06c003b5f44" />
+<img width="1917" height="1142" alt="Screenshot 2026-09-21 231340" src="https://github.com/user-attachments/assets/1b939609-a844-4968-ae8b-bbaf4486879a" />
+<img width="1917" height="1135" alt="Screenshot 2026-09-23 143147" src="https://github.com/user-attachments/assets/c231959f-48ef-4df2-97ce-8612742cc866" />
+
 
 ---
 
@@ -582,132 +598,6 @@ This demonstrates the trade-offs involved in clock-tree optimization.
 | **Crosstalk**         | Coupling between nearby signal nets                               |
 | **Shielding**         | Technique used to reduce unwanted coupling                        |
 | **ECO**               | Engineering Change Order for targeted design modification         |
-
----
-
-#  Complete Module 4 Flow
-
-```text
-                         STANDARD CELLS
-                              │
-                              ▼
-                       LAYOUT / LEF
-                              │
-                              ▼
-                       TIMING LIBRARY
-                              │
-                              ▼
-                         DELAY TABLES
-                              │
-                              ▼
-                          SYNTHESIS
-                              │
-                              ▼
-                   ┌────────────────────┐
-                   │   IDEAL CLOCK STA  │
-                   │                    │
-                   │ Setup / Uncertainty│
-                   └─────────┬──────────┘
-                             │
-                             ▼
-                    SYNTHESIS OPTIMIZATION
-                             │
-                             ▼
-                            CTS
-                             │
-                             ▼
-                         TritonCTS
-                             │
-                             ▼
-                    CLOCK TREE NETWORK
-                             │
-                             ▼
-                   ┌────────────────────┐
-                   │   REAL CLOCK STA   │
-                   │                    │
-                   │ Setup + Hold       │
-                   └─────────┬──────────┘
-                             │
-                             ▼
-                     TIMING OPTIMIZATION
-                             │
-                             ▼
-                       TIMING CLOSURE
-```
-
----
-
-# Key Concepts Learned
-
-### Timing Modelling
-
-* Standard-cell LEF
-* Timing libraries
-* Liberty files
-* Timing arcs
-* Delay tables
-* Cell delay
-* Input transition
-* Output load
-
-### Static Timing Analysis
-
-* Setup timing
-* Hold timing
-* Timing slack
-* Critical paths
-* Clock jitter
-* Clock uncertainty
-* Ideal-clock analysis
-* Real-clock analysis
-* Timing optimization
-* Timing ECO
-
-### Clock Tree Synthesis
-
-* Clock distribution
-* H-Tree
-* Clock buffers
-* Clock fanout
-* Clock latency
-* Clock skew
-* Clock routing
-* Crosstalk
-* Clock shielding
-* TritonCTS
-
-### Post-CTS Timing
-
-* Real-clock timing
-* Setup analysis
-* Hold analysis
-* CTS-aware OpenSTA
-* Timing-library selection
-* CTS clock assignment
-* CTS buffer impact
-* Timing closure
-
----
-
-#  Key Takeaway
-
-This module demonstrates the importance of **timing analysis and clock-tree design in physical design**.
-
-The transition from ideal-clock analysis to real-clock analysis shows how the physical implementation of the clock network can affect:
-
-```text
-Clock Distribution
-       ↓
-Clock Latency & Skew
-       ↓
-Setup / Hold Timing
-       ↓
-Timing Slack
-       ↓
-Timing Closure
-```
-
-A well-controlled clock network is therefore an important part of achieving reliable timing in a physical implementation.
 
 ---
 
