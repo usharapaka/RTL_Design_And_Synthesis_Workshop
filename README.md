@@ -23,7 +23,7 @@ This repository documents my learning journey and practical work completed durin
   - [SKY130 Module 3](#sky130-module-3--design-library-cell-using-magic-layout-and-ngspice-characterization)
   - [SKY130 Module 4](#sky130-module-4--pre-layout-timing-analysis-and-importance-of-good-clock-tree)
   - [SKY130 Module 5](#sky130-module-5--final-steps-for-rtl2gds-using-tritonroute-and-opensta)
-- [Tools & Technologies](#-tools--technologies)
+  - [Tools & Technologies](#tools--technologies)
 - [Author](#author)
 ---
 
