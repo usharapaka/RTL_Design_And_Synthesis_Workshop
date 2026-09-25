@@ -388,17 +388,26 @@ This repository documents my learning journey and practical work completed durin
 
 ---
 
-# Tools & Technologies
+# 🛠️ Tools & Technologies
 
-| Tool / Technology  | Application                                    |
-| ------------------ | ---------------------------------------------- |
-| **OpenLANE**       | RTL-to-GDSII ASIC design flow                  |
-| **SKY130 PDK**     | Open-source process design kit                 |
-| **OpenROAD**       | Physical design and placement                  |
-| **RePlAce**        | Placement optimization                         |
-| **Magic**          | VLSI layout visualization                      |
-| **Git & GitHub**   | Version control and project documentation      |
-| **Linux Terminal** | Running commands and executing the design flow |
+| Tool / Technology | Application |
+| :---------------- | :---------- |
+| **OpenLANE** | RTL-to-GDSII ASIC design flow |
+| **SKY130 PDK** | Open-source process design kit |
+| **OpenROAD** | Physical design, placement, CTS and routing |
+| **RePlAce** | Placement optimization |
+| **TritonCTS** | Clock Tree Synthesis |
+| **TritonRoute** | Global and detailed routing |
+| **OpenSTA** | Static Timing Analysis and timing verification |
+| **Magic** | VLSI layout, extraction and Design Rule Checking (DRC) |
+| **ngspice** | CMOS inverter simulation and characterization |
+| **LEF** | Standard-cell physical abstraction |
+| **DEF** | Physical design and layout representation |
+| **Liberty (.lib)** | Standard-cell timing and characterization data |
+| **SDC** | Timing and clock constraints |
+| **Git** | Version control |
+| **GitHub** | Repository management and documentation |
+| **Linux Terminal** | VLSI tool execution and design-flow automation |
 
 ---
 
