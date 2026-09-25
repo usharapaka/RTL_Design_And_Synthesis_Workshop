@@ -245,6 +245,119 @@ This repository documents my learning journey and hands-on experiments completed
 ➡️ **Documentation:** [Sky130 Module 2 README](./Sky130%20Module%202/README.md)
 
 
+# SKY130 Module 3 — Design Library Cell Using Magic Layout and ngspice Characterization
+
+## SKY130_D3_SK1 — Labs for CMOS Inverter ngspice Simulations
+
+1. **svgSKY_L0** — IO Placer Revision
+2. **SKY_L1** — SPICE Deck Creation for CMOS Inverter
+3. **SKY_L2** — SPICE Simulation Lab for CMOS Inverter
+4. **SKY_L3** — Switching Threshold — Vm
+5. **SKY_L4** — Static and Dynamic Simulation of CMOS Inverter
+6. **SKY_L5** — Lab Steps to Git Clone `vsdstdcelldesign`
+
+---
+
+## SKY130_D3_SK2 — Inception of Layout — CMOS Fabrication Process
+
+1. **svgSKY_L1** — Create Active Regions
+2. **SKY_L2** — Formation of N-Well and P-Well
+3. **SKY_L3** — Formation of Gate Terminal
+4. **SKY_L4** — Lightly Doped Drain (LDD) Formation
+5. **SKY_L5** — Source–Drain Formation
+6. **SKY_L6** — Local Interconnect Formation
+7. **SKY_L7** — Higher-Level Metal Formation
+8. **SKY_L8** — Lab Introduction to SKY130 Basic Layers Layout and LEF Using Inverter
+9. **SKY_L9** — Lab Steps to Create Standard Cell Layout and Extract SPICE Netlist
+
+---
+
+## SKY130_D3_SK2 — Inception of Layout — CMOS Fabrication Process
+
+1. **svgSKY_L9** — Lab Steps to Create Standard Cell Layout and Extract SPICE Netlist
+2. **SKY_L2** — Lab Steps to Characterize Inverter Using SKY130 Model Files
+3. **SKY_L3** — Lab Introduction to Magic Tool Options and DRC Rules
+4. **SKY_L4** — Lab Introduction to SKY130 PDKs and Steps to Download Labs
+5. **SKY_L5** — Lab Introduction to Magic and Steps to Load SKY130 Tech Rules
+6. **SKY_L6** — Lab Exercise to Fix `poly.9` Error in SKY130 Tech File
+7. **SKY_L7** — Lab Exercise to Implement Poly Resistor Spacing to Diff and Tap
+8. **SKY_L8** — Lab Challenge Exercise to Describe DRC Error as Geometrical Construct
+9. **SKY_L9** — Lab Challenge to Find Missing or Incorrect Rules and Fix Them
+
+➡️ **Documentation:** [Sky130 Module 3 README](./Sky130%20Module%203/README.md)
+
+
+# SKY130 Module 4 — Pre-Layout Timing Analysis and Importance of Good Clock Tree
+
+## SKY130_D4_SK1 — Timing Modelling Using Delay Tables
+
+1. **svgSKY_L1** — Lab Steps to Convert Grid Info to Track Info
+2. **SKY_L2** — Lab Steps to Convert Magic Layout to Standard Cell LEF
+3. **SKY_L3** — Introduction to Timing Libraries and Steps to Include New Cell in Synthesis
+4. **SKY_L4** — Introduction to Delay Tables
+5. **SKY_L5** — Delay Table Usage — Part 1
+6. **SKY_L6** — Delay Table Usage — Part 2
+7. **SKY_L7** — Lab Steps to Configure Synthesis Settings to Fix Slack and Include `vsdinv`
+
+---
+
+## SKY130_D4_SK2 — Timing Analysis with Ideal Clocks Using OpenSTA
+
+1. **svgSKY_L1** — Setup Timing Analysis and Introduction to Flip-Flop Setup Time
+2. **SKY_L2** — Introduction to Clock Jitter and Uncertainty
+3. **SKY_L3** — Lab Steps to Configure OpenSTA for Post-Synthesis Timing Analysis
+4. **SKY_L4** — Lab Steps to Optimize Synthesis to Reduce Setup Violations
+5. **SKY_L5** — Lab Steps to Perform Basic Timing ECO
+
+---
+
+## SKY130_D4_SK3 — Clock Tree Synthesis Using TritonCTS and Signal Integrity
+
+1. **svgSKY_L1** — Clock Tree Routing and Buffering Using H-Tree Algorithm
+2. **SKY_L2** — Crosstalk and Clock Net Shielding
+3. **SKY_L3** — Lab Steps to Run CTS Using TritonCTS
+4. **SKY_L4** — Lab Steps to Verify CTS Runs
+
+---
+
+## SKY130_D4_SK4 — Timing Analysis with Real Clocks Using OpenSTA
+
+1. **svgSKY_L1** — Setup Timing Analysis Using Real Clocks
+2. **SKY_L2** — Hold Timing Analysis Using Real Clocks
+3. **SKY_L3** — Lab Steps to Analyze Timing with Real Clocks Using OpenSTA
+4. **SKY_L4** — Lab Steps to Execute OpenSTA with the Correct Timing Libraries and CTS Assignment
+5. **SKY_L5** — Lab Steps to Observe the Impact of Larger CTS Buffers on Setup and Hold Timing
+
+  ➡️ **Documentation:** [Sky130 Module 4 README](./Sky130%20Module%204/README.md)
+
+# SKY130 Module 5 — Final Steps for RTL2GDS Using TritonRoute and OpenSTA
+
+## SKY130_D5_SK1 — Routing and Design Rule Check (DRC)
+
+1. **svgSKY_L1** — Introduction to Maze Routing — Lee’s Algorithm
+2. **SKY_L2** — Lee’s Algorithm Conclusion
+3. **SKY_L3** — Design Rule Check (DRC)
+
+---
+
+## SKY130_D5_SK2 — Power Distribution Network and Routing
+
+1. **svgSKY_L1** — Lab Steps to Build Power Distribution Network
+2. **SKY_L2** — Lab Steps from Power Straps to Standard Cell Power
+3. **SKY_L3** — Basics of Global and Detailed Routing and Configuring TritonRoute
+
+---
+
+## SKY130_D5_SK3 — TritonRoute Features
+
+1. **svgSKY_L1** — TritonRoute Feature 1 — Honors Pre-Processed Route Guides
+2. **SKY_L2** — TritonRoute Features 2 & 3 — Inter-Guide Connectivity and Intra- & Inter-Layer Routing
+3. **SKY_L3** — TritonRoute Method to Handle Connectivity
+4. **SKY_L4** — Routing Topology Algorithm and Final Files List Post-Route
+
+  ➡️ **Documentation:** [Sky130 Module 5 README](./Sky130%20Module%205/README.md)
+
+
 
 ## Tools Used
 
