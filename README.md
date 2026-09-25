@@ -5,9 +5,41 @@
 This repository documents my learning journey and practical work completed during the **RTL Design Workshop**, including Verilog RTL implementations, simulation and waveform analysis, synthesis experiments, optimization techniques, and SKY130-based ASIC design studies.
 
 ---
+## Quick Navigation
 
-## Repository Contents
+* [Workshop Overview](#workshop-overview)
+* [Module 0 – Workshop Introduction](#module-0--workshop-introduction)
+* [Module 1 – Verilog RTL Design & Synthesis](#module-1--verilog-rtl-design--synthesis)
+* [Module 2.1 – Timing Libraries & Synthesis](#module-21--timing-libraries--synthesis)
+* [Module 2.2 – Efficient Flip-Flop Coding](#module-22--efficient-flip-flop-coding)
+* [Module 3 – Combinational & Sequential Optimizations](#module-3--combinational--sequential-optimizations)
+* [Module 4 – GLS & Synthesis-Simulation Mismatch](#module-4--gls--synthesis-simulation-mismatch)
+* [Module 5 – RTL Coding Constructs](#module-5--rtl-coding-constructs)
+* [Mid-Term Submission](#mid-term-submission)
+* [Assignment – Sequence Detector](#assignment--sequence-detector)
+* [SKY130 Modules](#sky130-modules)
 
+  * [SKY130 Module 1](#sky130-module-1)
+  * [SKY130 Module 2](#sky130-module-2)
+  * [SKY130 Module 3](#sky130-module-3)
+  * [SKY130 Module 4](#sky130-module-4)
+  * [SKY130 Module 5](#sky130-module-5)
+* [Tools & Technologies](#tools--technologies)
+* [Author](#author)
+  
+---
+
+# Repository Contents
+
+| Section                    | Focus                                                                          |
+|----------------------------|--------------------------------------------------------------------------------|
+| **RTL Design & Synthesis** | Verilog RTL design, simulation, synthesis, technology mapping and optimization |
+| **Mid Term Submission**    | RISC-V, RTL simulation, synthesis, GLS and OpenROAD exploration                |
+| **Sequence Detector**      | FSM design, sequence detection, verification, synthesis and GLS                |
+| **SKY130 Modules**         | Open-source EDA, ASIC design, layout, timing, CTS, routing and DRC             |
+| **Tools & Technologies**   | OpenLANE, OpenROAD, Yosys, Magic, RePlAce, SKY130 and related tools            |
+
+---
 ### RTL Design & Synthesis
 
 | Module         | Topic                                                                    | Documentation                           |
