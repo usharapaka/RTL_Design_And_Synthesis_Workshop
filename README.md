@@ -418,7 +418,7 @@ This repository documents my learning journey and practical work completed durin
 
 ---
 
-# 🛠️ Tools & Technologies
+#  Tools & Technologies
 
 | Tool / Technology | Application |
 | :---------------- | :---------- |
