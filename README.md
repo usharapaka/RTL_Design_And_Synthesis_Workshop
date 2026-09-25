@@ -7,26 +7,24 @@ This repository documents my learning journey and practical work completed durin
 ---
 ## Quick Navigation
 
-* [Workshop Overview](#workshop-overview)
-* [Module 0 – Workshop Introduction](#module-0--workshop-introduction)
-* [Module 1 – Verilog RTL Design & Synthesis](#module-1--verilog-rtl-design--synthesis)
-* [Module 2.1 – Timing Libraries & Synthesis](#module-21--timing-libraries--synthesis)
-* [Module 2.2 – Efficient Flip-Flop Coding](#module-22--efficient-flip-flop-coding)
-* [Module 3 – Combinational & Sequential Optimizations](#module-3--combinational--sequential-optimizations)
-* [Module 4 – GLS & Synthesis-Simulation Mismatch](#module-4--gls--synthesis-simulation-mismatch)
-* [Module 5 – RTL Coding Constructs](#module-5--rtl-coding-constructs)
-* [Mid-Term Submission](#mid-term-submission)
-* [Assignment – Sequence Detector](#assignment--sequence-detector)
-* [SKY130 Modules](#sky130-modules)
-
-  * [SKY130 Module 1](#sky130-module-1)
-  * [SKY130 Module 2](#sky130-module-2)
-  * [SKY130 Module 3](#sky130-module-3)
-  * [SKY130 Module 4](#sky130-module-4)
-  * [SKY130 Module 5](#sky130-module-5)
-* [Tools & Technologies](#tools--technologies)
-* [Author](#author)
-  
+- [Workshop Overview](#rtl-design--synthesis)
+- [Module 0 – Workshop Introduction](#module-0--workshop-introduction)
+- [Module 1 – Verilog RTL Design & Synthesis](#module-1--introduction-to-verilog-rtl-design-and-synthesis)
+- [Module 2.1 – Timing Libraries & Synthesis](#module-21--timing-libraries-hierarchical-vs-flat-synthesis--efficient-flop-coding-styles)
+- [Module 2.2 – Efficient Flip-Flop Coding](#module-22--flip-flop-design--sky130-technology-mapping)
+- [Module 3 – Combinational & Sequential Optimizations](#module-3--combinational-and-sequential-optimizations)
+- [Module 4 – GLS & Synthesis-Simulation Mismatch](#module-4--gls-blocking-vs-non-blocking--synthesis-simulation-mismatch)
+- [Module 5 – RTL Coding Constructs](#module-5--optimization-in-synthesis)
+- [Mid-Term Submission](#mid-term-submission)
+- [Assignment – Sequence Detector](#assignment--sequence-detector)
+- [SKY130 Modules](#sky130-modules)
+  - [SKY130 Module 1](#sky130-module-1--inception-of-open-source-eda-openlane--sky130-pdk)
+  - [SKY130 Module 2](#sky130-module-2--good-floorplan-vs-bad-floorplan-and-introduction-to-library-cells)
+  - [SKY130 Module 3](#sky130-module-3--design-library-cell-using-magic-layout-and-ngspice-characterization)
+  - [SKY130 Module 4](#sky130-module-4--pre-layout-timing-analysis-and-importance-of-good-clock-tree)
+  - [SKY130 Module 5](#sky130-module-5--final-steps-for-rtl2gds-using-tritonroute-and-opensta)
+- [Tools & Technologies](#-tools--technologies)
+- [Author](#author)
 ---
 
 # Repository Contents
@@ -40,7 +38,7 @@ This repository documents my learning journey and practical work completed durin
 | **Tools & Technologies**   | OpenLANE, OpenROAD, Yosys, Magic, RePlAce, SKY130 and related tools            |
 
 ---
-### RTL Design & Synthesis
+# RTL Design & Synthesis
 
 | Module         | Topic                                                                    | Documentation                           |
 | -------------- | ------------------------------------------------------------------------ | --------------------------------------- |
@@ -54,7 +52,7 @@ This repository documents my learning journey and practical work completed durin
 
 ---
 
-# Module 0 — Workshop Introduction
+# Module 0 — Workshop Introduction 
 
 ### Topics Covered
 
