@@ -16,6 +16,11 @@ This repository documents my learning journey and practical work completed durin
 - [Module 4 – GLS & Synthesis-Simulation Mismatch](#module-4--gls-blocking-vs-non-blocking--synthesis-simulation-mismatch)
 - [Module 5 – RTL Coding Constructs](#module-5--optimization-in-synthesis)
 - [Mid-Term Submission](#mid-term-submission)
+- [VSDBabySoC Complete Document](#vsdbabysoc-complete-document)
+  - [VSDBabySoC Pre-Synthesis](#vsdbabysoc-pre-synthesis)
+  - [VSDBabySoC Post-Synthesis](#vsdbabysoc-post-synthesis)
+  - [VSDBabySoC on SKY130HD](#vsdbabysoc-on-sky130hd)
+  - [VSDBabySoC Static Timing Analysis](#vsdbabysoc-static-timing-analysis)
 - [Assignment – Sequence Detector](#assignment--sequence-detector)
 - [SKY130 Modules](#sky130-modules)
   - [SKY130 Module 1](#sky130-module-1--inception-of-open-source-eda-openlane--sky130-pdk)
@@ -24,6 +29,7 @@ This repository documents my learning journey and practical work completed durin
   - [SKY130 Module 4](#sky130-module-4--pre-layout-timing-analysis-and-importance-of-good-clock-tree)
   - [SKY130 Module 5](#sky130-module-5--final-steps-for-rtl2gds-using-tritonroute-and-opensta)
   - [Tools & Technologies](#tools--technologies)
+  - [Repository Walkthrough Video](#repository-walkthrough-video)
 - [Author](#author)
 ---
 
@@ -227,7 +233,7 @@ This repository documents my learning journey and practical work completed durin
 - OpenROAD GUI analysis
 - Physical-design logs, results, and reports
 
-**SKY130HD Documentation:** [Open Folder]()
+**SKY130HD Documentation:** [Open Folder](https://github.com/usharapaka/RTL_Design_And_Synthesis_Workshop/tree/main/VSDBabySoC%20on%20SKY130HD)
 
 ### VSDBabySoC Static Timing Analysis
 
