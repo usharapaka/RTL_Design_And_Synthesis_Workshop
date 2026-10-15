@@ -227,7 +227,7 @@ This repository documents my learning journey and practical work completed durin
 - OpenROAD GUI analysis
 - Physical-design logs, results, and reports
 
-**SKY130HD Documentation:** [Open Folder](https://github.com/usharapaka/RTL_Design_And_Synthesis_Workshop/tree/main/VSDBabySoC%20on%20SKY130HD)
+**SKY130HD Documentation:** [Open Folder]()
 
 ### VSDBabySoC Static Timing Analysis
 
@@ -245,7 +245,7 @@ This repository documents my learning journey and practical work completed durin
 - WNS, TNS, and hold-slack graphs
 - Timing results, observations, and conclusion
 
-**Static Timing Analysis Documentation:** [Open Folder](https://github.com/usharapaka/RTL_Design_And_Synthesis_Workshop/tree/main/VSDBabySoC%20Static%20Timing%20Analysis)
+**Static Timing Analysis Documentation:** [Open Folder](https://github.com/usharapaka/RTL_Design_And_Synthesis_Workshop/tree/main/VSDBabySoC%20Static%20Timing%20Analysis%20(STA))
 
 ----
 
