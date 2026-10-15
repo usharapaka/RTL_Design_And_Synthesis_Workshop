@@ -182,39 +182,71 @@ This repository documents my learning journey and practical work completed durin
 
 **Documentation:** [Session 1 README](./Session%201/README.md)
 
----
+# VSDBabySoC Complete Document
 
 ## VSDBabySoC Pre-Synthesis
 
 ### Topics Covered
 
-* Introduction to Yosys Synthesis Flow
-* RTL Simulation using Icarus Verilog
-* Waveform Analysis using GTKWave
-* Good MUX and Bad MUX Design Comparison
-* Writing Verilog Testbenches
-* Logic Synthesis using Yosys
-* Viewing Synthesized Netlists and Schematics
-* Gate-Level Simulation (GLS)
-* Comparing RTL and Synthesized Design Behavior
+- Introduction to Yosys Synthesis Flow
+- RTL Simulation using Icarus Verilog
+- Waveform Analysis using GTKWave
+- Good MUX and Bad MUX Design Comparison
+- Writing Verilog Testbenches
+- Logic Synthesis using Yosys
+- Viewing Synthesized Netlists and Schematics
+- Gate-Level Simulation (GLS)
+- Comparing RTL and Synthesized Design Behavior
 
-**Documentation:** [VSDBabySoC Pre-Synthesis README](./VSDBabySoCPre-Synthesis%202/README.md)
-
----
+**Documentation:** [VSDBabySoC Pre-Synthesis README](https://github.com/usharapaka/RTL_Design_And_Synthesis_Workshop/blob/main/VSDBabySoCPre-Synthesis%202/README.md)
 
 ## VSDBabySoC Post-Synthesis
 
 ### Topics Covered
 
-* RTL Simulation
-* Yosys Synthesis
-* Gate-Level Netlist
-* Gate-Level Simulation (GLS)
-* GTKWave Analysis
+- RTL Simulation
+- Yosys Synthesis
+- Gate-Level Netlist
+- Gate-Level Simulation (GLS)
+- GTKWave Analysis
 
-**Documentation:** [VSDBabySoC Post-Synthesis README](./VSDBabySoCPost-Synthesis%203/README.md)
+**Documentation:** [VSDBabySoC Post-Synthesis README](https://github.com/usharapaka/RTL_Design_And_Synthesis_Workshop/blob/main/VSDBabySoCPost-Synthesis%203/README.md)
 
----
+### VSDBabySoC on SKY130HD
+
+**Topics Covered**
+- VSDBabySoC design overview
+- SKY130HD technology and design configuration
+- RTL synthesis and synthesized design outputs
+- Floorplanning and macro placement
+- Tapcell insertion and Power Distribution Network (PDN)
+- Global placement and detailed placement
+- Clock-Tree Synthesis (CTS)
+- Global routing and routed-net inspection
+- OpenROAD GUI analysis
+- Physical-design logs, results, and reports
+
+**Documentation:** [VSDBabySoC on SKY130HD](https://github.com/usharapaka/RTL_Design_And_Synthesis_Workshop/tree/main/VSDBabySoC%20on%20SKY130HD)
+
+### VSDBabySoC Static Timing Analysis
+
+**Topics Covered**
+- Static Timing Analysis (STA) using OpenSTA
+- Synthesized netlist, SDC constraints, and timing libraries
+- SKY130HD standard-cell timing libraries
+- Process, Voltage, and Temperature (PVT) corners
+- Multi-corner STA across 18 timing corners
+- Setup timing and hold timing analysis
+- Minimum and maximum slack analysis
+- Worst Negative Slack (WNS) analysis
+- Total Negative Slack (TNS) analysis
+- Automated timing-report generation and slack extraction
+- WNS, TNS, and hold-slack graphs
+- Timing results, observations, and conclusion
+
+**Documentation:** [VSDBabySoC Static Timing Analysis](https://github.com/usharapaka/RTL_Design_And_Synthesis_Workshop/tree/main/VSDBabySoC%20Static%20Timing%20Analy...)
+
+----
 
 # Assignment — Sequence Detector
 
