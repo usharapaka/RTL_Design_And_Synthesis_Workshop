@@ -184,7 +184,7 @@ This repository documents my learning journey and practical work completed durin
 
 ---
 
-## Session 2
+## VSDBabySoC Pre-Synthesis
 
 ### Topics Covered
 
@@ -198,11 +198,11 @@ This repository documents my learning journey and practical work completed durin
 * Gate-Level Simulation (GLS)
 * Comparing RTL and Synthesized Design Behavior
 
-**Documentation:** [Session 2 README](./Session%202/README.md)
+**Documentation:** [VSDBabySoC Pre-Synthesis README](./VSDBabySoCPre-Synthesis/README.md)
 
 ---
 
-## Session 3
+## VSDBabySoC Post-Synthesis
 
 ### Topics Covered
 
@@ -212,7 +212,7 @@ This repository documents my learning journey and practical work completed durin
 * Gate-Level Simulation (GLS)
 * GTKWave Analysis
 
-**Documentation:** [Session 3 README](./Session%203/README.md)
+**Documentation:** [VSDBabySoC Post-Synthesis README](./VSDBabySoCPost-Synthesis/README.md)
 
 ---
 
