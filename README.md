@@ -198,7 +198,7 @@ This repository documents my learning journey and practical work completed durin
 - Gate-Level Simulation (GLS)
 - Comparing RTL and Synthesized Design Behavior
 
-**Pre-Synthesis Documentation:** [Open README](https://github.com/usharapaka/RTL_Design_And_Synthesis_Workshop/blob/main/VSDBabySoC%20Pre-Synthesis/README.md)
+**Pre-Synthesis Documentation:** [Open README](https://github.com/usharapaka/RTL_Design_And_Synthesis_Workshop/tree/main/VSDBabySoC%20Pre-Synthesis)
 
 ## VSDBabySoC Post-Synthesis
 
@@ -210,7 +210,7 @@ This repository documents my learning journey and practical work completed durin
 - Gate-Level Simulation (GLS)
 - GTKWave Analysis
 
-**Post-Synthesis Documentation:** [Open README](https://github.com/usharapaka/RTL_Design_And_Synthesis_Workshop/blob/main/VSDBabySoC%20Post-Synthesis/README.md)
+**Post-Synthesis Documentation:** [Open README](https://github.com/usharapaka/RTL_Design_And_Synthesis_Workshop/tree/main/VSDBabySoC%20Post-Synthesis)
 
 
 ### VSDBabySoC on SKY130HD
