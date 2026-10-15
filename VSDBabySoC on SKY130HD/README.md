@@ -583,19 +583,19 @@ The PDF contains implementation screenshots and timing-analysis evidence. The fo
 
 Shows the remote Linux workspace used for the physical-design flow. The workspace contains the design configuration, scripts, logs, and result databases.
 
-<img width="719" height="450" alt="image" src="https://github.com/user-attachments/assets/f5f66f95-519b-499e-9491-6445c8c83fec" />
+<img width="1917" height="1198" alt="Screenshot 2026-09-26 103741" src="https://github.com/user-attachments/assets/a8400e53-d0a2-4681-9913-ced9df563698" />
 
 **Figure 2 — VSDBabySoC source directory**
 
 Shows the Verilog/SystemVerilog design files. Before synthesis, the top module and dependent source files must be specified correctly.
 
-<img width="713" height="425" alt="image" src="https://github.com/user-attachments/assets/c7ac5dfd-f3a4-49ea-b613-b1bca65c1bc4" />
+<img width="1901" height="1131" alt="Screenshot 2026-09-26 123920" src="https://github.com/user-attachments/assets/ffe6488b-c6b6-4c7f-9d8e-8a51d87fa0f5" />
 
 **Figure 3 — VSDBabySoC design folder in VS Code**
 
 Shows the terminal in the expected design and flow environment. Correct directory navigation allows the scripts to locate platform files and result paths.
 
-<img width="719" height="426" alt="image" src="https://github.com/user-attachments/assets/b59a8edd-655f-4993-adb8-2b6af89f4cb6" />
+<img width="1917" height="1136" alt="Screenshot 2026-09-26 115433" src="https://github.com/user-attachments/assets/7f1f6a11-a3f1-412e-a533-93b958aa35d6" />
 
 ### Figures 4–6: GUI Timing and Net Inspection
 
