@@ -7,7 +7,7 @@ This repository documents my learning journey and practical work completed durin
 ---
 ## Quick Navigation
 
-- [Workshop Overview](#rtl-design--synthesis)
+- [RTL Modules](#rtl-design--synthesis)
 - [Module 0 – Workshop Introduction](#module-0--workshop-introduction)
 - [Module 1 – Verilog RTL Design & Synthesis](#module-1--introduction-to-verilog-rtl-design-and-synthesis)
 - [Module 2.1 – Timing Libraries & Synthesis](#module-21--timing-libraries-hierarchical-vs-flat-synthesis--efficient-flop-coding-styles)
