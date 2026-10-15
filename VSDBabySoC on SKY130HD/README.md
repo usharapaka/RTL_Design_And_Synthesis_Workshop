@@ -579,13 +579,19 @@ The PDF contains implementation screenshots and timing-analysis evidence. The fo
 
 Shows the remote Linux workspace used for the physical-design flow. The workspace contains the design configuration, scripts, logs, and result databases.
 
+<img width="719" height="450" alt="image" src="https://github.com/user-attachments/assets/f5f66f95-519b-499e-9491-6445c8c83fec" />
+
 **Figure 2 — VSDBabySoC source directory**
 
 Shows the Verilog/SystemVerilog design files. Before synthesis, the top module and dependent source files must be specified correctly.
 
+<img width="713" height="425" alt="image" src="https://github.com/user-attachments/assets/c7ac5dfd-f3a4-49ea-b613-b1bca65c1bc4" />
+
 **Figure 3 — VSDBabySoC design folder in VS Code**
 
 Shows the terminal in the expected design and flow environment. Correct directory navigation allows the scripts to locate platform files and result paths.
+
+<img width="719" height="426" alt="image" src="https://github.com/user-attachments/assets/b59a8edd-655f-4993-adb8-2b6af89f4cb6" />
 
 ### Figures 4–6: GUI Timing and Net Inspection
 
@@ -593,13 +599,19 @@ Shows the terminal in the expected design and flow environment. Correct director
 
 Shows a floorplan database and loaded SDC constraints. GUI timing views should be supported by saved text reports that identify the analyzed stage and constraints.
 
+<img width="720" height="425" alt="image" src="https://github.com/user-attachments/assets/6913a39c-3479-4651-ae41-d43621f5bd71" />
+
 **Figure 5 — Timing Report**
 
 Shows a setup slack value of approximately -0.156. The units depend on the loaded constraints and timing session. The path type, units, corner, and SDC must be confirmed before using this value in a report.
 
+<img width="717" height="427" alt="image" src="https://github.com/user-attachments/assets/93eb94c4-f66a-4b0a-9d87-a0f539de5cf7" />
+
 **Figure 6 — VSS ground net**
 
 The Inspector identifies the VSS net as a ground net and marks it as routed in the loaded database. This provides evidence of power/ground geometry but does not independently establish complete supply connectivity or power-integrity sign-off.
+
+<img width="719" height="429" alt="image" src="https://github.com/user-attachments/assets/a41904c6-ead6-4980-b5fb-9914295aba74" />
 
 ### Figures 7–10: Synthesis and Floorplanning
 
@@ -607,17 +619,25 @@ The Inspector identifies the VSS net as a ground net and marks it as routed in t
 
 Shows a flow command and the technology-library information used by the run. The complete log should be retained for debugging.
 
+<img width="719" height="428" alt="image" src="https://github.com/user-attachments/assets/0f78a409-544f-4152-ac7f-6781de755163" />
+
 **Figure 8 — Synthesis outputs**
 
 Shows the design being linked and database/constraint artifacts being written. These outputs are inputs to later physical-design stages.
+
+<img width="719" height="430" alt="image" src="https://github.com/user-attachments/assets/67af8f93-e9d9-4a45-ac8e-2d3714a215de" />
 
 **Figure 9 — Invalid floorplan target**
 
 Shows the error caused by the misspelled target `floorplane`. The correct target is `floorplan`.
 
+<img width="719" height="428" alt="image" src="https://github.com/user-attachments/assets/5c7d4776-44f8-4014-99d7-a4df7a9206d5" />
+
 **Figure 10 — Tapcell and PDN preparation**
 
 Shows floorplan-stage outputs being copied into the base result directory. Supply-pin warnings still need to be reviewed.
+
+<img width="719" height="429" alt="image" src="https://github.com/user-attachments/assets/9476807d-a6d0-4be8-aa8b-44a10afcfbf0" />
 
 ### Figures 11–12: Macro and Power/Ground Geometry
 
@@ -625,9 +645,13 @@ Shows floorplan-stage outputs being copied into the base result directory. Suppl
 
 Shows the DAC hard macro and its physical placement. Macro placement affects routing channels, pin access, and congestion.
 
+<img width="719" height="427" alt="image" src="https://github.com/user-attachments/assets/73c92165-1ea5-451e-a466-a4f7aaa512b3" />
+
 **Figure 12 — Power/ground layers**
 
 Shows visible metal layers and power/ground structures. A layout image alone does not prove that routing is DRC-clean.
+
+<img width="719" height="428" alt="image" src="https://github.com/user-attachments/assets/cde18cf1-ebbf-4378-ad06-a71e20df193f" />
 
 ### Figures 13–15: Placement
 
@@ -635,13 +659,19 @@ Shows visible metal layers and power/ground structures. A layout image alone doe
 
 Shows placement statistics and an initial Make error. That run must be treated as failed until the first error is identified.
 
+<img width="714" height="382" alt="image" src="https://github.com/user-attachments/assets/79d910b4-d2d8-4db7-b896-7fc59412b3de" />
+
 **Figure 14 — Detailed placement results**
 
 Shows placement legalization checks and area/utilization metrics. The displayed checks report no wrong-region, row-alignment, site-alignment, or adjacent-cell overlap problems.
 
+<img width="718" height="389" alt="image" src="https://github.com/user-attachments/assets/b18ad9f5-4993-49e2-ac0a-c414870e0bf0" />
+
 **Figure 15 — Placed standard cells and DAC macro**
 
 Shows the placed design in the OpenROAD GUI, including a standard cell with `PLACED` status. This is a placement-stage snapshot.
+
+<img width="719" height="388" alt="image" src="https://github.com/user-attachments/assets/24207b77-b2b4-4869-b0c8-2f28b8668573" />
 
 ### Figures 16–19: Clock-Tree Synthesis and Heat Map
 
@@ -649,17 +679,25 @@ Shows the placed design in the OpenROAD GUI, including a standard cell with `PLA
 
 Shows the `CLK` net and the clock sinks used by the clock-tree synthesis stage.
 
+<img width="719" height="388" alt="image" src="https://github.com/user-attachments/assets/19d48282-9dc5-4822-a719-ea57a57da9d7" />
+
 **Figure 17 — CTS final timing checks**
 
 Reports no setup violations and no hold violations at the displayed CTS final stage. This is not proof of post-route timing closure across all corners.
+
+<img width="719" height="387" alt="image" src="https://github.com/user-attachments/assets/9669843e-5fab-4c71-b4f6-a4efa1cfb145" />
 
 **Figure 18 — Post-CTS GUI**
 
 Shows the placed design with routing layers visible. The image does not independently establish route completion or clock sign-off.
 
+<img width="720" height="386" alt="image" src="https://github.com/user-attachments/assets/03a0a423-aa1d-4ec8-a755-bf8c7d02071a" />
+
 **Figure 19 — Heat-map view**
 
 Shows a localized concentration near the DAC macro. The selected heat-map metric must be identified before interpreting the displayed colors as congestion or another physical-design issue.
+
+<img width="719" height="382" alt="image" src="https://github.com/user-attachments/assets/6fb72709-d362-4164-aa8a-d561a5c8cf5a" />
 
 ### Figures 20–22: Macro Blockages, Sequential Cells, and Technology Layers
 
@@ -667,13 +705,19 @@ Shows a localized concentration near the DAC macro. The selected heat-map metric
 
 Shows the DAC macro and visible routing/placement blockages. Blockages can restrict routing resources and influence congestion around a macro.
 
+<img width="719" height="426" alt="image" src="https://github.com/user-attachments/assets/aa2498ad-8fe5-43ca-b901-4b330e335560" />
+
 **Figure 21 — Sequential standard cell**
 
 Shows a sequential standard cell associated with the CPU register logic. Sequential elements store state and are central to clocked timing analysis.
 
+<img width="719" height="429" alt="image" src="https://github.com/user-attachments/assets/5abd8ffd-4374-4f2c-8598-33e336630c4f" />
+
 **Figure 22 — Technology-layer information**
 
 Shows the floorplan and a technology-layer panel identifying a via layer and its properties. Technology-layer information contributes to routing and parasitic estimation.
+
+<img width="719" height="424" alt="image" src="https://github.com/user-attachments/assets/08a10202-e6cf-4b50-99ec-29e59d4f582b" />
 
 ### Figure 23: Global Routing and Routed-Net Inspection
 
@@ -690,6 +734,8 @@ sta::find_timing
 sta::find_requireds
 ```
 
+<img width="859" height="466" alt="image" src="https://github.com/user-attachments/assets/8629ddae-0a1b-403b-bd07-3b57d8d89149" />
+
 This provides evidence of routed-net geometry and global-routing-related timing analysis in the loaded database.
 
 However, a single routed net does not establish that all nets are routed or that DRC/LVS verification has passed.
@@ -703,6 +749,8 @@ The final pages contain the following additional evidence:
 - A Worst Slack (max) vs PVT Corners graph.
 - A summary of the observed timing behavior.
 - A conclusion identifying the need for setup timing optimization.
+
+<img width="862" height="468" alt="image" src="https://github.com/user-attachments/assets/7808b322-80fe-45b2-b641-f2ce9b595167" />
 
 The graphs report positive hold slack across all 16 corners and negative setup slack at some corners, with the worst reported setup slack at `ss_n40C_1v28`.
 
