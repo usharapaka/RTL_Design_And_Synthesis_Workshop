@@ -512,6 +512,8 @@ Hold timing verifies that data does not change too soon after the active clock e
 | Corner with maximum hold slack | `ss_n40C_1v28` |
 | Corner with minimum hold slack | `ff_n40C_1v95` |
 
+<img width="853" height="429" alt="image" src="https://github.com/user-attachments/assets/c936dff7-e101-499d-802d-3517e1025e9f" />
+
 The graph shows positive reported hold slack across all 16 corners.
 
 ### Interpretation
@@ -539,6 +541,8 @@ Setup timing verifies that data arrives early enough before the active clock edg
 | Corner with worst setup slack | `ss_n40C_1v28` |
 | Highest setup slack | 9.03 ns |
 | Corner with highest setup slack | `ff_100C_1v95` |
+
+<img width="851" height="419" alt="image" src="https://github.com/user-attachments/assets/dc1847cf-17f1-4b9f-b9e2-6d27077bc1d5" />
 
 The graph shows positive setup slack at several corners and negative setup slack at others.
 
