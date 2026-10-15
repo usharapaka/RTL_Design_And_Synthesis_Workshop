@@ -441,6 +441,16 @@ This repository documents my learning journey and practical work completed durin
 
 ---
 
+---
+
+# Repository Walkthrough Video
+
+This video provides a complete overview of the RTL Design and Synthesis Workshop repository, including RTL design, simulation, synthesis, optimization, SKY130 physical design, and VSDBabySoC design folders.
+
+**Watch the Video:** [RTL Design and Synthesis Workshop — Repository Walkthrough](https://drive.google.com/file/d/1aQ6pohebLrrjOgzMAOqeTjEp67adSmAy/view?usp=sharing)
+
+---
+
 # Author
 
 **Rapaka Usha**
