@@ -198,7 +198,7 @@ This repository documents my learning journey and practical work completed durin
 - Gate-Level Simulation (GLS)
 - Comparing RTL and Synthesized Design Behavior
 
-**Documentation:** [VSDBabySoC Pre-Synthesis README](https://github.com/usharapaka/RTL_Design_And_Synthesis_Workshop/blob/main/VSDBabySoCPre-Synthesis%202/README.md)
+**Pre-Synthesis Documentation:** [Open README](https://github.com/usharapaka/RTL_Design_And_Synthesis_Workshop/blob/main/VSDBabySoC%20Pre-Synthesis/README.md)
 
 ## VSDBabySoC Post-Synthesis
 
@@ -210,7 +210,8 @@ This repository documents my learning journey and practical work completed durin
 - Gate-Level Simulation (GLS)
 - GTKWave Analysis
 
-**Documentation:** [VSDBabySoC Post-Synthesis README](https://github.com/usharapaka/RTL_Design_And_Synthesis_Workshop/blob/main/VSDBabySoCPost-Synthesis%203/README.md)
+**Post-Synthesis Documentation:** [Open README](https://github.com/usharapaka/RTL_Design_And_Synthesis_Workshop/blob/main/VSDBabySoC%20Post-Synthesis/README.md)
+
 
 ### VSDBabySoC on SKY130HD
 
@@ -226,7 +227,7 @@ This repository documents my learning journey and practical work completed durin
 - OpenROAD GUI analysis
 - Physical-design logs, results, and reports
 
-**Documentation:** [VSDBabySoC on SKY130HD](https://github.com/usharapaka/RTL_Design_And_Synthesis_Workshop/tree/main/VSDBabySoC%20on%20SKY130HD)
+**SKY130HD Documentation:** [Open Folder](https://github.com/usharapaka/RTL_Design_And_Synthesis_Workshop/tree/main/VSDBabySoC%20on%20SKY130HD)
 
 ### VSDBabySoC Static Timing Analysis
 
@@ -244,7 +245,7 @@ This repository documents my learning journey and practical work completed durin
 - WNS, TNS, and hold-slack graphs
 - Timing results, observations, and conclusion
 
-**Documentation:** [VSDBabySoC Static Timing Analysis](https://github.com/usharapaka/RTL_Design_And_Synthesis_Workshop/tree/main/VSDBabySoC%20Static%20Timing%20Analy...)
+**Static Timing Analysis Documentation:** [Open Folder](https://github.com/usharapaka/RTL_Design_And_Synthesis_Workshop/tree/main/VSDBabySoC%20Static%20Timing%20Analysis)
 
 ----
 
