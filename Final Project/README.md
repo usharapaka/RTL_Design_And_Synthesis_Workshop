@@ -43,6 +43,22 @@ The main problem addressed by this project is the design and implementation of a
 
 ## 4. System Architecture
 
+The following functional block diagram illustrates the controller's inputs,
+fault-detection logic, sequential control, fault counter, and safety outputs.
+
+<img width="1672" height="940" alt="Sequential Lithium-Ion Safety Controller Diagram" src="https://github.com/user-attachments/assets/f6883f24-d5bd-4a5e-8e1b-5670dde08ae4" />
+
+1. **Input Signals:** The controller receives battery presence, temperature fault,
+   voltage fault, damage detection, clock, and reset signals.
+2. **Fault Detection:** The fault logic combines temperature, voltage, and damage
+   signals using OR logic.
+3. **Fault Counter:** A 4-bit counter tracks persistent faults using a configurable
+   threshold.
+4. **Finite State Machine:** The controller uses SAFE, MONITORING, WARNING, and
+   ISOLATE states to manage the safety response.
+5. **Output Signals:** The controller generates `safe`, `warning`, `isolate`,
+   and `alert` outputs.
+   
 ### 4.1 Input Signals
 
 | Signal | Description |
