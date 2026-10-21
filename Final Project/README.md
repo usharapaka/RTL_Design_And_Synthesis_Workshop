@@ -246,6 +246,10 @@ The synthesis report provides information about:
 - Wire and bit counts in the synthesized design.
 - Synthesis area estimate.
 
+## Synthesized Gate-Level Schematic
+
+<img width="1910" height="1130" alt="Screenshot 2026-10-21 121927" src="https://github.com/user-attachments/assets/beb25b3a-2459-4543-95e0-f7db7c419442" />
+
 The recorded Yosys statistics for this design report **50 cells** and a Yosys-reported module area of **496.7264** in the units used by that synthesis report.
 
 This is a **synthesis area estimate**, not the final physical die area. Synthesis and physical-design area figures must not be treated as interchangeable.
