@@ -417,7 +417,17 @@ All 16 hold-slack values shown in the supplied plot are positive.
 
 Positive hold slack means the reported hold checks have margin under the corresponding analysis conditions.
 
-### 10.4 Timing Graphs
+### 10.4 Timing Reports
+
+<img width="1600" height="951" alt="WhatsApp Image 2026-10-09 at 11 29 55 PM (3)" src="https://github.com/user-attachments/assets/a0fae47e-32ce-4fa6-bdbf-e7d6efd30e39" />
+
+<img width="1600" height="947" alt="WhatsApp Image 2026-10-09 at 11 29 55 PM (1)" src="https://github.com/user-attachments/assets/f3470d66-896c-42ce-bc59-519ff3e4b83a" />
+
+<img width="1600" height="949" alt="WhatsApp Image 2026-10-09 at 11 29 55 PM (2)" src="https://github.com/user-attachments/assets/c9e81ba0-9a1b-4fc0-85fd-f3a737bc6322" />
+
+<img width="1600" height="958" alt="WhatsApp Image 2026-10-09 at 11 29 55 PM" src="https://github.com/user-attachments/assets/f1cf7577-240d-4cda-a490-0befefd384b3" />
+
+### 10.5 Timing Graphs
 
 Include the actual generated plots in the repository and link them below. Use these filenames if you save the corresponding images under `documentation/sta/`.
 
@@ -433,9 +443,7 @@ Include the actual generated plots in the repository and link them below. Use th
 
 <img width="1917" height="1137" alt="Screenshot 2026-10-12 005924" src="https://github.com/user-attachments/assets/e8151abd-c558-4e2d-abbf-1ce1de83f52f" />
 
-> The image links above require the corresponding PNG files to be committed at those exact paths. If your files have different names, update the links to match the actual filenames.
-
-### 10.5 Interpretation
+### 10.6 Interpretation
 
 The supplied plots show positive setup and hold slack for all 16 evaluated corners. The smallest displayed margins occur at the slow-slow, low-voltage, low-temperature corner labeled `SS -40C 1.28V`:
 
