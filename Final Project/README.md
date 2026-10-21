@@ -16,8 +16,6 @@ The controller monitors battery presence, temperature faults, voltage faults, an
 
 The design is implemented using the **SkyWater SKY130 HD standard-cell library** through an OpenLane-based RTL-to-GDSII flow. Static Timing Analysis (STA) is also evaluated across 16 process-voltage-temperature (PVT) corners.
 
-> **Project scope:** This is a digital hardware controller prototype. The fault inputs represent signals provided by external sensing and monitoring circuits. The design does not itself measure battery temperature or voltage, and the project does not claim certification for real-world battery protection.
-
 ## 2. Problem Statement
 
 Lithium-ion batteries entering e-waste collection systems may have faults that require prompt detection and safe handling. A hardware controller can provide deterministic state-based responses to fault signals.
