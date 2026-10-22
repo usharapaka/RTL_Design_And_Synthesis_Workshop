@@ -589,9 +589,9 @@ The following tools and technologies were used in the project:
 | 10. KLayout                          |
 +--------------------------------------+
 ```
-
-**Documentation:** 
 ---
+**Final Project Documentation:** [Lithium-Ion Battery Safety Controller](./Final%20Project/README.md)
+
 # Author
 
 **Rapaka Usha**
