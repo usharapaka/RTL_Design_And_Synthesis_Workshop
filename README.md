@@ -568,27 +568,27 @@ This video provides a complete overview of the RTL Design and Synthesis Workshop
 - Timing reports and slack interpretation.
 - DRC and LVS verification results.
 - Design limitations and possible improvements.
-
+  
 ## 14. Tools and Technologies Used
 
-The following tools and technologies were used in the project:
+| Tool / Technology | Purpose |
+|---|---|
+| **Verilog HDL** | RTL design of the sequential battery safety controller |
+| **Icarus Verilog** | Functional simulation of the RTL design |
+| **GTKWave** | Visualization and analysis of simulation waveforms |
+| **Yosys** | Logic synthesis and generation of gate-level netlists |
+| **OpenLane** | Automated RTL-to-GDSII implementation flow |
+| **OpenROAD** | Physical design operations such as placement, clock-tree synthesis, and routing |
+| **OpenSTA** | Static Timing Analysis and timing report generation |
+| **SKY130 HD PDK** | Process design kit and standard-cell library for ASIC implementation |
+| **Magic VLSI** | Layout inspection and Design Rule Check (DRC) |
+| **KLayout** | Layout visualization and GDSII inspection |
+| **Linux Terminal** | Running design tools, commands, and implementation scripts |
 
-```text
-+--------------------------------------+
-|          REQUIRED TOOLS              |
-+--------------------------------------+
-| 1. Verilog HDL                       |
-| 2. Icarus Verilog                    |
-| 3. GTKWave                           |
-| 4. Yosys                             |
-| 5. OpenLane                          |
-| 6. OpenROAD                          |
-| 7. OpenSTA                           |
-| 8. SKY130 HD PDK                     |
-| 9. Magic                             |
-| 10. KLayout                          |
-+--------------------------------------+
-```
+### Technology Flow
+
+**Verilog RTL → Functional Simulation → Logic Synthesis → Floorplanning → Placement → Clock-Tree Synthesis → Routing → Static Timing Analysis → DRC/LVS Verification → GDSII Generation**
+
 ---
 **Final Project Documentation:** [Lithium-Ion Battery Safety Controller](https://github.com/usharapaka/RTL_Design_And_Synthesis_Workshop/tree/main/Final%20Project)
 
