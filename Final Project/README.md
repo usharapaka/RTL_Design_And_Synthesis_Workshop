@@ -79,8 +79,6 @@ fault-detection logic, sequential control, fault counter, and safety outputs.
 | `isolate` | Asserted in the ISOLATE state |
 | `alert` | Asserted in the ISOLATE state |
 
-**Important RTL detail:** The `safe` output is asserted in both SAFE and MONITORING. It should therefore not be interpreted as proof that no fault is present.
-
 ### 4.3 Functional Block Diagram
 
 The following diagram summarizes the major functional blocks. Keep the image at the specified path in the repository.
@@ -161,8 +159,6 @@ The counter is not a substitute for analog battery sensing. It processes the dig
 | KLayout | Layout viewing and inspection |
 | Graphviz | Functional and synthesis diagram generation |
 | Git and GitHub | Version control and project documentation |
-
-Tool availability and exact versions depend on the execution environment.
 
 ## 8. Complete RTL-to-GDSII Implementation Flow
 
@@ -250,8 +246,6 @@ gtkwave battery_safety_controller.vcd
 
 <img width="1600" height="949" alt="WhatsApp Image 2026-10-10 at 12 24 22 AM" src="https://github.com/user-attachments/assets/1c7fd316-2566-45d4-8aa7-300cc0582cba" />
 
-The testbench and waveform should be included in the repository if they are used as project evidence. Simulation claims should match the actual testbench and observed waveform.
-
 ### 8.3 Logic Synthesis
 
 Yosys converts the RTL into a gate-level representation and maps the logic to standard cells from the SKY130 HD library.
@@ -267,8 +261,6 @@ The synthesis report provides information about:
 <img width="1910" height="1130" alt="Screenshot 2026-10-21 121927" src="https://github.com/user-attachments/assets/beb25b3a-2459-4543-95e0-f7db7c419442" />
 
 The recorded Yosys statistics for this design report **50 cells** and a Yosys-reported module area of **496.7264** in the units used by that synthesis report.
-
-This is a **synthesis area estimate**, not the final physical die area. Synthesis and physical-design area figures must not be treated as interchangeable.
 
 ## Synthesis Report
 
@@ -367,12 +359,7 @@ set_load 0.01765 [all_outputs]
 | `set_driving_cell` | Models the external input driver |
 | `set_load` | Models the load applied to output ports |
 
-The 20 ns clock period corresponds to a nominal clock frequency of:
-
-\[
-f = \frac{1}{20\text{ ns}} = 50\text{ MHz}
-\]
-
+The 20 ns clock period corresponds to a nominal clock frequency 
 These constraints represent the assumptions used for timing evaluation; they do not by themselves establish that the design meets every possible real-world interface requirement.
 
 ## 10. 16-Corner Static Timing Analysis (STA)
@@ -392,10 +379,10 @@ This project evaluates 16 PVT corners, including fast-fast (FF), typical-typical
 ## SS Cornner result
 <img width="1600" height="952" alt="WhatsApp Image 2026-10-10 at 2 30 56 PM" src="https://github.com/user-attachments/assets/14f9478a-8d66-4003-a5ab-14367d819e46" />
 
-## STA 16 Conners Results
+# STA 16 Conners Results
 <img width="1600" height="557" alt="WhatsApp Image 2026-10-12 at 12 32 18 AM" src="https://github.com/user-attachments/assets/2c5c5745-f2f6-431e-a39d-4d9f1a374d77" />
 
-### 10.2 Setup Slack Results
+## 10.2 Setup Slack Results
 
 The supplied 16-corner setup-slack plot reports the following range:
 
@@ -406,7 +393,7 @@ All 16 setup-slack values shown in the supplied plot are positive.
 
 Positive setup slack means the reported setup checks have timing margin under the specific constraints and models used for that analysis.
 
-### 10.3 Hold Slack Results
+## 10.3 Hold Slack Results
 
 The supplied 16-corner hold-slack plot reports:
 
@@ -431,15 +418,15 @@ Positive hold slack means the reported hold checks have margin under the corresp
 
 Include the actual generated plots in the repository and link them below. Use these filenames if you save the corresponding images under `documentation/sta/`.
 
-**Setup slack across 16 PVT corners**
+## Setup slack across 16 PVT corners
 
 <img width="1600" height="944" alt="WhatsApp Image 2026-10-12 at 12 54 42 AM" src="https://github.com/user-attachments/assets/9f729563-477c-4f76-9c54-f784b6a50b93" />
 
-**Hold slack across 16 PVT corners**
+## Hold slack across 16 PVT corners
 
 <img width="1600" height="951" alt="WhatsApp Image 2026-10-12 at 12 55 12 AM" src="https://github.com/user-attachments/assets/3f783f8c-5d1a-446a-a2cb-c792c4bf0975" />
 
-**Setup and hold slack comparison**
+## Setup and hold slack comparison
 
 <img width="1917" height="1137" alt="Screenshot 2026-10-12 005924" src="https://github.com/user-attachments/assets/e8151abd-c558-4e2d-abbf-1ce1de83f52f" />
 
@@ -506,15 +493,9 @@ Add a screenshot of the final routed layout at:
 
 `documentation/layout/final_layout.png`
 
-Then display it in this section:
-
 ## Final GDS Layout
 
 <img width="1600" height="951" alt="WhatsApp Image 2026-10-12 at 12 09 23 AM" src="https://github.com/user-attachments/assets/1abd5415-4781-4eca-8c1f-d3dcb5d6473d" />
-
-The screenshot must be generated from the actual project layout. Do not use a conceptual diagram as a substitute for the physical layout.
-
-The GDSII file is a generated physical-design deliverable. Before uploading it to GitHub, check the file size and repository policies. If the file is too large, provide a documented download or release link instead of committing it directly.
 
 ## 13. Repository Structure
 
@@ -549,8 +530,6 @@ battery-safety-controller/
 └── .gitignore
 ```
 
-This is a recommended documentation layout. Preserve the actual OpenLane `config.tcl`, selected reports, and relevant implementation evidence in clearly named directories. Update this tree if your final repository differs.
-
 ## 14. Final Results Summary
 
 | Item | Reported result |
@@ -570,8 +549,6 @@ This is a recommended documentation layout. Preserve the actual OpenLane `config
 | Magic DRC | 0 violations reported |
 | LVS | 0 errors reported |
 
-Synthesis area and physical die area are different measurements. Do not compare them directly without accounting for their definitions and units.
-
 ## 15. Conclusion
 
 This project demonstrates the implementation of a sequential battery safety controller from Verilog RTL through synthesis and physical ASIC implementation using an open-source tool flow and the SKY130 HD technology library.
@@ -579,8 +556,6 @@ This project demonstrates the implementation of a sequential battery safety cont
 The design includes a four-state FSM, combined fault detection, a configurable fault threshold, and safety-related output signals. The supplied evidence reports positive setup and hold slack across the 16 evaluated PVT corners, zero Magic DRC violations, and zero LVS errors.
 
 The project brings together RTL design, simulation, logic synthesis, physical implementation, timing analysis, and layout verification in a single documented hardware-design workflow.
-
-**The results apply to the specific design, constraints, library models, tools, and verification reports used in this project. They should not be interpreted as safety certification for a physical battery-protection system.**
 
 **Project:** Design and Physical Implementation of a Sequential Lithium-Ion Battery Safety Controller for E-Waste Collection Systems  
 **HDL:** Verilog  
