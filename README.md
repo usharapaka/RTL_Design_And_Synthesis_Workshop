@@ -30,7 +30,7 @@ This repository documents my learning journey and practical work completed durin
   - [SKY130 Module 5](#sky130-module-5--final-steps-for-rtl2gds-using-tritonroute-and-opensta)
   - [Tools & Technologies](#tools--technologies)
   - [Repository Walkthrough Video](#repository-walkthrough-video)
-- [Topics Covered in the Final Project](./Final%20Project/README.md#topics-covered-in-the-final-project)
+- [Topics Covered in the Final Project](#topics-covered-in-the-final-project) 
 - [Author](#author)
 ---
 
