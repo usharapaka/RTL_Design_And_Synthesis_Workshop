@@ -610,6 +610,12 @@ This video provides a complete overview of the RTL Design and Synthesis Workshop
 
 **Verilog RTL → Functional Simulation → Logic Synthesis → Floorplanning → Placement → Clock-Tree Synthesis → Routing → Static Timing Analysis → DRC/LVS Verification → GDSII Generation**
 
+## 15. Final Project Video
+
+**Project Title:** Design and Physical Implementation of a Sequential Lithium-Ion Battery Safety Controller for E-Waste Collection Systems
+
+[ Watch the Final Project Video](https://drive.google.com/file/d/1W8lPGMB56Bty3wNoag1tFB9unA-a7V8x/view?usp=sharing)
+
 ---
 **Final Project Documentation:** [Lithium-Ion Battery Safety Controller](https://github.com/usharapaka/RTL_Design_And_Synthesis_Workshop/tree/main/Final%20Project)
 
