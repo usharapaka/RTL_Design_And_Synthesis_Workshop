@@ -590,7 +590,7 @@ The following tools and technologies were used in the project:
 +--------------------------------------+
 ```
 ---
-**Final Project Documentation:** [Lithium-Ion Battery Safety Controller](./Final%20Project/README.md)
+**Final Project Documentation:** [Lithium-Ion Battery Safety Controller](https://github.com/usharapaka/RTL_Design_And_Synthesis_Workshop/tree/main/Final%20Project)
 
 # Author
 
