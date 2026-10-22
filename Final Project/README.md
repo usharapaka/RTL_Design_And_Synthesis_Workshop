@@ -563,3 +563,9 @@ The project brings together RTL design, simulation, logic synthesis, physical im
 **Implementation flow:** OpenLane / OpenROAD  
 **Verification:** RTL simulation, multi-corner STA, Magic DRC, and LVS
 
+##  Final Project Video
+
+**Project Title:** Design and Physical Implementation of a Sequential Lithium-Ion Battery Safety Controller for E-Waste Collection Systems
+
+[ Watch the Final Project Video](https://drive.google.com/file/d/1W8lPGMB56Bty3wNoag1tFB9unA-a7V8x/view?usp=sharing)
+
