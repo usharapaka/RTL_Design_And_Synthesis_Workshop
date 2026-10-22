@@ -1,4 +1,4 @@
-# RTL Design & Synthesis Workshop
+ # RTL Design & Synthesis Workshop
 
 **A structured collection of hands-on experiments and documentation covering RTL design, simulation, synthesis, optimization, timing analysis, and open-source ASIC design.**
 
@@ -191,6 +191,16 @@ This repository documents my learning journey and practical work completed durin
 
 # VSDBabySoC Complete Document
 
+# VSDBabySoC
+
+| Section | Topic | Documentation |
+|---|---|---|
+| **Pre-Synthesis** | RTL Simulation, Yosys Synthesis & Gate-Level Simulation | [View Documentation](./VSDBabySoC%20Pre-Synthesis/README.md) |
+| **Post-Synthesis** | Synthesized Netlist, GLS & Waveform Analysis | [View Documentation](./VSDBabySoC%20Post-Synthesis/README.md) |
+| **SKY130HD Implementation** | Floorplanning, Placement, CTS & Routing | [View Documentation](./VSDBabySoC%20on%20SKY130HD/README.md) |
+| **Static Timing Analysis** | Multi-Corner STA, Setup/Hold Slack, WNS & TNS | [View Documentation](./VSDBabySoC%20Static%20Timing%20Analysis%20(STA)/README.md) |
+
+
 ## VSDBabySoC Pre-Synthesis
 
 ### Topics Covered
@@ -285,6 +295,16 @@ This repository documents my learning journey and practical work completed durin
 ---
 
 # SKY130 Modules
+
+# SKY130 Modules
+
+| Module | Topic | Documentation |
+|---|---|---|
+| **SKY130 Module 1** | Open-Source EDA, OpenLane & SKY130 PDK | [View README](./Sky130%20Module%201/README.md) |
+| **SKY130 Module 2** | Floorplanning, Library Cells & Placement | [View README](./Sky130%20Module%202/README.md) |
+| **SKY130 Module 3** | Standard-Cell Layout, Magic & ngspice Characterization | [View README](./Sky130%20Module%203/README.md) |
+| **SKY130 Module 4** | Pre-Layout STA, Clock Trees & Timing Analysis | [View README](./Sky130%20Module%204/README.md) |
+| **SKY130 Module 5** | RTL-to-GDSII, TritonRoute & OpenSTA | [View README](./Sky130%20Module%205/README.md) |
 
 ## SKY130 Module 1 — Inception of Open-Source EDA, OpenLANE & SKY130 PDK
 
