@@ -195,7 +195,7 @@ Physical Verification
 GDSII Layout
 ```
 
-### 8.1 RTL Design
+## 8.1 RTL Design
 
 The controller is described in Verilog HDL using:
 - A two-bit state register.
@@ -208,7 +208,7 @@ The asynchronous reset is active-high and initializes the state to SAFE and the 
 
 **RTL source:** `src/battery_safety_controller.v`
 
-### 8.2 RTL Simulation
+## 8.2 RTL Simulation
 
 The testbench applies clock, reset, battery-presence, and fault-input sequences to exercise the controller.
 
@@ -246,7 +246,7 @@ gtkwave battery_safety_controller.vcd
 
 <img width="1600" height="949" alt="WhatsApp Image 2026-10-10 at 12 24 22 AM" src="https://github.com/user-attachments/assets/1c7fd316-2566-45d4-8aa7-300cc0582cba" />
 
-### 8.3 Logic Synthesis
+## 8.3 Logic Synthesis
 
 Yosys converts the RTL into a gate-level representation and maps the logic to standard cells from the SKY130 HD library.
 
@@ -268,7 +268,7 @@ The recorded Yosys statistics for this design report **50 cells** and a Yosys-re
 
 The cell-level schematic represents the synthesized logic network. The functional block diagram is more suitable for understanding the controller architecture at a high level.
 
-### 8.4 Floorplanning
+## 8.4 Floorplanning
 
 Floorplanning establishes the initial physical layout region and the organization of the design within the chip boundary.
 
@@ -286,7 +286,7 @@ Typical tasks include:
 
 <img width="1600" height="952" alt="WhatsApp Image 2026-10-11 at 11 51 34 PM" src="https://github.com/user-attachments/assets/ec6533c7-7092-4cad-a4b5-fcfc7b4b5b2a" />
 
-### 8.5 Placement
+## 8.5 Placement
 
 Placement assigns physical locations to standard cells within the floorplan.
 
@@ -295,7 +295,7 @@ Placement assigns physical locations to standard cells within the floorplan.
 
 The implementation flow places the synthesized cells while considering timing, congestion, and physical constraints. Placement results provide the starting point for clock-tree construction and routing.
 
-### 8.6 Clock-Tree Synthesis (CTS)
+## 8.6 Clock-Tree Synthesis (CTS)
 
 Clock-tree synthesis builds the clock distribution network for sequential cells.
 
@@ -305,7 +305,7 @@ Clock-tree synthesis builds the clock distribution network for sequential cells.
 
 Its purpose is to distribute the clock to the relevant flip-flops while controlling clock insertion delay and skew. The post-CTS design is subsequently evaluated through timing analysis and routing stages.
 
-### 8.7 Routing
+## 8.7 Routing
 
 Routing creates the physical metal interconnections between standard cells and design ports.
 
@@ -315,7 +315,7 @@ Routing creates the physical metal interconnections between standard cells and d
 
 The flow includes global routing and detailed routing. The final routing stage must be evaluated using the corresponding reports rather than assuming that successful placement alone means the design is complete.
 
-### 8.8 Parasitic Extraction and Static Timing Analysis
+## 8.8 Parasitic Extraction and Static Timing Analysis
 
 After physical implementation, timing analysis evaluates signal paths using timing constraints and cell/interconnect timing information.
 
@@ -364,7 +364,7 @@ These constraints represent the assumptions used for timing evaluation; they do 
 
 ## 10. 16-Corner Static Timing Analysis (STA)
 
-### 10.1 Why Multi-Corner STA Is Important
+## 10.1 Why Multi-Corner STA Is Important
 
 Standard-cell delay varies with process conditions, supply voltage, and temperature. Static Timing Analysis across PVT corners evaluates whether the design's timing behavior remains acceptable under different library conditions.
 
@@ -404,7 +404,7 @@ All 16 hold-slack values shown in the supplied plot are positive.
 
 Positive hold slack means the reported hold checks have margin under the corresponding analysis conditions.
 
-### 10.4 Timing Reports
+## 10.4 Timing Reports
 
 <img width="1600" height="951" alt="WhatsApp Image 2026-10-09 at 11 29 55 PM (3)" src="https://github.com/user-attachments/assets/a0fae47e-32ce-4fa6-bdbf-e7d6efd30e39" />
 
@@ -414,7 +414,7 @@ Positive hold slack means the reported hold checks have margin under the corresp
 
 <img width="1600" height="958" alt="WhatsApp Image 2026-10-09 at 11 29 55 PM" src="https://github.com/user-attachments/assets/f1cf7577-240d-4cda-a490-0befefd384b3" />
 
-### 10.5 Timing Graphs
+## 10.5 Timing Graphs
 
 Include the actual generated plots in the repository and link them below. Use these filenames if you save the corresponding images under `documentation/sta/`.
 
@@ -430,8 +430,8 @@ Include the actual generated plots in the repository and link them below. Use th
 
 <img width="1917" height="1137" alt="Screenshot 2026-10-12 005924" src="https://github.com/user-attachments/assets/e8151abd-c558-4e2d-abbf-1ce1de83f52f" />
 
-### 10.6 Interpretation
-
+## 10.6 Interpretation
+ZAW
 The supplied plots show positive setup and hold slack for all 16 evaluated corners. The smallest displayed margins occur at the slow-slow, low-voltage, low-temperature corner labeled `SS -40C 1.28V`:
 
 - Setup slack: 5.79 ns
@@ -441,7 +441,7 @@ These values are results for the provided timing setup and reported checks. A co
 
 ## 11. Physical Verification: DRC and LVS
 
-### 11.1 Design Rule Checking (DRC)
+## 11.1 Design Rule Checking (DRC)
 
 Design Rule Checking verifies the layout against the physical design rules defined by the technology and verification deck.
 
@@ -457,7 +457,7 @@ Total Magic DRC violations is 0
 
 This result applies to the specific final layout and verification deck used in the recorded run.
 
-### 11.2 Layout Versus Schematic (LVS)
+## 11.2 Layout Versus Schematic (LVS)
 
 LVS compares the extracted layout connectivity and devices against the reference netlist.
 
@@ -476,7 +476,7 @@ Total errors = 0
 
 This indicates that the reported LVS comparison found no net, device, pin, or property mismatches.
 
-### 11.3 Verification Scope
+## 11.3 Verification Scope
 
 DRC and LVS are separate checks:
 - DRC evaluates layout geometry against design rules.
