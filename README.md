@@ -489,7 +489,109 @@ This video provides a complete overview of the RTL Design and Synthesis Workshop
 **Watch the Video:** [RTL Design and Synthesis Workshop — Repository Walkthrough](https://drive.google.com/file/d/1aQ6pohebLrrjOgzMAOqeTjEp67adSmAy/view?usp=sharing)
 
 ---
+---
 
+# Topics Covered in the Final Project
+
+**Project Title:** Design and Physical Implementation of a Sequential Lithium-Ion Battery Safety Controller for E-Waste Collection Systems
+
+## 1. Introduction to VLSI Design
+- Overview of ASIC design and the RTL-to-GDSII flow.
+- Role of digital controllers in battery safety monitoring.
+
+## 2. Problem Statement and Project Objectives
+- Monitoring temperature faults, voltage faults, and physical damage.
+- Designing a sequential controller to respond to persistent fault conditions.
+
+## 3. Verilog HDL Design
+- RTL coding using Verilog.
+- Module declaration, input/output signals, registers, and parameters.
+- Sequential state updates and combinational output logic.
+
+## 4. Finite State Machine (FSM) Design
+- SAFE state.
+- MONITORING state.
+- WARNING state.
+- ISOLATE state.
+- State transitions and reset behavior.
+
+## 5. Fault Detection and Counter Logic
+- Temperature, voltage, and damage fault inputs.
+- Fault-detection logic using the Boolean OR operation.
+- Fault counter and configurable fault threshold.
+
+## 6. Functional Simulation and Verification
+- Testbench development.
+- Simulation using Icarus Verilog.
+- Waveform analysis using GTKWave.
+- Verification of state transitions and output behavior.
+
+## 7. Logic Synthesis Using Yosys
+- RTL elaboration and synthesis.
+- Mapping logic to SKY130 HD standard cells.
+- Cell statistics and synthesis reports.
+- Netlist and schematic generation.
+
+## 8. SKY130 PDK and Standard-Cell Library
+- Introduction to the SKY130 Process Design Kit (PDK).
+- SKY130 High-Density (HD) standard-cell library.
+- Standard-cell-based ASIC implementation.
+
+## 9. RTL-to-GDSII Physical Design Using OpenLane
+- Floorplanning.
+- Standard-cell placement.
+- Clock-Tree Synthesis (CTS).
+- Global and detailed routing.
+- Final layout and GDSII generation.
+
+## 10. Static Timing Analysis (STA)
+- Setup timing analysis.
+- Hold timing analysis.
+- Recovery and removal checks for asynchronous reset.
+- Timing slack, data arrival time, and required time.
+- Timing report analysis.
+
+## 11. Multi-Corner Timing Analysis
+- Process, Voltage, and Temperature (PVT) corners.
+- Liberty timing libraries.
+- Comparing timing behavior across operating corners.
+
+## 12. Physical Verification
+- Design Rule Check (DRC).
+- Layout Versus Schematic (LVS).
+- Antenna checks.
+- Review of final verification reports.
+
+## 13. Implementation Results and Report Analysis
+- Synthesis statistics.
+- Physical layout results.
+- Timing reports and slack interpretation.
+- DRC and LVS verification results.
+- Design limitations and possible improvements.
+
+## 14. Tools and Technologies Used
+
+The following tools and technologies were used in the project:
+
+```text
++--------------------------------------+
+|          REQUIRED TOOLS              |
++--------------------------------------+
+| 1. Verilog HDL                       |
+| 2. Icarus Verilog                    |
+| 3. GTKWave                           |
+| 4. Yosys                             |
+| 5. OpenLane                          |
+| 6. OpenROAD                          |
+| 7. OpenSTA                           |
+| 8. SKY130 HD PDK                     |
+| 9. Magic                             |
+| 10. KLayout                          |
++--------------------------------------+
+```
+
+**Documentation:** 
+---
 # Author
 
 **Rapaka Usha**
