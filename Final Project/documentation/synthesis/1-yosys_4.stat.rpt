@@ -1,0 +1,35 @@
+
+28. Printing statistics.
+
+=== battery_safety_controller ===
+
+   Number of wires:                 56
+   Number of wire bits:             56
+   Number of public wires:          17
+   Number of public wire bits:      17
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 50
+     sky130_fd_sc_hd__a211o_2        2
+     sky130_fd_sc_hd__a32o_2         1
+     sky130_fd_sc_hd__a41o_2         1
+     sky130_fd_sc_hd__and2_2         1
+     sky130_fd_sc_hd__and2b_2        1
+     sky130_fd_sc_hd__and4_2         1
+     sky130_fd_sc_hd__buf_1          8
+     sky130_fd_sc_hd__buf_2          1
+     sky130_fd_sc_hd__dfrtp_2        7
+     sky130_fd_sc_hd__dfstp_2        1
+     sky130_fd_sc_hd__inv_2          9
+     sky130_fd_sc_hd__nor2_2         3
+     sky130_fd_sc_hd__nor3_2         1
+     sky130_fd_sc_hd__o21a_2         2
+     sky130_fd_sc_hd__o22a_2         2
+     sky130_fd_sc_hd__o22ai_2        2
+     sky130_fd_sc_hd__o31a_2         3
+     sky130_fd_sc_hd__or2_2          3
+     sky130_fd_sc_hd__or3b_2         1
+
+   Chip area for module '\battery_safety_controller': 496.726400
+

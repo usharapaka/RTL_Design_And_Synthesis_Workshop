@@ -1,0 +1,60 @@
+digraph BatterySafetyController {
+    graph [
+        label="Sequential Lithium-Ion Battery Safety Controller",
+        labelloc="t",
+        fontsize=20,
+        rankdir=TB,
+        nodesep=0.5,
+        ranksep=0.7,
+        bgcolor="white"
+    ];
+
+    node [
+        shape=box,
+        style="rounded,filled",
+        fillcolor="lightblue",
+        color="black",
+        fontname="Arial",
+        fontsize=11,
+        margin=0.18
+    ];
+
+    edge [
+        color="black",
+        arrowsize=0.8,
+        fontname="Arial",
+        fontsize=10
+    ];
+
+    inputs [
+        label="INPUT SIGNALS\nclk, reset\nbattery_present\ntemp_fault\nvoltage_fault\ndamage_detected",
+        fillcolor="lightyellow"
+    ];
+
+    fault [
+        label="FAULT DETECTION\n temp_fault OR\n voltage_fault OR\n damage_detected",
+        fillcolor="lightcyan"
+    ];
+
+    fsm [
+        label="FINITE STATE MACHINE\nSAFE → MONITORING\nMONITORING → WARNING\nWARNING → ISOLATE\nRecovery → SAFE",
+        fillcolor="palegreen"
+    ];
+
+    counter [
+        label="FAULT COUNTER\n4-bit fault_count\nThreshold = 3",
+        fillcolor="lightpink"
+    ];
+
+    outputs [
+        label="SAFETY OUTPUTS\nsafe\nwarning\nisolate\nalert",
+        fillcolor="lightyellow"
+    ];
+
+    inputs -> fault;
+    inputs -> fsm [label="clk / reset"];
+    fault -> fsm [label="fault_detected"];
+    fsm -> counter [label="state-dependent update"];
+    counter -> fsm [label="threshold"];
+    fsm -> outputs;
+}

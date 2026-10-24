@@ -1,0 +1,215 @@
+$date
+	Sat Oct 10 00:12:38 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module battery_safety_controller_tb $end
+$var wire 1 ! warning $end
+$var wire 1 " safe $end
+$var wire 1 # isolate $end
+$var wire 1 $ alert $end
+$var reg 1 % battery_present $end
+$var reg 1 & clk $end
+$var reg 1 ' damage_detected $end
+$var reg 1 ( reset $end
+$var reg 1 ) temp_fault $end
+$var reg 1 * voltage_fault $end
+$scope module dut $end
+$var wire 1 % battery_present $end
+$var wire 1 & clk $end
+$var wire 1 ' damage_detected $end
+$var wire 1 + fault_detected $end
+$var wire 1 ( reset $end
+$var wire 1 ) temp_fault $end
+$var wire 1 * voltage_fault $end
+$var reg 1 $ alert $end
+$var reg 4 , fault_count [3:0] $end
+$var reg 1 # isolate $end
+$var reg 1 " safe $end
+$var reg 2 - state [1:0] $end
+$var reg 1 ! warning $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 -
+b0 ,
+0+
+0*
+0)
+1(
+0'
+0&
+0%
+0$
+0#
+1"
+0!
+$end
+#5000
+1&
+#10000
+0&
+0(
+#15000
+1&
+#20000
+1+
+0&
+1)
+1%
+#25000
+1"
+b1 -
+1&
+#30000
+0&
+#35000
+b1 ,
+1&
+#40000
+0&
+#45000
+b10 ,
+1&
+#50000
+0&
+#55000
+1!
+0"
+b11 ,
+b10 -
+1&
+#60000
+0&
+#65000
+1$
+1#
+0!
+b11 -
+1&
+#70000
+0+
+0&
+0)
+#75000
+1"
+0$
+0#
+b0 ,
+b0 -
+1&
+#80000
+1+
+0&
+1*
+#85000
+1"
+b1 -
+1&
+#90000
+0&
+#95000
+b1 ,
+1&
+#100000
+0&
+#105000
+b10 ,
+1&
+#110000
+0&
+#115000
+1!
+0"
+b11 ,
+b10 -
+1&
+#120000
+0&
+#125000
+1$
+1#
+0!
+b11 -
+1&
+#130000
+0+
+0&
+0*
+#135000
+1"
+0$
+0#
+b0 ,
+b0 -
+1&
+#140000
+1+
+0&
+1'
+#145000
+1"
+b1 -
+1&
+#150000
+0&
+#155000
+b1 ,
+1&
+#160000
+0&
+#165000
+b10 ,
+1&
+#170000
+0&
+#175000
+1!
+0"
+b11 ,
+b10 -
+1&
+#180000
+0&
+#185000
+1$
+1#
+0!
+b11 -
+1&
+#190000
+0&
+#195000
+1&
+#200000
+0+
+0&
+0'
+#205000
+1"
+0$
+0#
+b0 ,
+b0 -
+1&
+#210000
+0&
+#215000
+1&
+#220000
+0&
+0%
+#225000
+1&
+#230000
+0&
+#235000
+1&
+#240000
+0&
