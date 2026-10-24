@@ -1,0 +1,8 @@
+
+27. Executing CHECK pass (checking for obvious problems).
+checking module battery_safety_controller..
+Warning: Wire battery_safety_controller.\warning is used but has no driver.
+Warning: Wire battery_safety_controller.\safe is used but has no driver.
+Warning: Wire battery_safety_controller.\isolate is used but has no driver.
+Warning: Wire battery_safety_controller.\alert is used but has no driver.
+found and reported 4 problems.

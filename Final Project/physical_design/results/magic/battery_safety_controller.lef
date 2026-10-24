@@ -1,0 +1,202 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO battery_safety_controller
+  CLASS BLOCK ;
+  FOREIGN battery_safety_controller ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 51.730 BY 62.450 ;
+  PIN alert
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 18.490 0.000 18.770 4.000 ;
+    END
+  END alert
+  PIN battery_present
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 32.290 58.450 32.570 62.450 ;
+    END
+  END battery_present
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 13.890 58.450 14.170 62.450 ;
+    END
+  END clk
+  PIN damage_detected
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 2.390 0.000 2.670 4.000 ;
+    END
+  END damage_detected
+  PIN isolate
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 48.390 58.450 48.670 62.450 ;
+    END
+  END isolate
+  PIN reset
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 27.240 4.000 27.840 ;
+    END
+  END reset
+  PIN safe
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 54.440 4.000 55.040 ;
+    END
+  END safe
+  PIN temp_fault
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 36.890 0.000 37.170 4.000 ;
+    END
+  END temp_fault
+  PIN voltage_fault
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 47.730 6.840 51.730 7.440 ;
+    END
+  END voltage_fault
+  PIN warning
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 47.730 34.040 51.730 34.640 ;
+    END
+  END warning
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 38.455 10.640 40.055 49.200 ;
+    END
+  END VPWR
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 24.960 10.640 26.560 49.200 ;
+    END
+  END VPWR
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 11.465 10.640 13.065 49.200 ;
+    END
+  END VPWR
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met5 ;
+        RECT 5.520 41.575 46.000 43.175 ;
+    END
+  END VPWR
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met5 ;
+        RECT 5.520 28.880 46.000 30.480 ;
+    END
+  END VPWR
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met5 ;
+        RECT 5.520 16.185 46.000 17.785 ;
+    END
+  END VPWR
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 31.705 10.640 33.305 49.200 ;
+    END
+  END VGND
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 18.215 10.640 19.815 49.200 ;
+    END
+  END VGND
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met5 ;
+        RECT 5.520 35.225 46.000 36.825 ;
+    END
+  END VGND
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met5 ;
+        RECT 5.520 22.535 46.000 24.135 ;
+    END
+  END VGND
+  OBS
+      LAYER li1 ;
+        RECT 5.520 10.795 46.000 49.045 ;
+      LAYER met1 ;
+        RECT 2.370 10.640 48.690 49.200 ;
+      LAYER met2 ;
+        RECT 2.400 58.170 13.610 58.450 ;
+        RECT 14.450 58.170 32.010 58.450 ;
+        RECT 32.850 58.170 48.110 58.450 ;
+        RECT 2.400 4.280 48.660 58.170 ;
+        RECT 2.950 4.000 18.210 4.280 ;
+        RECT 19.050 4.000 36.610 4.280 ;
+        RECT 37.450 4.000 48.660 4.280 ;
+      LAYER met3 ;
+        RECT 4.400 54.040 47.730 54.905 ;
+        RECT 4.000 35.040 47.730 54.040 ;
+        RECT 4.000 33.640 47.330 35.040 ;
+        RECT 4.000 28.240 47.730 33.640 ;
+        RECT 4.400 26.840 47.730 28.240 ;
+        RECT 4.000 7.840 47.730 26.840 ;
+        RECT 4.000 6.975 47.330 7.840 ;
+      LAYER met4 ;
+        RECT 20.215 10.640 24.560 49.200 ;
+        RECT 26.960 10.640 31.305 49.200 ;
+        RECT 33.705 10.640 38.055 49.200 ;
+      LAYER met5 ;
+        RECT 5.520 38.425 46.000 39.975 ;
+        RECT 5.520 32.080 46.000 33.625 ;
+        RECT 5.520 25.735 46.000 27.280 ;
+  END
+END battery_safety_controller
+END LIBRARY
+

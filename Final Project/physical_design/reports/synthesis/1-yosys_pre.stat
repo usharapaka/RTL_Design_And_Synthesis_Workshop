@@ -1,0 +1,26 @@
+
+9. Printing statistics.
+
+=== battery_safety_controller ===
+
+   Number of wires:                 57
+   Number of wire bits:             66
+   Number of public wires:          12
+   Number of public wire bits:      18
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 58
+     $_ANDNOT_                      13
+     $_AND_                          3
+     $_DFFE_PP0P_                    4
+     $_DFF_PP0_                      3
+     $_DFF_PP1_                      1
+     $_NAND_                         2
+     $_NOR_                          5
+     $_NOT_                          1
+     $_ORNOT_                        6
+     $_OR_                          17
+     $_XNOR_                         2
+     $_XOR_                          1
+

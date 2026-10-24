@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<report-database>
+    <categories/>
+    <cells>
+        <cell>
+            <name>battery_safety_controller</name>
+        </cell>
+    </cells>
+    <items/>
+</report-database>

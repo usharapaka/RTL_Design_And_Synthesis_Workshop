@@ -1,0 +1,9 @@
+VPWR power 1.8
+VGND power 0.0
+#define std_input min@VGND max@VPWR
+battery_present input std_input
+clk input std_input
+damage_detected input std_input
+reset input std_input
+temp_fault input std_input
+voltage_fault input std_input
